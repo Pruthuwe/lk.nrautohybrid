@@ -167,7 +167,7 @@
                             <!-- Section Title Start -->
                             <div class="section-title section-title-white">
                                 <h5 class="sub-title">Emergency Calls 24/7 </h5>
-                                <h2 class="main-title">+12(254) 258 741</h2>
+                                <h2 class="main-title">+94 77 721 1639</h2>
                             </div>
                             <!-- Section Title End -->
                             <p>Car servicing rationally encounter consequences extremely painful. Nor again is there anyone who loves or pursues of more than a quality servicing is very important </p>
