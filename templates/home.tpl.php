@@ -4,27 +4,46 @@
 ?> 
 <style>
     .single-brand img {
-        width: 130px;
-        height: 110px;
-        object-fit: contain;  /* keeps original aspect ratio */
-        display: block;
-        margin: 0 auto;       /* centers the logo */
-        filter: grayscale(100%);   /* Make logos grayscale (gray) */
-        transition: filter 0.4s ease; /* Smooth transition for color change */
-    }
-    
-    .single-brand:hover img {
-        filter: grayscale(0%);   /* Show original colors on hover */
-    }
-    
-    /* Custom Swiper settings for faster movement */
-    .brand-active .swiper-container {
-        overflow: hidden;
-    }
-    
-    .brand-active .swiper-wrapper {
-        transition-timing-function: linear !important;
-    }
+    width: 130px;
+    height: 110px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    filter: grayscale(100%);
+    transition: filter 0.4s ease;
+    will-change: filter; /* Optimize for animation performance */
+}
+
+.single-brand:hover img {
+    filter: grayscale(0%);
+}
+
+/* Optimized Swiper settings for smooth movement */
+.brand-active .swiper-container {
+    overflow: hidden;
+}
+
+.brand-active .swiper-wrapper {
+    transition-timing-function: linear !important;
+    /* Hardware acceleration for smoother animation */
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+}
+
+.brand-active .swiper-slide {
+    /* Prevent flickering during animation */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+/* Ensure smooth transitions */
+.brand-active .swiper-container .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+}
 </style>
 
         <!-- Slider Section Start -->
@@ -446,25 +465,28 @@
         <!-- Brand Section End -->
 
 <script>
-// Custom JavaScript to make the brand carousel move slowly and continuously
+// Professional Brand Carousel - Smooth Continuous Movement
 document.addEventListener('DOMContentLoaded', function() {
-    // Find the brand carousel
     const brandCarousel = document.querySelector('.brand-active .swiper-container');
     
     if (brandCarousel) {
-        // Initialize Swiper with slow continuous movement
         const brandSwiper = new Swiper(brandCarousel, {
             slidesPerView: 'auto',
             spaceBetween: 30,
             loop: true,
-            speed: 3000, // Slow transition speed (3 seconds)
+            loopedSlides: 7, // Number of slides to loop
+            speed: 5000, // Smooth transition speed (5 seconds)
             autoplay: {
-                delay: 0, // No delay for continuous movement
+                delay: 0,
                 disableOnInteraction: false,
-                pauseOnMouseEnter: false
+                pauseOnMouseEnter: true, // Pause on hover for better UX
+                reverseDirection: false
             },
-            allowTouchMove: false, // Disable manual swiping to keep it continuous
-            freeMode: true, // Enable free mode for smoother continuous scrolling
+            allowTouchMove: true, // Allow user interaction
+            freeMode: false, // Disable free mode for consistent speed
+            freeModeMomentum: false,
+            grabCursor: true,
+            cssMode: false,
             breakpoints: {
                 0: {
                     slidesPerView: 2,
@@ -488,9 +510,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         });
+        
+        // Ensure consistent speed by resetting autoplay on slide change
+        brandSwiper.on('slideChange', function() {
+            if (brandSwiper.autoplay.running) {
+                brandSwiper.params.speed = 5000;
+            }
+        });
     }
 });
 </script>
+
+        <!-- Footer Section Start -->
 
 <?php
       include 'include/footer.inc.php'; 
