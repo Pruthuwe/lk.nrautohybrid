@@ -1,5 +1,5 @@
 <?php
-      include 'include/header.inc.php'; 
+      include __DIR__ . '/../include/header.inc.php'; 
      
 ?> 
 
@@ -22,8 +22,8 @@
                         <!-- Section Title End -->
 
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a href="project-gallery.html">Gallery</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/project-gallery">Gallery</a></li>
                             <li class="breadcrumb-item active">Projects Details</li>
                         </ul>
                     </div>
@@ -173,10 +173,10 @@
                             <!-- Single Gallery Start -->
                             <div class="single-gallery">
                                 <div class="gallery-images">
-                                    <a href="project-details.html"><img src="assets/images/gallery/gallery-4.jpg" alt="Gallery"></a>
+                                    <a href="/project-details"><img src="assets/images/gallery/gallery-4.jpg" alt="Gallery"></a>
                                 </div>
                                 <div class="gallery-content">
-                                    <h4 class="title"><a href="project-details.html">AC Repair Servicing</a></h4>
+                                    <h4 class="title"><a href="/project-details">AC Repair Servicing</a></h4>
                                     <span>Car AC repari & Servicing</span>
                                 </div>
                             </div>
@@ -186,10 +186,10 @@
                             <!-- Single Gallery Start -->
                             <div class="single-gallery">
                                 <div class="gallery-images">
-                                    <a href="project-details.html"><img src="assets/images/gallery/gallery-5.jpg" alt="Gallery"></a>
+                                    <a href="/project-details"><img src="assets/images/gallery/gallery-5.jpg" alt="Gallery"></a>
                                 </div>
                                 <div class="gallery-content">
-                                    <h4 class="title"><a href="project-details.html">AC Repair Servicing</a></h4>
+                                    <h4 class="title"><a href="/project-details">AC Repair Servicing</a></h4>
                                     <span>Car AC repari & Servicing</span>
                                 </div>
                             </div>
@@ -199,10 +199,10 @@
                             <!-- Single Gallery Start -->
                             <div class="single-gallery">
                                 <div class="gallery-images">
-                                    <a href="project-details.html"><img src="assets/images/gallery/gallery-6.jpg" alt="Gallery"></a>
+                                    <a href="/project-details"><img src="assets/images/gallery/gallery-6.jpg" alt="Gallery"></a>
                                 </div>
                                 <div class="gallery-content">
-                                    <h4 class="title"><a href="project-details.html">AC Repair Servicing</a></h4>
+                                    <h4 class="title"><a href="/project-details">AC Repair Servicing</a></h4>
                                     <span>Car AC repari & Servicing</span>
                                 </div>
                             </div>
@@ -270,7 +270,7 @@
         <!-- Brand Section End -->
 
    <?php
-      include 'include/footer.inc.php'; 
+      include __DIR__ . '/../include/footer.inc.php'; 
      
 ?> 
 

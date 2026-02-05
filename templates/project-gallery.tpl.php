@@ -1,5 +1,5 @@
 <?php
-      include 'include/header.inc.php'; 
+      include __DIR__ . '/../include/header.inc.php'; 
      
 ?> 
 
@@ -22,7 +22,7 @@
                         <!-- Section Title End -->
 
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item active">Gallery</li>
                         </ul>
                     </div>
@@ -51,10 +51,10 @@
                             <!-- Single Gallery Start -->
                             <div class="single-gallery" data-aos="fade-up" data-aos-delay="200">
                                 <div class="gallery-images">
-                                    <a href="project-details.html"><img src="assets/images/gallery/gallery-1.jpg" alt="Gallery"></a>
+                                    <a href="/project-details"><img src="assets/images/gallery/gallery-1.jpg" alt="Gallery"></a>
                                 </div>
                                 <div class="gallery-content">
-                                    <h4 class="title"><a href="project-details.html">AC Repair Servicing</a></h4>
+                                    <h4 class="title"><a href="/project-details">AC Repair Servicing</a></h4>
                                     <span>Car AC repari & Servicing</span>
                                 </div>
                             </div>
@@ -64,10 +64,10 @@
                             <!-- Single Gallery Start -->
                             <div class="single-gallery" data-aos="fade-up" data-aos-delay="400">
                                 <div class="gallery-images">
-                                    <a href="project-details.html"><img src="assets/images/gallery/gallery-2.jpg" alt="Gallery"></a>
+                                    <a href="/project-details"><img src="assets/images/gallery/gallery-2.jpg" alt="Gallery"></a>
                                 </div>
                                 <div class="gallery-content">
-                                    <h4 class="title"><a href="project-details.html">AC Repair Servicing</a></h4>
+                                    <h4 class="title"><a href="/project-details">AC Repair Servicing</a></h4>
                                     <span>Car AC repari & Servicing</span>
                                 </div>
                             </div>
@@ -77,10 +77,10 @@
                             <!-- Single Gallery Start -->
                             <div class="single-gallery" data-aos="fade-up" data-aos-delay="600">
                                 <div class="gallery-images">
-                                    <a href="project-details.html"><img src="assets/images/gallery/gallery-3.jpg" alt="Gallery"></a>
+                                    <a href="/project-details"><img src="assets/images/gallery/gallery-3.jpg" alt="Gallery"></a>
                                 </div>
                                 <div class="gallery-content">
-                                    <h4 class="title"><a href="project-details.html">AC Repair Servicing</a></h4>
+                                    <h4 class="title"><a href="/project-details">AC Repair Servicing</a></h4>
                                     <span>Car AC repari & Servicing</span>
                                 </div>
                             </div>
@@ -90,10 +90,10 @@
                             <!-- Single Gallery Start -->
                             <div class="single-gallery" data-aos="fade-up" data-aos-delay="200">
                                 <div class="gallery-images">
-                                    <a href="project-details.html"><img src="assets/images/gallery/gallery-4.jpg" alt="Gallery"></a>
+                                    <a href="/project-details"><img src="assets/images/gallery/gallery-4.jpg" alt="Gallery"></a>
                                 </div>
                                 <div class="gallery-content">
-                                    <h4 class="title"><a href="project-details.html">AC Repair Servicing</a></h4>
+                                    <h4 class="title"><a href="/project-details">AC Repair Servicing</a></h4>
                                     <span>Car AC repari & Servicing</span>
                                 </div>
                             </div>
@@ -103,10 +103,10 @@
                             <!-- Single Gallery Start -->
                             <div class="single-gallery" data-aos="fade-up" data-aos-delay="400">
                                 <div class="gallery-images">
-                                    <a href="project-details.html"><img src="assets/images/gallery/gallery-5.jpg" alt="Gallery"></a>
+                                    <a href="/project-details"><img src="assets/images/gallery/gallery-5.jpg" alt="Gallery"></a>
                                 </div>
                                 <div class="gallery-content">
-                                    <h4 class="title"><a href="project-details.html">AC Repair Servicing</a></h4>
+                                    <h4 class="title"><a href="/project-details">AC Repair Servicing</a></h4>
                                     <span>Car AC repari & Servicing</span>
                                 </div>
                             </div>
@@ -116,10 +116,10 @@
                             <!-- Single Gallery Start -->
                             <div class="single-gallery" data-aos="fade-up" data-aos-delay="600">
                                 <div class="gallery-images">
-                                    <a href="project-details.html"><img src="assets/images/gallery/gallery-6.jpg" alt="Gallery"></a>
+                                    <a href="/project-details"><img src="assets/images/gallery/gallery-6.jpg" alt="Gallery"></a>
                                 </div>
                                 <div class="gallery-content">
-                                    <h4 class="title"><a href="project-details.html">AC Repair Servicing</a></h4>
+                                    <h4 class="title"><a href="/project-details">AC Repair Servicing</a></h4>
                                     <span>Car AC repari & Servicing</span>
                                 </div>
                             </div>
@@ -129,10 +129,10 @@
                             <!-- Single Gallery Start -->
                             <div class="single-gallery" data-aos="fade-up" data-aos-delay="200">
                                 <div class="gallery-images">
-                                    <a href="project-details.html"><img src="assets/images/gallery/gallery-7.jpg" alt="Gallery"></a>
+                                    <a href="/project-details"><img src="assets/images/gallery/gallery-7.jpg" alt="Gallery"></a>
                                 </div>
                                 <div class="gallery-content">
-                                    <h4 class="title"><a href="project-details.html">AC Repair Servicing</a></h4>
+                                    <h4 class="title"><a href="/project-details">AC Repair Servicing</a></h4>
                                     <span>Car AC repari & Servicing</span>
                                 </div>
                             </div>
@@ -142,10 +142,10 @@
                             <!-- Single Gallery Start -->
                             <div class="single-gallery" data-aos="fade-up" data-aos-delay="400">
                                 <div class="gallery-images">
-                                    <a href="project-details.html"><img src="assets/images/gallery/gallery-8.jpg" alt="Gallery"></a>
+                                    <a href="/project-details"><img src="assets/images/gallery/gallery-8.jpg" alt="Gallery"></a>
                                 </div>
                                 <div class="gallery-content">
-                                    <h4 class="title"><a href="project-details.html">AC Repair Servicing</a></h4>
+                                    <h4 class="title"><a href="/project-details">AC Repair Servicing</a></h4>
                                     <span>Car AC repari & Servicing</span>
                                 </div>
                             </div>
@@ -155,10 +155,10 @@
                             <!-- Single Gallery Start -->
                             <div class="single-gallery" data-aos="fade-up" data-aos-delay="600">
                                 <div class="gallery-images">
-                                    <a href="project-details.html"><img src="assets/images/gallery/gallery-9.jpg" alt="Gallery"></a>
+                                    <a href="/project-details"><img src="assets/images/gallery/gallery-9.jpg" alt="Gallery"></a>
                                 </div>
                                 <div class="gallery-content">
-                                    <h4 class="title"><a href="project-details.html">AC Repair Servicing</a></h4>
+                                    <h4 class="title"><a href="/project-details">AC Repair Servicing</a></h4>
                                     <span>Car AC repari & Servicing</span>
                                 </div>
                             </div>
@@ -260,7 +260,7 @@
         <!-- Brand Section End -->
 
   <?php
-      include 'include/footer.inc.php'; 
+      include __DIR__ . '/../include/footer.inc.php'; 
      
 ?> 
 

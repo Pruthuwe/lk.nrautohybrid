@@ -3,7 +3,7 @@
 $TEMPLATE_LOAD = __DIR__ . '/templates';
 
 
-$APP_ROOT = '/lk.universalautomart';
+$APP_ROOT = '';
 
 // Get only the path from the full request URI, ignoring query strings
 $REQUEST_URI = $_SERVER['REQUEST_URI'];

@@ -1,5 +1,5 @@
 <?php
-      include 'include/header.inc.php'; 
+      include __DIR__ . '/../include/header.inc.php'; 
      
 ?> 
 
@@ -20,7 +20,7 @@
                         <!-- Section Title End -->
 
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item active">Empty Cart</li>
                         </ul>
                     </div>
@@ -49,7 +49,7 @@
                         <img src="assets/images/cart.png" alt="">
                     </div>
                     <p>Your cart is currently empty!</p>
-                    <a href="shop-left-sidebar.html" class="btn btn-custom-01"><i class="fa fa-angle-left"></i> Continue browsing</a>
+                    <a href="/shop-left-sidebar" class="btn btn-custom-01"><i class="fa fa-angle-left"></i> Continue browsing</a>
                 </div>
                 <!-- empty cart End -->
 
@@ -58,7 +58,7 @@
         <!-- Cart Section End -->
 
      <?php
-      include 'include/footer.inc.php'; 
+      include __DIR__ . '/../include/footer.inc.php'; 
      
 ?> 
 

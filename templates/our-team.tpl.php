@@ -1,5 +1,5 @@
 <?php
-      include 'include/header.inc.php'; 
+      include __DIR__ . '/../include/header.inc.php'; 
      
 ?> 
 
@@ -22,7 +22,7 @@
                         <!-- Section Title End -->
 
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item active">Mechanics</li>
                         </ul>
                     </div>
@@ -51,11 +51,11 @@
                             <!-- Single Team Start -->
                             <div class="single-team" data-aos="fade-up" data-aos-delay="100">
                                 <div class="team-images">
-                                    <a href="team-profile.html"><img src="assets/images/team/team-1.jpg" alt="Team"></a>
+                                    <a href="/team-profile"><img src="assets/images/team/team-1.jpg" alt="Team"></a>
                                 </div>
                                 <div class="team-content">
                                     <div class="content-wrapper">
-                                        <h4 class="name"><a href="team-profile.html">Daniel Williams</a></h4>
+                                        <h4 class="name"><a href="/team-profile">Daniel Williams</a></h4>
                                         <span class="designation">Engine Mechanic</span>
                                         <div class="team-meta">
                                             <p class="meta">Exprience: <strong>8 years</strong></p>
@@ -76,11 +76,11 @@
                             <!-- Single Team Start -->
                             <div class="single-team" data-aos="fade-up" data-aos-delay="200">
                                 <div class="team-images">
-                                    <a href="team-profile.html"><img src="assets/images/team/team-2.jpg" alt="Team"></a>
+                                    <a href="/team-profile"><img src="assets/images/team/team-2.jpg" alt="Team"></a>
                                 </div>
                                 <div class="team-content">
                                     <div class="content-wrapper">
-                                        <h4 class="name"><a href="team-profile.html">Stuart Macgil</a></h4>
+                                        <h4 class="name"><a href="/team-profile">Stuart Macgil</a></h4>
                                         <span class="designation">Interior Mechanic</span>
                                         <div class="team-meta">
                                             <p class="meta">Exprience: <strong>8 years</strong></p>
@@ -101,11 +101,11 @@
                             <!-- Single Team Start -->
                             <div class="single-team" data-aos="fade-up" data-aos-delay="300">
                                 <div class="team-images">
-                                    <a href="team-profile.html"><img src="assets/images/team/team-3.jpg" alt="Team"></a>
+                                    <a href="/team-profile"><img src="assets/images/team/team-3.jpg" alt="Team"></a>
                                 </div>
                                 <div class="team-content">
                                     <div class="content-wrapper">
-                                        <h4 class="name"><a href="team-profile.html">Ricardo Powel</a></h4>
+                                        <h4 class="name"><a href="/team-profile">Ricardo Powel</a></h4>
                                         <span class="designation">Wheels Specialist</span>
                                         <div class="team-meta">
                                             <p class="meta">Exprience: <strong>8 years</strong></p>
@@ -126,11 +126,11 @@
                             <!-- Single Team Start -->
                             <div class="single-team" data-aos="fade-up" data-aos-delay="400">
                                 <div class="team-images">
-                                    <a href="team-profile.html"><img src="assets/images/team/team-4.jpg" alt="Team"></a>
+                                    <a href="/team-profile"><img src="assets/images/team/team-4.jpg" alt="Team"></a>
                                 </div>
                                 <div class="team-content">
                                     <div class="content-wrapper">
-                                        <h4 class="name"><a href="team-profile.html">Albert Thomas</a></h4>
+                                        <h4 class="name"><a href="/team-profile">Albert Thomas</a></h4>
                                         <span class="designation">Lead Painter</span>
                                         <div class="team-meta">
                                             <p class="meta">Exprience: <strong>8 years</strong></p>
@@ -151,11 +151,11 @@
                             <!-- Single Team Start -->
                             <div class="single-team" data-aos="fade-up" data-aos-delay="100">
                                 <div class="team-images">
-                                    <a href="team-profile.html"><img src="assets/images/team/team-5.jpg" alt="Team"></a>
+                                    <a href="/team-profile"><img src="assets/images/team/team-5.jpg" alt="Team"></a>
                                 </div>
                                 <div class="team-content">
                                     <div class="content-wrapper">
-                                        <h4 class="name"><a href="team-profile.html">David Layed</a></h4>
+                                        <h4 class="name"><a href="/team-profile">David Layed</a></h4>
                                         <span class="designation">Brake Expert</span>
                                         <div class="team-meta">
                                             <p class="meta">Exprience: <strong>8 years</strong></p>
@@ -176,11 +176,11 @@
                             <!-- Single Team Start -->
                             <div class="single-team" data-aos="fade-up" data-aos-delay="200">
                                 <div class="team-images">
-                                    <a href="team-profile.html"><img src="assets/images/team/team-6.jpg" alt="Team"></a>
+                                    <a href="/team-profile"><img src="assets/images/team/team-6.jpg" alt="Team"></a>
                                 </div>
                                 <div class="team-content">
                                     <div class="content-wrapper">
-                                        <h4 class="name"><a href="team-profile.html">Alvin Ward</a></h4>
+                                        <h4 class="name"><a href="/team-profile">Alvin Ward</a></h4>
                                         <span class="designation">Structure Mechanic</span>
                                         <div class="team-meta">
                                             <p class="meta">Exprience: <strong>8 years</strong></p>
@@ -201,11 +201,11 @@
                             <!-- Single Team Start -->
                             <div class="single-team" data-aos="fade-up" data-aos-delay="300">
                                 <div class="team-images">
-                                    <a href="team-profile.html"><img src="assets/images/team/team-7.jpg" alt="Team"></a>
+                                    <a href="/team-profile"><img src="assets/images/team/team-7.jpg" alt="Team"></a>
                                 </div>
                                 <div class="team-content">
                                     <div class="content-wrapper">
-                                        <h4 class="name"><a href="team-profile.html">Kingsley Hodges</a></h4>
+                                        <h4 class="name"><a href="/team-profile">Kingsley Hodges</a></h4>
                                         <span class="designation">Engine Mechanic</span>
                                         <div class="team-meta">
                                             <p class="meta">Exprience: <strong>10 years</strong></p>
@@ -226,11 +226,11 @@
                             <!-- Single Team Start -->
                             <div class="single-team" data-aos="fade-up" data-aos-delay="400">
                                 <div class="team-images">
-                                    <a href="team-profile.html"><img src="assets/images/team/team-8.jpg" alt="Team"></a>
+                                    <a href="/team-profile"><img src="assets/images/team/team-8.jpg" alt="Team"></a>
                                 </div>
                                 <div class="team-content">
                                     <div class="content-wrapper">
-                                        <h4 class="name"><a href="team-profile.html">Gerard Butler</a></h4>
+                                        <h4 class="name"><a href="/team-profile">Gerard Butler</a></h4>
                                         <span class="designation">Interior Mechanic</span>
                                         <div class="team-meta">
                                             <p class="meta">Exprience: <strong>9 years</strong></p>
@@ -309,7 +309,7 @@
         <!-- Brand Section End -->
 
       <?php
-      include 'include/footer.inc.php'; 
+      include __DIR__ . '/../include/footer.inc.php'; 
      
 ?> 
 

@@ -1,5 +1,5 @@
 <?php
-      include 'include/header.inc.php'; 
+      include __DIR__ . '/../include/header.inc.php'; 
      
 ?> 
 
@@ -21,7 +21,7 @@
                         <!-- Section Title End -->
 
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item active">Compare</li>
                         </ul>
                     </div>
@@ -55,12 +55,12 @@
                                     <div class="compare-product ">
                                         <div class="pack-product-container">
                                             <div class="thumb-mask">
-                                                <a href="product-details-right-sidebar.html">
+                                                <a href="/product-details-right-sidebar">
                                                     <img src="assets/images/shop/shop-4.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="desc-box">
-                                                <a class="product-name" href="product-details-right-sidebar.html">New Balance Fresh Foam Kaymin</a>
+                                                <a class="product-name" href="/product-details-right-sidebar">New Balance Fresh Foam Kaymin</a>
                                                 <div class="product-reviews">
                                                     <div class="review-star">
                                                         <div class="star" style="width: 80%;"></div>
@@ -84,12 +84,12 @@
                                     <div class="compare-product ">
                                         <div class="pack-product-container">
                                             <div class="thumb-mask">
-                                                <a href="product-details-right-sidebar.html">
+                                                <a href="/product-details-right-sidebar">
                                                     <img src="assets/images/shop/shop-5.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="desc-box">
-                                                <a class="product-name" href="product-details-right-sidebar.html">Trans-Weight Hooded Wind and Water...</a>
+                                                <a class="product-name" href="/product-details-right-sidebar">Trans-Weight Hooded Wind and Water...</a>
                                                 <div class="product-reviews">
                                                     <div class="review-star">
                                                         <div class="star" style="width: 80%;"></div>
@@ -111,12 +111,12 @@
                                     <div class="compare-product ">
                                         <div class="pack-product-container">
                                             <div class="thumb-mask">
-                                                <a href="product-details-right-sidebar.html">
+                                                <a href="/product-details-right-sidebar">
                                                     <img src="assets/images/shop/shop-6.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="desc-box">
-                                                <a class="product-name" href="product-details-right-sidebar.html">Originals Kaval Windbreaker Winter Jacket</a>
+                                                <a class="product-name" href="/product-details-right-sidebar">Originals Kaval Windbreaker Winter Jacket</a>
                                                 <div class="product-reviews">
                                                     <div class="review-star">
                                                         <div class="star" style="width: 80%;"></div>
@@ -175,7 +175,7 @@
         <!-- Compare Section End -->
 
         <?php
-      include 'include/footer.inc.php'; 
+      include __DIR__ . '/../include/footer.inc.php'; 
      
 ?> 
 

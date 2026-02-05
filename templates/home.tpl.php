@@ -1,5 +1,5 @@
 <?php
-      include 'include/header.inc.php'; 
+      include __DIR__ . '/../include/header.inc.php'; 
      
 ?> 
 
@@ -16,7 +16,7 @@
                         <h5 class="sub-title" data-aos="fade-up" data-aos-delay="100"> a garage for all models </h5>
                         <h1 class="main-title" data-aos="fade-up" data-aos-delay="400">Need to Service or repair your car?</h1>
                         <p data-aos="fade-up" data-aos-delay="600">Car servicing rationally encounter consequences that extremely painful. Nor again is there anyone who loves or pursues </p>
-                        <a href="contact.html" data-aos="fade-up" data-aos-delay="800" class="btn btn-custom-01">Contact us</a>
+                        <a href="/contact" data-aos="fade-up" data-aos-delay="800" class="btn btn-custom-01">Contact us</a>
                     </div>
                     <!-- Slider Section End -->
 
@@ -99,7 +99,7 @@
                                 </div>
                                 <!-- About Count End -->
 
-                                <a href="contact.html" class="btn btn-custom-01">Get Appointment</a>
+                                <a href="/contact" class="btn btn-custom-01">Get Appointment</a>
 
                             </div>
                             <!-- About Content End -->
@@ -132,8 +132,8 @@
                             <div class="col-lg-4 col-sm-6">
                                 <!-- Single Service Start -->
                                 <div class="single-service" data-aos="fade-up" data-aos-delay="200">
-                                    <h4 class="title"><a href="service-details.html">Anti Lock Brake <br> Servicing</a></h4>
-                                    <a href="service-details.html" class="more">Lean more</a>
+                                    <h4 class="title"><a href="/service-details">Anti Lock Brake <br> Servicing</a></h4>
+                                    <a href="/service-details" class="more">Lean more</a>
 
                                     <div class="service-icon">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
@@ -255,8 +255,8 @@
                             <div class="col-lg-4 col-sm-6">
                                 <!-- Single Service Start -->
                                 <div class="single-service" data-aos="fade-up" data-aos-delay="400">
-                                    <h4 class="title"><a href="service-details.html">Entire Engine <br> Servicing</a></h4>
-                                    <a href="service-details.html" class="more">Lean more</a>
+                                    <h4 class="title"><a href="/service-details">Entire Engine <br> Servicing</a></h4>
+                                    <a href="/service-details" class="more">Lean more</a>
 
                                     <div class="service-icon">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
@@ -329,8 +329,8 @@
                             <div class="col-lg-4 col-sm-6">
                                 <!-- Single Service Start -->
                                 <div class="single-service" data-aos="fade-up" data-aos-delay="600">
-                                    <h4 class="title"><a href="service-details.html">Car Wash <br> Service</a></h4>
-                                    <a href="service-details.html" class="more">Lean more</a>
+                                    <h4 class="title"><a href="/service-details">Car Wash <br> Service</a></h4>
+                                    <a href="/service-details" class="more">Lean more</a>
 
                                     <div class="service-icon">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
@@ -425,8 +425,8 @@
                             <div class="col-lg-4 col-sm-6">
                                 <!-- Single Service Start -->
                                 <div class="single-service" data-aos="fade-up" data-aos-delay="200">
-                                    <h4 class="title"><a href="service-details.html">Battery <br> Replacement</a></h4>
-                                    <a href="service-details.html" class="more">Lean more</a>
+                                    <h4 class="title"><a href="/service-details">Battery <br> Replacement</a></h4>
+                                    <a href="/service-details" class="more">Lean more</a>
 
                                     <div class="service-icon">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
@@ -467,8 +467,8 @@
                             <div class="col-lg-4 col-sm-6">
                                 <!-- Single Service Start -->
                                 <div class="single-service" data-aos="fade-up" data-aos-delay="400">
-                                    <h4 class="title"><a href="service-details.html">Change Oil <br> and Filter</a></h4>
-                                    <a href="service-details.html" class="more">Lean more</a>
+                                    <h4 class="title"><a href="/service-details">Change Oil <br> and Filter</a></h4>
+                                    <a href="/service-details" class="more">Lean more</a>
                                     <div class="service-icon">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
                                             <path class="icon-path" d="M85.68,152.95h88.53c9.76,0,17.71-7.94,17.71-17.71V82.12c0-9.76-7.94-17.71-17.71-17.71H85.68
@@ -516,8 +516,8 @@
                             <div class="col-lg-4 col-sm-6">
                                 <!-- Single Service Start -->
                                 <div class="single-service" data-aos="fade-up" data-aos-delay="600">
-                                    <h4 class="title"><a href="service-details.html">Tire Change <br> and Repair</a></h4>
-                                    <a href="service-details.html" class="more">Lean more</a>
+                                    <h4 class="title"><a href="/service-details">Tire Change <br> and Repair</a></h4>
+                                    <a href="/service-details" class="more">Lean more</a>
 
                                     <div class="service-icon">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
@@ -586,7 +586,7 @@
                             </div>
                             <!-- Section Title End -->
                             <p>Car servicing rationally encounter consequences extremely painful. Nor again is there anyone who loves or pursues of more than a quality servicing is very important </p>
-                            <a href="contact.html" class="btn btn-custom-01 btn-hover-white">Get a Quote</a>
+                            <a href="/contact" class="btn btn-custom-01 btn-hover-white">Get a Quote</a>
                         </div>
                         <img class="shape" src="assets/images/call-to-action.webp" alt="Call to Action">
                     </div>
@@ -880,15 +880,15 @@
                                 <!-- Single Blog Start -->
                                 <div class="single-blog" data-aos="fade-up" data-aos-delay="200">
                                     <div class="blog-image">
-                                        <a href="blog-details-right-sidebar.html"><img src="assets/images/blog/blog-01.webp" alt="Blog"></a>
+                                        <a href="/blog-details-right-sidebar"><img src="assets/images/blog/blog-01.webp" alt="Blog"></a>
                                     </div>
                                     <div class="blog-content">
                                         <ul class="meta">
                                             <li> <i class="fa fa-calendar"></i> 28 May, 2023</li>
                                             <li> <i class="fa fa-user-o"></i> Albert Ross</li>
                                         </ul>
-                                        <h3 class="title"><a href="blog-details-right-sidebar.html">Anti-lock Brake Servicing is very important for your vehical</a></h3>
-                                        <a href="blog-details-right-sidebar.html" class="more">+ Read more</a>
+                                        <h3 class="title"><a href="/blog-details-right-sidebar">Anti-lock Brake Servicing is very important for your vehical</a></h3>
+                                        <a href="/blog-details-right-sidebar" class="more">+ Read more</a>
                                     </div>
                                 </div>
                                 <!-- Single Blog End -->
@@ -897,15 +897,15 @@
                                 <!-- Single Blog Start -->
                                 <div class="single-blog" data-aos="fade-up" data-aos-delay="400">
                                     <div class="blog-image">
-                                        <a href="blog-details-right-sidebar.html"><img src="assets/images/blog/blog-02.webp" alt="Blog"></a>
+                                        <a href="/blog-details-right-sidebar"><img src="assets/images/blog/blog-02.webp" alt="Blog"></a>
                                     </div>
                                     <div class="blog-content">
                                         <ul class="meta">
                                             <li> <i class="fa fa-calendar"></i> 28 May, 2023</li>
                                             <li> <i class="fa fa-user-o"></i> Albert Ross</li>
                                         </ul>
-                                        <h3 class="title"><a href="blog-details-right-sidebar.html">Don’t do these 4 things if you want your car to retain its value</a></h3>
-                                        <a href="blog-details-right-sidebar.html" class="more">+ Read more</a>
+                                        <h3 class="title"><a href="/blog-details-right-sidebar">Don’t do these 4 things if you want your car to retain its value</a></h3>
+                                        <a href="/blog-details-right-sidebar" class="more">+ Read more</a>
                                     </div>
                                 </div>
                                 <!-- Single Blog End -->
@@ -914,15 +914,15 @@
                                 <!-- Single Blog Start -->
                                 <div class="single-blog" data-aos="fade-up" data-aos-delay="600">
                                     <div class="blog-image">
-                                        <a href="blog-details-right-sidebar.html"><img src="assets/images/blog/blog-03.webp" alt="Blog"></a>
+                                        <a href="/blog-details-right-sidebar"><img src="assets/images/blog/blog-03.webp" alt="Blog"></a>
                                     </div>
                                     <div class="blog-content">
                                         <ul class="meta">
                                             <li> <i class="fa fa-calendar"></i> 28 May, 2023</li>
                                             <li> <i class="fa fa-user-o"></i> Albert Ross</li>
                                         </ul>
-                                        <h3 class="title"><a href="blog-details-right-sidebar.html">Full car Diagnostic is important for every year maintainance</a></h3>
-                                        <a href="blog-details-right-sidebar.html" class="more">+ Read more</a>
+                                        <h3 class="title"><a href="/blog-details-right-sidebar">Full car Diagnostic is important for every year maintainance</a></h3>
+                                        <a href="/blog-details-right-sidebar" class="more">+ Read more</a>
                                     </div>
                                 </div>
                                 <!-- Single Blog End -->
@@ -933,7 +933,7 @@
 
                     <!-- Blog Button Start -->
                     <div class="blog-btn">
-                        <a href="blog-right-sidebar.html" class="btn btn-custom-01">View More</a>
+                        <a href="/blog-right-sidebar" class="btn btn-custom-01">View More</a>
                     </div>
                     <!-- Blog Button End -->
 
@@ -997,7 +997,7 @@
         </div>
         <!-- Brand Section End -->
 <?php
-      include 'include/footer.inc.php'; 
+      include __DIR__ . '/../include/footer.inc.php'; 
      
 ?> 
         <!-- Footer Section End -->

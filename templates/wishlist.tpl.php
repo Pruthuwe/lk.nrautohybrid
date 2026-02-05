@@ -1,5 +1,5 @@
 <?php
-      include 'include/header.inc.php'; 
+      include __DIR__ . '/../include/header.inc.php'; 
      
 ?> 
 
@@ -21,7 +21,7 @@
                         <!-- Section Title End -->
 
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item active">Wishlist</li>
                         </ul>
                     </div>
@@ -63,7 +63,7 @@
                                         <img src="assets/images/mini-cart/cart-1.jpg" alt="Cart">
                                     </td>
                                     <td class="Product-info">
-                                        <h6 class="name"><a href="product-details-right-sidebar.html">Originals Kaval Windbreaker Winter Jacket</a></h6>
+                                        <h6 class="name"><a href="/product-details-right-sidebar">Originals Kaval Windbreaker Winter Jacket</a></h6>
                                         <div class="product-prices">
                                             <span class="old-price">$35.90</span>
                                             <span class="sale-price">$28.72</span>
@@ -96,7 +96,7 @@
                                         <img src="assets/images//mini-cart/cart-2.jpg" alt="cart">
                                     </td>
                                     <td class="Product-info">
-                                        <h6 class="name"><a href="product-details-right-sidebar.html">Originals Kaval Windbreaker Winter Jacket</a></h6>
+                                        <h6 class="name"><a href="/product-details-right-sidebar">Originals Kaval Windbreaker Winter Jacket</a></h6>
                                         <div class="product-prices">
                                             <span class="sale-price">$35.72</span>
                                         </div>
@@ -127,7 +127,7 @@
                                         <img src="assets/images//mini-cart/cart-3.jpg" alt="Cart">
                                     </td>
                                     <td class="Product-info">
-                                        <h6 class="name"><a href="product-details-right-sidebar.html">Originals Kaval Windbreaker Winter Jacket</a></h6>
+                                        <h6 class="name"><a href="/product-details-right-sidebar">Originals Kaval Windbreaker Winter Jacket</a></h6>
                                         <div class="product-prices">
                                             <span class="sale-price">$28.72</span>
                                         </div>
@@ -164,7 +164,7 @@
         <!-- Cart Section End -->
 
      <?php
-      include 'include/footer.inc.php'; 
+      include __DIR__ . '/../include/footer.inc.php'; 
      
 ?> 
 
