@@ -48,7 +48,7 @@ const HeroSlider = () => (
 
       {/* Slider Images Start */}
       <div className="slider-images-02">
-        <div className="image" data-aos="fade-right" data-aos-delay="1300">
+        <div className="image" data-aos="fade-right" data-aos-delay="1000">
           <img src="/assets/images/slider/slider-1.webp" alt="Slider" />
         </div>
       </div>
