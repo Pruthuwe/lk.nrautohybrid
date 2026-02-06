@@ -19,22 +19,22 @@ const BrandSection = () => (
             992: { slidesPerView: 4 }
           }}
         >
-          <SwiperSlide>
+          <SwiperSlide key={0}>
             <div className="single-brand">
               <img src="/assets/images/brand/brand-01.webp" alt="Brand" />
             </div>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide key={1}>
             <div className="single-brand">
               <img src="/assets/images/brand/brand-02.webp" alt="Brand" />
             </div>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide key={2}>
             <div className="single-brand">
               <img src="/assets/images/brand/brand-03.webp" alt="Brand" />
             </div>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide key={3}>
             <div className="single-brand">
               <img src="/assets/images/brand/brand-04.webp" alt="Brand" />
             </div>

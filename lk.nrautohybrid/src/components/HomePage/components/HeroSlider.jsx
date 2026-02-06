@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const HeroSlider = () => (
   <div className="section slider-section">
     <div 
       className="single-slider" 
-      style={{ backgroundImage: 'url(/assets/images/slider/slider-bg.webp)' }}
+      style={{ backgroundImage: 'url(/assets/images/slider/slider-bg.jpg)' }}
     >
       <div className="container">
         {/* Slider Content Start */}
@@ -27,14 +26,14 @@ const HeroSlider = () => (
           <p data-aos="fade-up" data-aos-delay="600">
             Car servicing rationally encounter consequences that extremely painful. Nor again is there anyone who loves or pursues
           </p>
-          <Link 
-            to="/contact" 
+          <a 
+            href="/contact" 
             data-aos="fade-up" 
             data-aos-delay="800" 
             className="btn btn-custom-01"
           >
             Contact us
-          </Link>
+          </a>
         </div>
         {/* Slider Content End */}
       </div>

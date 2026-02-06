@@ -2,6 +2,7 @@ import React from 'react';
 
 const ChooseItem = ({ delay, icon, title, description }) => (
   <div className="col-sm-6">
+    {/* Single Choose Item Start */}
     <div className="single-choose-item" data-aos="fade-up" data-aos-delay={delay}>
       <div className="item-icon">
         <img src={icon} alt="Icon" />
@@ -11,6 +12,7 @@ const ChooseItem = ({ delay, icon, title, description }) => (
         <p>{description}</p>
       </div>
     </div>
+    {/* Single Choose Item End */}
   </div>
 );
 

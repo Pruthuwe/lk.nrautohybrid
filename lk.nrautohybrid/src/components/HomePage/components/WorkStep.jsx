@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const WorkStep = ({ number, image, title, delay }) => (
   <div className="col-lg-3 col-sm-6">
@@ -7,7 +6,7 @@ const WorkStep = ({ number, image, title, delay }) => (
       <span className="number">{number}</span>
       <div className="content-wrapper">
         <img src={image} alt="Work" />
-        <h4 className="title"><Link to="#">{title}</Link></h4>
+        <h4 className="title"><a href="#">{title}</a></h4>
       </div>
     </div>
   </div>

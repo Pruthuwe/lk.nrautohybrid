@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const AboutSection = () => (
   <div className="section section-padding-02">
@@ -55,7 +54,7 @@ const AboutSection = () => (
               </div>
               {/* About Count End */}
 
-              <Link to="/contact" className="btn btn-custom-01">Get Appointment</Link>
+              <a href="#" className="btn btn-custom-01">Get Appointment</a>
             </div>
             {/* About Content End */}
           </div>

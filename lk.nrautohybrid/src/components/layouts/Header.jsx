@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -39,8 +38,8 @@ const Header = () => {
               </div>
 
               <div className="header-top-btn">
-                <Link to="/login">Login</Link>
-                <Link to="/register">Register</Link>
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
               </div>
             </div>
           </div>
@@ -53,54 +52,54 @@ const Header = () => {
 
               {/* Logo */}
               <div className="header-logo">
-                <Link to="/">
+                <a href="/">
                   <img src="/assets/images/logo.png" alt="Logo" />
-                </Link>
+                </a>
               </div>
 
               {/* Desktop Menu */}
               <div className="primary-menu d-none d-lg-block">
                 <ul className="nav-menu">
 
-                  <li><Link to="/">Home</Link></li>
+                  <li><a href="/">Home</a></li>
 
                   <li>
                     <span>Services</span>
                     <ul className="sub-menu">
-                      <li><Link to="/service">Services</Link></li>
-                      <li><Link to="/service-details">Service Details</Link></li>
+                      <li><a href="/service">Services</a></li>
+                      <li><a href="/service-details">Service Details</a></li>
                     </ul>
                   </li>
 
                   <li>
                     <span>Shop</span>
                     <ul className="sub-menu">
-                      <li><Link to="/shop-grid">Shop Grid</Link></li>
-                      <li><Link to="/shop-left-sidebar">Shop Left Sidebar</Link></li>
-                      <li><Link to="/shop-right-sidebar">Shop Right Sidebar</Link></li>
+                      <li><a href="/shop-grid">Shop Grid</a></li>
+                      <li><a href="/shop-left-sidebar">Shop Left Sidebar</a></li>
+                      <li><a href="/shop-right-sidebar">Shop Right Sidebar</a></li>
                     </ul>
                   </li>
 
                   <li>
                     <span>Pages</span>
                     <ul className="sub-menu">
-                      <li><Link to="/about">About Us</Link></li>
-                      <li><Link to="/cart">Cart</Link></li>
-                      <li><Link to="/checkout">Checkout</Link></li>
-                      <li><Link to="/my-account">My Account</Link></li>
-                      <li><Link to="/faq">FAQ</Link></li>
+                      <li><a href="/about">About Us</a></li>
+                      <li><a href="/cart">Cart</a></li>
+                      <li><a href="/checkout">Checkout</a></li>
+                      <li><a href="/my-account">My Account</a></li>
+                      <li><a href="/faq">FAQ</a></li>
                     </ul>
                   </li>
 
                   <li>
                     <span>Blog</span>
                     <ul className="sub-menu">
-                      <li><Link to="/blog-grid">Blog Grid</Link></li>
-                      <li><Link to="/blog-details">Blog Details</Link></li>
+                      <li><a href="/blog-grid">Blog Grid</a></li>
+                      <li><a href="/blog-details">Blog Details</a></li>
                     </ul>
                   </li>
 
-                  <li><Link to="/contact">Contact</Link></li>
+                  <li><a href="/contact">Contact</a></li>
 
                 </ul>
               </div>
@@ -157,11 +156,11 @@ const Header = () => {
 
         <div className="offcanvas-body">
           <ul className="nav-menu">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/service">Services</Link></li>
-            <li><Link to="/shop-grid">Shop</Link></li>
-            <li><Link to="/cart">Cart</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/service">Services</a></li>
+            <li><a href="/shop-grid">Shop</a></li>
+            <li><a href="/cart">Cart</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
       </div>

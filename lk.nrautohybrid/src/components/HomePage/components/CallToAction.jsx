@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const CallToAction = () => (
   <div className="section section-padding-02">
@@ -16,11 +15,11 @@ const CallToAction = () => (
             </div>
             {/* Section Title End */}
             <p>Car servicing rationally encounter consequences extremely painful. Nor again is there anyone who loves or pursues of more than a quality servicing is very important</p>
-            <Link to="/contact" className="btn btn-custom-01 btn-hover-white">
+            <a href="/contact" className="btn btn-custom-01 btn-hover-white">
               Get a Quote
-            </Link>
+            </a>
           </div>
-          <img className="shape" src="/assets/images/call-to-action.webp" alt="Call to Action" />
+          <img className="shape" src="/assets/images/call-to-action.png" alt="Call to Action" />
         </div>
         {/* Call to Action Content End */}
 

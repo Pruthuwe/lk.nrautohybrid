@@ -1,13 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const ServiceItem = ({ delay, title, link, children }) => (
   <div className="col-lg-4 col-sm-6">
     <div className="single-service" data-aos="fade-up" data-aos-delay={delay}>
       <h4 className="title">
-        <Link to={link}>{title}</Link>
+        <a href={link}>{title}</a>
       </h4>
-      <Link to={link} className="more">Lean more</Link>
+      <a href={link} className="more">Lean more</a>
       <div className="service-icon">
         {children}
       </div>

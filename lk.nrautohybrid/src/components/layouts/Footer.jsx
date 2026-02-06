@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -16,9 +15,9 @@ const Footer = () => {
               {/* Footer About */}
               <div className="col-lg-3 col-md-6 order-md-1 order-lg-1">
                 <div className="footer-widget" data-aos="fade-up" data-aos-delay="100">
-                  <Link className="footer-logo" to="/">
+                  <a className="footer-logo" href="/">
                     <img src="/assets/images/logo.png" alt="Logo" />
-                  </Link>
+                  </a>
 
                   <p>
                     Trusted and reliable service is our to main goal extremely
@@ -44,24 +43,24 @@ const Footer = () => {
                   <div className="footer-widget" data-aos="fade-up" data-aos-delay="200">
                     <h3 className="footer-widget-title">Quick Links</h3>
                     <ul className="widget-link">
-                      <li><Link to="/about">About us</Link></li>
-                      <li><Link to="/service">Our Services</Link></li>
-                      <li><Link to="/our-team">Our Mechanics</Link></li>
-                      <li><Link to="/blog">Blog Post</Link></li>
-                      <li><Link to="/login">Login / Register</Link></li>
-                      <li><Link to="/contact">Contact</Link></li>
+                      <li><a href="/about">About us</a></li>
+                      <li><a href="/service">Our Services</a></li>
+                      <li><a href="/our-team">Our Mechanics</a></li>
+                      <li><a href="/blog">Blog Post</a></li>
+                      <li><a href="/login">Login / Register</a></li>
+                      <li><a href="/contact">Contact</a></li>
                     </ul>
                   </div>
 
                   <div className="footer-widget" data-aos="fade-up" data-aos-delay="300">
                     <h3 className="footer-widget-title">Information</h3>
                     <ul className="widget-link">
-                      <li><Link to="/contact">Book Appointment</Link></li>
-                      <li><Link to="/terms">Terms & Conditions</Link></li>
-                      <li><Link to="/return-policy">Return Policy</Link></li>
-                      <li><Link to="/payment">Payment</Link></li>
-                      <li><Link to="/emergency">Emergency Call</Link></li>
-                      <li><Link to="/tracking">Tracking Service</Link></li>
+                      <li><a href="/contact">Book Appointment</a></li>
+                      <li><a href="/terms">Terms & Conditions</a></li>
+                      <li><a href="/return-policy">Return Policy</a></li>
+                      <li><a href="/payment">Payment</a></li>
+                      <li><a href="/emergency">Emergency Call</a></li>
+                      <li><a href="/tracking">Tracking Service</a></li>
                     </ul>
                   </div>
 

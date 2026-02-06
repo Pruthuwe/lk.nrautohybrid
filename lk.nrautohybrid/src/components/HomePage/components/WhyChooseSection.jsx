@@ -19,7 +19,7 @@ const WhyChooseSection = () => (
 
               <p>Trusted and reliable service is our main goal extremely painful. Nor again is there anyone who loves our to take a trivial example, which of us undertakes chooses</p>
 
-              <img src="/assets/images/choose/choose.webp" alt="Choose" />
+              <img src="assets/images/choose/choose.webp" alt="Choose" />
             </div>
             {/* Why Choose Content End */}
           </div>
@@ -27,25 +27,25 @@ const WhyChooseSection = () => (
             {/* Why Choose Items Wrapper Start */}
             <div className="choose-items-wrapper">
               <div className="row gx-xl-5 align-items-center">
-                <ChooseItem 
+                <ChooseItem
                   delay="200"
                   icon="/assets/images/choose/icon-1.svg"
                   title="Latest Equipments"
                   description="Car servicing rationally encounter extremely anyone chooses"
                 />
-                <ChooseItem 
+                <ChooseItem
                   delay="400"
                   icon="/assets/images/choose/icon-3.svg"
                   title="Expert Mecanics"
                   description="Car servicing rationally encounter extremely anyone chooses"
                 />
-                <ChooseItem 
+                <ChooseItem
                   delay="200"
                   icon="/assets/images/choose/icon-2.svg"
                   title="Qulaity Services"
                   description="Car servicing rationally encounter extremely anyone chooses"
                 />
-                <ChooseItem 
+                <ChooseItem
                   delay="400"
                   icon="/assets/images/choose/icon-4.svg"
                   title="Fast Delivery"

@@ -1,13 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const BlogPost = ({ image, date, author, title, link, delay }) => (
   <div className="col-lg-4 col-md-6">
     <div className="single-blog" data-aos="fade-up" data-aos-delay={delay}>
       <div className="blog-image">
-        <Link to={link}>
+        <a href={link}>
           <img src={image} alt="Blog" />
-        </Link>
+        </a>
       </div>
       <div className="blog-content">
         <ul className="meta">
@@ -15,9 +14,9 @@ const BlogPost = ({ image, date, author, title, link, delay }) => (
           <li><i className="fa fa-user-o"></i> {author}</li>
         </ul>
         <h3 className="title">
-          <Link to={link}>{title}</Link>
+          <a href={link}>{title}</a>
         </h3>
-        <Link to={link} className="more">+ Read more</Link>
+        <a href={link} className="more">+ Read more</a>
       </div>
     </div>
   </div>

@@ -21,7 +21,7 @@ const TestimonialsSection = () => (
         {/* Testimonials Title End */}
 
         {/* Testimonials Items Start */}
-        <div className="testimonials-items testimonial-active">
+        <div className="testimonials-items testimonial-active" style={{position: 'relative'}}>
           <img className="shape" src="/assets/images/testimonials.webp" alt="Testimonials" />
           <img className="quote" src="/assets/images/quote.svg" alt="quote" />
 
@@ -33,21 +33,21 @@ const TestimonialsSection = () => (
             autoplay={{ delay: 5000 }}
             loop={true}
           >
-            <SwiperSlide>
+            <SwiperSlide key={0}>
               <Testimonial 
                 author="/assets/images/author/author-01.webp"
                 name="Crystopher Lopez"
                 text="Great service makes me happy, my car is like the most the new one is our main goal extremely painful again is there anyone who loves our to take"
               />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide key={1}>
               <Testimonial 
-                author="/assets/images/author/author-02.webp"
+                author="/assets/images/author/author-02.jpg"
                 name="Crystopher Lopez"
                 text="Great service makes me happy, my car is like the most the new one is our main goal extremely painful again is there anyone who loves our to take"
               />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide key={2}>
               <Testimonial 
                 author="/assets/images/author/author-03.jpg"
                 name="Crystopher Lopez"
@@ -57,6 +57,16 @@ const TestimonialsSection = () => (
           </Swiper>
         </div>
         {/* Testimonials Items End */}
+        <style>{`
+          .testimonials-items .swiper-pagination {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: auto;
+            right: auto;
+            text-align: left;
+          }
+        `}</style>
       </div>
       {/* Testimonials Wrapper End */}
     </div>
