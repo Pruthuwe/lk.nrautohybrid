@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HeroSlider = () => (
   <div className="section slider-section">
@@ -26,14 +27,14 @@ const HeroSlider = () => (
           <p data-aos="fade-up" data-aos-delay="600">
             Car servicing rationally encounter consequences that extremely painful. Nor again is there anyone who loves or pursues
           </p>
-          <a 
-            href="/contact" 
+          <Link 
+            to="/contact" 
             data-aos="fade-up" 
             data-aos-delay="800" 
             className="btn btn-custom-01"
           >
             Contact us
-          </a>
+          </Link>
         </div>
         {/* Slider Content End */}
       </div>

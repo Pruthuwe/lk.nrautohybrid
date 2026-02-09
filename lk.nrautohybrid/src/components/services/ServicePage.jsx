@@ -13,7 +13,7 @@ const ServicePage = () => {
       <Header />
 
       {/* Page Banner Section Start */}
-      <div className="section page-banner-section" style={{backgroundImage: 'url(/assets/images/page-banner-bg.png)'}}>
+      <div className="section page-banner-section" style={{backgroundImage: 'url(/assets/images/page-banner-bg.webp)'}}>
         <div className="container">
           {/* Page Banner Wrapper Start */}
           <div className="page-banner-wrapper">
@@ -37,7 +37,7 @@ const ServicePage = () => {
 
             {/* Page Banner Images Start */}
             <div className="page-banner-images">
-              <img src="/assets/images/page-banner.png" alt="Page Banner" />
+              <img src="/assets/images/page-banner.webp" alt="Page Banner" />
             </div>
             {/* Page Banner Images End */}
 

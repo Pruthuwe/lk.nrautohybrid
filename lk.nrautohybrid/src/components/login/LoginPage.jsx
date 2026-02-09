@@ -8,7 +8,7 @@ const LoginPage = () => {
       <Header />
 
       {/* Page Banner Section Start */}
-      <div className="section page-banner-section" style={{backgroundImage: 'url(/assets/images/page-banner-bg.png)'}}>
+      <div className="section page-banner-section" style={{backgroundImage: 'url(/assets/images/page-banner-bg.webp)'}}>
         <div className="container">
           {/* Page Banner Wrapper Start */}
           <div className="page-banner-wrapper">

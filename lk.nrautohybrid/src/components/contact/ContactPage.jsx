@@ -8,7 +8,7 @@ const ContactPage = () => {
       <Header />
 
       {/* Page Banner Section Start */}
-      <div className="section page-banner-section" style={{backgroundImage: 'url(/assets/images/page-banner-bg.png)'}}>
+      <div className="section page-banner-section" style={{backgroundImage: 'url(/assets/images/page-banner-bg.webp)'}}>
         <div className="container">
           {/* Page Banner Wrapper Start */}
           <div className="page-banner-wrapper">
@@ -52,7 +52,7 @@ const ContactPage = () => {
               <div className="col-lg-6">
                 {/* Contact Image Start */}
                 <div className="contact-image" data-aos="fade-right" data-aos-delay="300">
-                  <img src="/assets/images/contact.jpg" alt="Contact" />
+                  <img src="/assets/images/contact.webp" alt="Contact" />
                 </div>
                 {/* Contact Image End */}
               </div>

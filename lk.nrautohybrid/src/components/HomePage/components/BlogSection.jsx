@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BlogPost from './BlogPost';
 
 const BlogSection = () => (
@@ -49,9 +50,9 @@ const BlogSection = () => (
 
         {/* Blog Button Start */}
         <div className="blog-btn">
-          <a href="/blog-right-sidebar" className="btn btn-custom-01">
+          <Link to="/blog-right-sidebar" className="btn btn-custom-01">
             View More
-          </a>
+          </Link>
         </div>
         {/* Blog Button End */}
       </div>

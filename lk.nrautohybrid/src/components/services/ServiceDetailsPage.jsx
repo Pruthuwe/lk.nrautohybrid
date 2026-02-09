@@ -8,7 +8,7 @@ const ServiceDetailsPage = () => {
       <Header />
 
       {/* Page Banner Section Start */}
-      <div className="section page-banner-section" style={{backgroundImage: 'url(/assets/images/page-banner-bg.png)'}}>
+      <div className="section page-banner-section" style={{backgroundImage: 'url(/assets/images/page-banner-bg.webp)'}}>
         <div className="container">
           {/* Page Banner Wrapper Start */}
           <div className="page-banner-wrapper">
@@ -33,7 +33,7 @@ const ServiceDetailsPage = () => {
 
             {/* Page Banner Images Start */}
             <div className="page-banner-images">
-              <img src="/assets/images/page-banner-2.png" alt="Page Banner" />
+              <img src="/assets/images/page-banner-2.webp" alt="Page Banner" />
             </div>
             {/* Page Banner Images End */}
 
@@ -55,7 +55,7 @@ const ServiceDetailsPage = () => {
                 {/* Service Details Content Start */}
                 <div className="service-details-content">
                   <div className="details-image">
-                    <img src="/assets/images/service/service-details.jpg" alt="Service" />
+                    <img src="/assets/images/service/service-details.webp" alt="Service" />
                   </div>
                   <h2 className="title">Entire Engine Servicing</h2>
                   <p>Car servicing rationally encounter consequences extremely painful. Nor again is the there anyone who loves or pursues take a trivial example, which of us undertakes chooses pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure</p>
@@ -79,7 +79,7 @@ const ServiceDetailsPage = () => {
                       </ul>
                     </div>
                     <div className="images">
-                      <img src="/assets/images/service/service-dec.jpg" alt="Service" />
+                      <img src="/assets/images/service/service-dec.webp" alt="Service" />
                     </div>
                   </div>
 
@@ -191,8 +191,8 @@ const ServiceDetailsPage = () => {
                   {/* Widget Sidebar End */}
 
                   {/* Widget Sidebar Start */}
-                  <div className="widget-sidebar">
-                    <a className="banner" href="#"><img src="/assets/images/banner-1.jpg" alt="Banner" /></a>
+                  <div className="widget-sidebar item-center">
+                    <a className="banner" href="#"><img src="/assets/images/banner-1.webp" alt="Banner" /></a>
                   </div>
                   {/* Widget Sidebar End */}
 

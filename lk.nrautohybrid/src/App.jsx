@@ -6,6 +6,11 @@ import RegisterPage from './components/login/RegisterPage.jsx'
 import ServicePage from './components/services/ServicePage.jsx'
 import ServiceDetailsPage from './components/services/ServiceDetailsPage.jsx'
 import ContactPage from './components/contact/ContactPage.jsx'
+import BlogGrid from './components/blog/blogGrid.jsx'
+import BlogDetailsLeftSidebar from './components/blog/blogDetailsLeftSidebar.jsx'
+import BlogDetailsRightSidebar from './components/blog/blogDetailsRightSidebar.jsx'
+import BlogLeftSidebar from './components/blog/blogLeftSidebar.jsx'
+import BlogRightSidebar from './components/blog/blogRightSidebar.jsx'
 
 function App() {
   return (
@@ -18,6 +23,11 @@ function App() {
           <Route path="/service" element={<ServicePage />} />
           <Route path="/service-details" element={<ServiceDetailsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/blog-grid" element={<BlogGrid />} />
+          <Route path="/blog-details-left-sidebar" element={<BlogDetailsLeftSidebar />} />
+          <Route path="/blog-details-right-sidebar" element={<BlogDetailsRightSidebar />} />
+          <Route path="/blog-left-sidebar" element={<BlogLeftSidebar />} />
+          <Route path="/blog-right-sidebar" element={<BlogRightSidebar />} />
         </Routes>
       </div>
     </Router>
