@@ -97,7 +97,7 @@ const Header = () => {
                       <li><Link to="/our-team" className={location.pathname === '/our-team' ? 'active' : ''}>Team</Link></li>
                       <li><Link to="/team-profile" className={location.pathname === '/team-profile' ? 'active' : ''}>Team Profile</Link></li>
                       <li><Link to="/faq" className={location.pathname === '/faq' ? 'active' : ''}>FAQ</Link></li>
-                      <li><Link to="/404-error" className={location.pathname === '/404-error' ? 'active' : ''}>404 Error</Link></li>
+                      <li><Link to="/404" className={location.pathname === '/404-error' ? 'active' : ''}>404 Error</Link></li>
                     </ul>
                   </li>
                   <li>

@@ -28,6 +28,7 @@ import ProjectDetails from './components/pages/ProjectDetails.jsx'
 import ProjectGallery from './components/pages/ProjectGallery.jsx'
 import TeamProfile from './components/pages/TeamProfile.jsx'
 import Wishlist from './components/pages/Wishlist.jsx'
+import Error404 from './components/404/error404.jsx'
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
           <Route path="/shop-right-sidebar" element={<ShopRightSidebar />} />
           <Route path="/team-profile" element={<TeamProfile />} />
           <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/404" element={<Error404 />} />
         </Routes>
       </div>
     </Router>
