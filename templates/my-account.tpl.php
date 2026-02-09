@@ -1,5 +1,5 @@
 <?php
-      include 'include/header.inc.php'; 
+      include __DIR__ . '/../include/header.inc.php'; 
      
 ?> 
 
@@ -21,7 +21,7 @@
                         <!-- Section Title End -->
 
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item active">My Account</li>
                         </ul>
                     </div>
@@ -70,7 +70,7 @@
                                         <a data-bs-toggle="pill" href="#pills-account"><i class="fa fa-user"></i> Account Details</a>
                                     </li>
                                     <li>
-                                        <a href="login.html"><i class="fa fa-sign-out"></i> Logout</a>
+                                        <a href="/login"><i class="fa fa-sign-out"></i> Logout</a>
                                     </li>
                                 </ul>
                             </div>
@@ -85,7 +85,7 @@
                                     <div class="my-account-dashboard account-wrapper">
                                         <h4 class="account-title">Dashboard</h4>
                                         <div class="welcome-dashboard">
-                                            <p>Hello, <strong>Alex Tuntuni</strong> (If Not <strong>Tuntuni !</strong> <a href="login.html">Logout</a> )</p>
+                                            <p>Hello, <strong>Alex Tuntuni</strong> (If Not <strong>Tuntuni !</strong> <a href="/login">Logout</a> )</p>
                                         </div>
                                         <p>From your account dashboard. you can easily check & view your recent orders, manage your shipping and billing addresses and edit your password and account details.</p>
                                     </div>
@@ -291,7 +291,7 @@
         <!-- My Account Section End -->
 
    <?php
-      include 'include/footer.inc.php'; 
+      include __DIR__ . '/../include/footer.inc.php'; 
      
 ?> 
 

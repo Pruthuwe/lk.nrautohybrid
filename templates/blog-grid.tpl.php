@@ -1,5 +1,5 @@
 <?php
-      include 'include/header.inc.php'; 
+      include __DIR__ . '/../include/header.inc.php'; 
      
 ?> 
 
@@ -20,7 +20,7 @@
                         <!-- Section Title End -->
 
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item active">Blog</li>
                         </ul>
                     </div>
@@ -49,15 +49,15 @@
                             <!-- Single Blog Start -->
                             <div class="single-blog" data-aos="fade-up" data-aos-delay="200">
                                 <div class="blog-image">
-                                    <a href="blog-details-right-sidebar.html"><img src="assets/images/blog/blog-01.jpg" alt="Blog"></a>
+                                    <a href="/blog-details-right-sidebar"><img src="assets/images/blog/blog-01.jpg" alt="Blog"></a>
                                 </div>
                                 <div class="blog-content">
                                     <ul class="meta">
                                         <li> <i class="fa fa-calendar"></i> 28 May, 2023</li>
                                         <li> <i class="fa fa-user-o"></i> Albert Ross</li>
                                     </ul>
-                                    <h3 class="title"><a href="blog-details-right-sidebar.html">Anti-lock Brake Servicing is very important for your vehical</a></h3>
-                                    <a href="blog-details-right-sidebar.html" class="more">+ Read more</a>
+                                    <h3 class="title"><a href="/blog-details-right-sidebar">Anti-lock Brake Servicing is very important for your vehical</a></h3>
+                                    <a href="/blog-details-right-sidebar" class="more">+ Read more</a>
                                 </div>
                             </div>
                             <!-- Single Blog End -->
@@ -66,15 +66,15 @@
                             <!-- Single Blog Start -->
                             <div class="single-blog" data-aos="fade-up" data-aos-delay="400">
                                 <div class="blog-image">
-                                    <a href="blog-details-right-sidebar.html"><img src="assets/images/blog/blog-02.jpg" alt="Blog"></a>
+                                    <a href="/blog-details-right-sidebar"><img src="assets/images/blog/blog-02.jpg" alt="Blog"></a>
                                 </div>
                                 <div class="blog-content">
                                     <ul class="meta">
                                         <li> <i class="fa fa-calendar"></i> 28 May, 2023</li>
                                         <li> <i class="fa fa-user-o"></i> Thomas Jayson</li>
                                     </ul>
-                                    <h3 class="title"><a href="blog-details-right-sidebar.html">Don’t do these 4 things if you want your car to retain its value</a></h3>
-                                    <a href="blog-details-right-sidebar.html" class="more">+ Read more</a>
+                                    <h3 class="title"><a href="/blog-details-right-sidebar">Don’t do these 4 things if you want your car to retain its value</a></h3>
+                                    <a href="/blog-details-right-sidebar" class="more">+ Read more</a>
                                 </div>
                             </div>
                             <!-- Single Blog End -->
@@ -83,15 +83,15 @@
                             <!-- Single Blog Start -->
                             <div class="single-blog" data-aos="fade-up" data-aos-delay="600">
                                 <div class="blog-image">
-                                    <a href="blog-details-right-sidebar.html"><img src="assets/images/blog/blog-03.jpg" alt="Blog"></a>
+                                    <a href="/blog-details-right-sidebar"><img src="assets/images/blog/blog-03.jpg" alt="Blog"></a>
                                 </div>
                                 <div class="blog-content">
                                     <ul class="meta">
                                         <li> <i class="fa fa-calendar"></i> 28 May, 2023</li>
                                         <li> <i class="fa fa-user-o"></i> Robert Smith</li>
                                     </ul>
-                                    <h3 class="title"><a href="blog-details-right-sidebar.html">Full car Diagnostic is important for every year maintainance</a></h3>
-                                    <a href="blog-details-right-sidebar.html" class="more">+ Read more</a>
+                                    <h3 class="title"><a href="/blog-details-right-sidebar">Full car Diagnostic is important for every year maintainance</a></h3>
+                                    <a href="/blog-details-right-sidebar" class="more">+ Read more</a>
                                 </div>
                             </div>
                             <!-- Single Blog End -->
@@ -100,15 +100,15 @@
                             <!-- Single Blog Start -->
                             <div class="single-blog" data-aos="fade-up" data-aos-delay="200">
                                 <div class="blog-image">
-                                    <a href="blog-details-right-sidebar.html"><img src="assets/images/blog/blog-04.jpg" alt="Blog"></a>
+                                    <a href="/blog-details-right-sidebar"><img src="assets/images/blog/blog-04.jpg" alt="Blog"></a>
                                 </div>
                                 <div class="blog-content">
                                     <ul class="meta">
                                         <li> <i class="fa fa-calendar"></i> 28 May, 2023</li>
                                         <li> <i class="fa fa-user-o"></i> Cristopher Lopez</li>
                                     </ul>
-                                    <h3 class="title"><a href="blog-details-right-sidebar.html">5 Tips to get best performance for your car AC and Light</a></h3>
-                                    <a href="blog-details-right-sidebar.html" class="more">+ Read more</a>
+                                    <h3 class="title"><a href="/blog-details-right-sidebar">5 Tips to get best performance for your car AC and Light</a></h3>
+                                    <a href="/blog-details-right-sidebar" class="more">+ Read more</a>
                                 </div>
                             </div>
                             <!-- Single Blog End -->
@@ -117,15 +117,15 @@
                             <!-- Single Blog Start -->
                             <div class="single-blog" data-aos="fade-up" data-aos-delay="400">
                                 <div class="blog-image">
-                                    <a href="blog-details-right-sidebar.html"><img src="assets/images/blog/blog-05.jpg" alt="Blog"></a>
+                                    <a href="/blog-details-right-sidebar"><img src="assets/images/blog/blog-05.jpg" alt="Blog"></a>
                                 </div>
                                 <div class="blog-content">
                                     <ul class="meta">
                                         <li> <i class="fa fa-calendar"></i> 28 May, 2023</li>
                                         <li> <i class="fa fa-user-o"></i> Alan Donald</li>
                                     </ul>
-                                    <h3 class="title"><a href="blog-details-right-sidebar.html">5 things every car owner needs to know for better performance</a></h3>
-                                    <a href="blog-details-right-sidebar.html" class="more">+ Read more</a>
+                                    <h3 class="title"><a href="/blog-details-right-sidebar">5 things every car owner needs to know for better performance</a></h3>
+                                    <a href="/blog-details-right-sidebar" class="more">+ Read more</a>
                                 </div>
                             </div>
                             <!-- Single Blog End -->
@@ -134,15 +134,15 @@
                             <!-- Single Blog Start -->
                             <div class="single-blog" data-aos="fade-up" data-aos-delay="600">
                                 <div class="blog-image">
-                                    <a href="blog-details-right-sidebar.html"><img src="assets/images/blog/blog-06.jpg" alt="Blog"></a>
+                                    <a href="/blog-details-right-sidebar"><img src="assets/images/blog/blog-06.jpg" alt="Blog"></a>
                                 </div>
                                 <div class="blog-content">
                                     <ul class="meta">
                                         <li> <i class="fa fa-calendar"></i> 28 May, 2023</li>
                                         <li> <i class="fa fa-user-o"></i> Stephen Fleming</li>
                                     </ul>
-                                    <h3 class="title"><a href="blog-details-right-sidebar.html">Upgrade Your Car Lights for Maximum Safety</a></h3>
-                                    <a href="blog-details-right-sidebar.html" class="more">+ Read more</a>
+                                    <h3 class="title"><a href="/blog-details-right-sidebar">Upgrade Your Car Lights for Maximum Safety</a></h3>
+                                    <a href="/blog-details-right-sidebar" class="more">+ Read more</a>
                                 </div>
                             </div>
                             <!-- Single Blog End -->
@@ -151,15 +151,15 @@
                             <!-- Single Blog Start -->
                             <div class="single-blog" data-aos="fade-up" data-aos-delay="200">
                                 <div class="blog-image">
-                                    <a href="blog-details-right-sidebar.html"><img src="assets/images/blog/blog-07.jpg" alt="Blog"></a>
+                                    <a href="/blog-details-right-sidebar"><img src="assets/images/blog/blog-07.jpg" alt="Blog"></a>
                                 </div>
                                 <div class="blog-content">
                                     <ul class="meta">
                                         <li> <i class="fa fa-calendar"></i> 28 May, 2023</li>
                                         <li> <i class="fa fa-user-o"></i> Albert Ross</li>
                                     </ul>
-                                    <h3 class="title"><a href="blog-details-right-sidebar.html">Latest interior design concept for modern Vehicals</a></h3>
-                                    <a href="blog-details-right-sidebar.html" class="more">+ Read more</a>
+                                    <h3 class="title"><a href="/blog-details-right-sidebar">Latest interior design concept for modern Vehicals</a></h3>
+                                    <a href="/blog-details-right-sidebar" class="more">+ Read more</a>
                                 </div>
                             </div>
                             <!-- Single Blog End -->
@@ -168,15 +168,15 @@
                             <!-- Single Blog Start -->
                             <div class="single-blog" data-aos="fade-up" data-aos-delay="400">
                                 <div class="blog-image">
-                                    <a href="blog-details-right-sidebar.html"><img src="assets/images/blog/blog-08.jpg" alt="Blog"></a>
+                                    <a href="/blog-details-right-sidebar"><img src="assets/images/blog/blog-08.jpg" alt="Blog"></a>
                                 </div>
                                 <div class="blog-content">
                                     <ul class="meta">
                                         <li> <i class="fa fa-calendar"></i> 28 May, 2023</li>
                                         <li> <i class="fa fa-user-o"></i> David Morgan</li>
                                     </ul>
-                                    <h3 class="title"><a href="blog-details-right-sidebar.html">Why you need to wash your car deeply every week?</a></h3>
-                                    <a href="blog-details-right-sidebar.html" class="more">+ Read more</a>
+                                    <h3 class="title"><a href="/blog-details-right-sidebar">Why you need to wash your car deeply every week?</a></h3>
+                                    <a href="/blog-details-right-sidebar" class="more">+ Read more</a>
                                 </div>
                             </div>
                             <!-- Single Blog End -->
@@ -185,15 +185,15 @@
                             <!-- Single Blog Start -->
                             <div class="single-blog" data-aos="fade-up" data-aos-delay="600">
                                 <div class="blog-image">
-                                    <a href="blog-details-right-sidebar.html"><img src="assets/images/blog/blog-09.jpg" alt="Blog"></a>
+                                    <a href="/blog-details-right-sidebar"><img src="assets/images/blog/blog-09.jpg" alt="Blog"></a>
                                 </div>
                                 <div class="blog-content">
                                     <ul class="meta">
                                         <li> <i class="fa fa-calendar"></i> 28 May, 2023</li>
                                         <li> <i class="fa fa-user-o"></i> Albert Ross</li>
                                     </ul>
-                                    <h3 class="title"><a href="blog-details-right-sidebar.html">Proper Servicing of car engine can improve the performance</a></h3>
-                                    <a href="blog-details-right-sidebar.html" class="more">+ Read more</a>
+                                    <h3 class="title"><a href="/blog-details-right-sidebar">Proper Servicing of car engine can improve the performance</a></h3>
+                                    <a href="/blog-details-right-sidebar" class="more">+ Read more</a>
                                 </div>
                             </div>
                             <!-- Single Blog End -->
@@ -221,7 +221,7 @@
         </div>
         <!-- Shop Section End -->
 <?php
-      include 'include/footer.inc.php'; 
+      include __DIR__ . '/../include/footer.inc.php'; 
      
 ?> 
 

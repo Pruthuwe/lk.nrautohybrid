@@ -1,5 +1,5 @@
 <?php
-      include 'include/header.inc.php'; 
+      include __DIR__ . '/../include/header.inc.php'; 
      
 ?> 
 
@@ -22,8 +22,8 @@
                         <!-- Section Title End -->
 
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a href="blog-left-sidebar.html">Blog</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/blog-left-sidebar">Blog</a></li>
                             <li class="breadcrumb-item active">Blog Details</li>
                         </ul>
                     </div>
@@ -266,33 +266,33 @@
                                         <!-- Single Post Start -->
                                         <div class="single-post">
                                             <div class="post-images">
-                                                <a href="blog-details-right-sidebar.html"><img src="assets/images/blog/blog-01.jpg" alt="Blog"></a>
+                                                <a href="/blog-details-right-sidebar"><img src="assets/images/blog/blog-01.jpg" alt="Blog"></a>
                                             </div>
                                             <div class="post-content">
                                                 <span class="date"><i class="fa fa-calendar"></i> 12 May, 2023</span>
-                                                <h4 class="title"><a href="blog-details-right-sidebar.html">Proper Servicing can improve performance</a></h4>
+                                                <h4 class="title"><a href="/blog-details-right-sidebar">Proper Servicing can improve performance</a></h4>
                                             </div>
                                         </div>
                                         <!-- Single Post End -->
                                         <!-- Single Post Start -->
                                         <div class="single-post">
                                             <div class="post-images">
-                                                <a href="blog-details-right-sidebar.html"><img src="assets/images/blog/blog-04.jpg" alt="Blog"></a>
+                                                <a href="/blog-details-right-sidebar"><img src="assets/images/blog/blog-04.jpg" alt="Blog"></a>
                                             </div>
                                             <div class="post-content">
                                                 <span class="date"><i class="fa fa-calendar"></i> 12 May, 2023</span>
-                                                <h4 class="title"><a href="blog-details-right-sidebar.html">Hydrolic Break system is very important</a></h4>
+                                                <h4 class="title"><a href="/blog-details-right-sidebar">Hydrolic Break system is very important</a></h4>
                                             </div>
                                         </div>
                                         <!-- Single Post End -->
                                         <!-- Single Post Start -->
                                         <div class="single-post">
                                             <div class="post-images">
-                                                <a href="blog-details-right-sidebar.html"><img src="assets/images/blog/blog-07.jpg" alt="Blog"></a>
+                                                <a href="/blog-details-right-sidebar"><img src="assets/images/blog/blog-07.jpg" alt="Blog"></a>
                                             </div>
                                             <div class="post-content">
                                                 <span class="date"><i class="fa fa-calendar"></i> 12 May, 2023</span>
-                                                <h4 class="title"><a href="blog-details-right-sidebar.html">Checking Tire condition and Replace system</a></h4>
+                                                <h4 class="title"><a href="/blog-details-right-sidebar">Checking Tire condition and Replace system</a></h4>
                                             </div>
                                         </div>
                                         <!-- Single Post End -->
@@ -332,7 +332,7 @@
         <!-- Blog Details Section End -->
 
    <?php
-      include 'include/footer.inc.php'; 
+      include __DIR__ . '/../include/footer.inc.php'; 
      
 ?> 
 

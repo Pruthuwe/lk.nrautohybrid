@@ -1,5 +1,5 @@
 <?php
-      include 'include/header.inc.php'; 
+      include __DIR__ . '/../include/header.inc.php'; 
      
 ?> 
 
@@ -22,8 +22,8 @@
                         <!-- Section Title End -->
 
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a href="service.html">Services</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/service">Services</a></li>
                             <li class="breadcrumb-item active">Services Details</li>
                         </ul>
                     </div>
@@ -215,7 +215,7 @@
         <!-- Service Details Section End -->
 
         <?php
-      include 'include/footer.inc.php'; 
+      include __DIR__ . '/../include/footer.inc.php'; 
       ?>
 
         <!--Back To Start-->

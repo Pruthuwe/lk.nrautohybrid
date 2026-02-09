@@ -1,5 +1,5 @@
 <?php
-      include 'include/header.inc.php'; 
+      include __DIR__ . '/../include/header.inc.php'; 
      
 ?> 
 
@@ -21,7 +21,7 @@
                         <!-- Section Title End -->
 
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item active">Services</li>
                         </ul>
                     </div>
@@ -105,8 +105,8 @@
                             <div class="col-lg-4 col-sm-6">
                                 <!-- Single Service Start -->
                                 <div class="single-service" data-aos="fade-up" data-aos-delay="200">
-                                    <h4 class="title"><a href="service-details.html">Anti Lock Brake <br> Servicing</a></h4>
-                                    <a href="service-details.html" class="more">Lean more</a>
+                                    <h4 class="title"><a href="/service-details">Anti Lock Brake <br> Servicing</a></h4>
+                                    <a href="/service-details" class="more">Lean more</a>
 
                                     <div class="service-icon">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
@@ -228,8 +228,8 @@
                             <div class="col-lg-4 col-sm-6">
                                 <!-- Single Service Start -->
                                 <div class="single-service" data-aos="fade-up" data-aos-delay="400">
-                                    <h4 class="title"><a href="service-details.html">Entire Engine <br> Servicing</a></h4>
-                                    <a href="service-details.html" class="more">Lean more</a>
+                                    <h4 class="title"><a href="/service-details">Entire Engine <br> Servicing</a></h4>
+                                    <a href="/service-details" class="more">Lean more</a>
 
                                     <div class="service-icon">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
@@ -302,8 +302,8 @@
                             <div class="col-lg-4 col-sm-6">
                                 <!-- Single Service Start -->
                                 <div class="single-service" data-aos="fade-up" data-aos-delay="600">
-                                    <h4 class="title"><a href="service-details.html">Car Wash <br> Service</a></h4>
-                                    <a href="service-details.html" class="more">Lean more</a>
+                                    <h4 class="title"><a href="/service-details">Car Wash <br> Service</a></h4>
+                                    <a href="/service-details" class="more">Lean more</a>
 
                                     <div class="service-icon">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
@@ -398,8 +398,8 @@
                             <div class="col-lg-4 col-sm-6">
                                 <!-- Single Service Start -->
                                 <div class="single-service" data-aos="fade-up" data-aos-delay="200">
-                                    <h4 class="title"><a href="service-details.html">Battery <br> Replacement</a></h4>
-                                    <a href="service-details.html" class="more">Lean more</a>
+                                    <h4 class="title"><a href="/service-details">Battery <br> Replacement</a></h4>
+                                    <a href="/service-details" class="more">Lean more</a>
 
                                     <div class="service-icon">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
@@ -440,8 +440,8 @@
                             <div class="col-lg-4 col-sm-6">
                                 <!-- Single Service Start -->
                                 <div class="single-service" data-aos="fade-up" data-aos-delay="400">
-                                    <h4 class="title"><a href="service-details.html">Change Oil <br> and Filter</a></h4>
-                                    <a href="service-details.html" class="more">Lean more</a>
+                                    <h4 class="title"><a href="/service-details">Change Oil <br> and Filter</a></h4>
+                                    <a href="/service-details" class="more">Lean more</a>
                                     <div class="service-icon">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
                                             <path class="icon-path" d="M85.68,152.95h88.53c9.76,0,17.71-7.94,17.71-17.71V82.12c0-9.76-7.94-17.71-17.71-17.71H85.68
@@ -489,8 +489,8 @@
                             <div class="col-lg-4 col-sm-6">
                                 <!-- Single Service Start -->
                                 <div class="single-service" data-aos="fade-up" data-aos-delay="600">
-                                    <h4 class="title"><a href="service-details.html">Tire Change <br> and Repair</a></h4>
-                                    <a href="service-details.html" class="more">Lean more</a>
+                                    <h4 class="title"><a href="/service-details">Tire Change <br> and Repair</a></h4>
+                                    <a href="/service-details" class="more">Lean more</a>
 
                                     <div class="service-icon">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
@@ -751,7 +751,7 @@
         </div>
         <!-- Brand Section End -->
          <?php
-      include 'include/footer.inc.php'; 
+      include __DIR__ . '/../include/footer.inc.php'; 
      
 ?> 
         <!-- Footer Section End -->

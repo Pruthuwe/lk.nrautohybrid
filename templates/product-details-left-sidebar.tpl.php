@@ -1,5 +1,5 @@
 <?php
-      include 'include/header.inc.php'; 
+      include __DIR__ . '/../include/header.inc.php'; 
      
 ?> 
 
@@ -21,8 +21,8 @@
                         <!-- Section Title End -->
 
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a href="shop-grid.html">Shop</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/shop-grid">Shop</a></li>
                             <li class="breadcrumb-item active">Details</li>
                         </ul>
                     </div>
@@ -288,7 +288,7 @@
                                                 <div class="product-image">
                                                     <span class="lable">25%</span>
 
-                                                    <a href="product-details-right-sidebar.html"><img src="assets/images/shop/shop-4.jpg" alt="Product"></a>
+                                                    <a href="/product-details-right-sidebar"><img src="assets/images/shop/shop-4.jpg" alt="Product"></a>
 
                                                     <ul class="product-action">
                                                         <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart"><i class="icofont-shopping-cart"></i></button></li>
@@ -297,7 +297,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="product-content">
-                                                    <h3 class="name"><a href="product-details-right-sidebar.html">BR-TX805 Disc Brake</a></h3>
+                                                    <h3 class="name"><a href="/product-details-right-sidebar">BR-TX805 Disc Brake</a></h3>
                                                     <div class="price">
                                                         <span class="sale-price">$125</span>
                                                         <span class="regular-price">$210</span>
@@ -312,7 +312,7 @@
                                                 <div class="product-image">
                                                     <span class="lable">35%</span>
 
-                                                    <a href="product-details-right-sidebar.html"><img src="assets/images/shop/shop-5.jpg" alt="Product"></a>
+                                                    <a href="/product-details-right-sidebar"><img src="assets/images/shop/shop-5.jpg" alt="Product"></a>
 
                                                     <ul class="product-action">
                                                         <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart"><i class="icofont-shopping-cart"></i></button></li>
@@ -321,7 +321,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="product-content">
-                                                    <h3 class="name"><a href="product-details-right-sidebar.html">Stereo Audio System</a></h3>
+                                                    <h3 class="name"><a href="/product-details-right-sidebar">Stereo Audio System</a></h3>
                                                     <div class="price">
                                                         <span class="sale-price">$180</span>
                                                         <span class="regular-price">$270</span>
@@ -336,7 +336,7 @@
                                                 <div class="product-image">
                                                     <span class="lable new">New</span>
 
-                                                    <a href="product-details-right-sidebar.html"><img src="assets/images/shop/shop-6.jpg" alt="Product"></a>
+                                                    <a href="/product-details-right-sidebar"><img src="assets/images/shop/shop-6.jpg" alt="Product"></a>
 
                                                     <ul class="product-action">
                                                         <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart"><i class="icofont-shopping-cart"></i></button></li>
@@ -345,7 +345,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="product-content">
-                                                    <h3 class="name"><a href="product-details-right-sidebar.html">Stylish Steering</a></h3>
+                                                    <h3 class="name"><a href="/product-details-right-sidebar">Stylish Steering</a></h3>
                                                     <div class="price">
                                                         <span class="sale-price">$230</span>
                                                     </div>
@@ -359,7 +359,7 @@
                                                 <div class="product-image">
                                                     <span class="lable new">New</span>
 
-                                                    <a href="product-details-right-sidebar.html"><img src="assets/images/shop/shop-7.jpg" alt="Product"></a>
+                                                    <a href="/product-details-right-sidebar"><img src="assets/images/shop/shop-7.jpg" alt="Product"></a>
 
                                                     <ul class="product-action">
                                                         <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart"><i class="icofont-shopping-cart"></i></button></li>
@@ -368,7 +368,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="product-content">
-                                                    <h3 class="name"><a href="product-details-right-sidebar.html">Air Intake Kit</a></h3>
+                                                    <h3 class="name"><a href="/product-details-right-sidebar">Air Intake Kit</a></h3>
                                                     <div class="price">
                                                         <span class="sale-price">$420</span>
                                                     </div>
@@ -489,7 +489,7 @@
         </div>
         <!-- Shop Section End -->
 <?php
-      include 'include/footer.inc.php'; 
+      include __DIR__ . '/../include/footer.inc.php'; 
      
 ?> 
 
