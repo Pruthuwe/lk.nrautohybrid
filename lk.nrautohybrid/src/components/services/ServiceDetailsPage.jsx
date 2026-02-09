@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
 
@@ -24,8 +25,8 @@ const ServiceDetailsPage = () => {
               {/* Section Title End */}
 
               <ul className="breadcrumb">
-                <li className="breadcrumb-item"><a href="/">Home</a></li>
-                <li className="breadcrumb-item"><a href="/service">Services</a></li>
+                <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+                <li className="breadcrumb-item"><Link to="/service">Services</Link></li>
                 <li className="breadcrumb-item active">Services Details</li>
               </ul>
             </div>
@@ -180,12 +181,12 @@ const ServiceDetailsPage = () => {
                   {/* Widget Sidebar Start */}
                   <div className="widget-sidebar">
                     <ul className="category">
-                      <li><a href="#">Anti Lock Brake Servicing</a></li>
-                      <li><a href="#">Car Wash Service</a></li>
-                      <li><a href="#">Entire Engine Servicing</a></li>
-                      <li><a href="#">Change Oil and Filter</a></li>
-                      <li><a href="#">Battery Replacement</a></li>
-                      <li><a href="#">Tire Change and Repair</a></li>
+                      <li><Link to="/service-details">Anti Lock Brake Servicing</Link></li>
+                      <li><Link to="/service-details">Car Wash Service</Link></li>
+                      <li><Link to="/service-details">Entire Engine Servicing</Link></li>
+                      <li><Link to="/service-details">Change Oil and Filter</Link></li>
+                      <li><Link to="/service-details">Battery Replacement</Link></li>
+                      <li><Link to="/service-details">Tire Change and Repair</Link></li>
                     </ul>
                   </div>
                   {/* Widget Sidebar End */}

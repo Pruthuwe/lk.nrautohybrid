@@ -143,9 +143,9 @@ const BlogGrid = () => {
                   {/* Single Blog Start */}
                   <div className="single-blog" data-aos="fade-up" data-aos-delay={post.delay}>
                     <div className="blog-image">
-                      <a href={post.link}>
+                      <Link to={post.link}>
                         <img src={post.image} alt="Blog" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="blog-content">
                       <ul className="meta">
@@ -153,9 +153,9 @@ const BlogGrid = () => {
                         <li><i className="fa fa-user-o"></i> {post.author}</li>
                       </ul>
                       <h3 className="title">
-                        <a href={post.link}>{post.title}</a>
+                        <Link to={post.link}>{post.title}</Link>
                       </h3>
-                      <a href={post.link} className="more">+ Read more</a>
+                      <Link to={post.link} className="more">+ Read more</Link>
                     </div>
                   </div>
                   {/* Single Blog End */}
@@ -168,14 +168,14 @@ const BlogGrid = () => {
           {/* Page Pagination Start */}
           <div className="page-pagination">
             <ul className="pagination justify-content-center">
-              <li><a href="#"><i className="fa fa-angle-left"></i></a></li>
-              <li><a className="active" href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
+              <li><Link to="#"><i className="fa fa-angle-left"></i></Link></li>
+              <li><Link className="active" to="#">1</Link></li>
+              <li><Link to="#">2</Link></li>
+              <li><Link to="#">3</Link></li>
+              <li><Link to="#">4</Link></li>
               <li>...</li>
-              <li><a href="#">15</a></li>
-              <li><a href="#"><i className="fa fa-angle-right"></i></a></li>
+              <li><Link to="#">15</Link></li>
+              <li><Link to="#"><i className="fa fa-angle-right"></i></Link></li>
             </ul>
           </div>
           {/* Page Pagination End */}
@@ -186,9 +186,9 @@ const BlogGrid = () => {
       <Footer />
 
       {/*Back To Start*/}
-      <a href="#" className="back-to-top">
+      <Link to="#" className="back-to-top">
         <i className="icofont-simple-up"></i>
-      </a>
+      </Link>
       {/*Back To End*/}
     </>
   );

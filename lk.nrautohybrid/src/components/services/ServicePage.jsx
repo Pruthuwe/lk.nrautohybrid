@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
 import AboutSection from '../HomePage/components/AboutSection';
@@ -29,7 +30,7 @@ const ServicePage = () => {
               {/* Section Title End */}
 
               <ul className="breadcrumb">
-                <li className="breadcrumb-item"><a href="/">Home</a></li>
+                <li className="breadcrumb-item"><Link to="/">Home</Link></li>
                 <li className="breadcrumb-item active">Services</li>
               </ul>
             </div>

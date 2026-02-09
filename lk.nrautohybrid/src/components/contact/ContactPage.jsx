@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
 
@@ -24,7 +25,7 @@ const ContactPage = () => {
               {/* Section Title End */}
 
               <ul className="breadcrumb">
-                <li className="breadcrumb-item"><a href="/">Home</a></li>
+                <li className="breadcrumb-item"><Link to="/">Home</Link></li>
                 <li className="breadcrumb-item active">Connect</li>
               </ul>
             </div>
@@ -76,8 +77,8 @@ const ContactPage = () => {
                         {/* Single Info Start */}
                         <div className="single-info">
                           <h4 className="info-title">Call us</h4>
-                          <p><a href="tel:+99123456789">+99 123 456 789</a></p>
-                          <p><a href="tel:+99123456789">+99 123 456 789</a></p>
+                          <p><Link to="tel:+99123456789">+99 123 456 789</Link></p>
+                          <p><Link to="tel:+99123456789">+99 123 456 789</Link></p>
                         </div>
                         {/* Single Info End */}
                       </div>
@@ -85,8 +86,8 @@ const ContactPage = () => {
                         {/* Single Info Start */}
                         <div className="single-info">
                           <h4 className="info-title">Web Info</h4>
-                          <p><a href="mailto:info@carserv.com">info@carserv.com</a></p>
-                          <p><a href="mailto:www.carserv.com">www.carserv.com</a></p>
+                          <p><Link to="mailto:info@carserv.com">info@carserv.com</Link></p>
+                          <p><Link to="mailto:www.carserv.com">www.carserv.com</Link></p>
                         </div>
                         {/* Single Info End */}
                       </div>
@@ -95,10 +96,10 @@ const ContactPage = () => {
                         <div className="single-info">
                           <h4 className="info-title">Also Follow us</h4>
                           <ul className="social">
-                            <li><a href="#"><i className="fa fa-whatsapp"></i></a></li>
-                            <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
+                            <li><Link to="#"><i className="fa fa-whatsapp"></i></Link></li>
+                            <li><Link to="#"><i className="fa fa-facebook-f"></i></Link></li>
+                            <li><Link to="#"><i className="fa fa-twitter"></i></Link></li>
+                            <li><Link to="#"><i className="fa fa-linkedin"></i></Link></li>
                           </ul>
                         </div>
                         {/* Single Info End */}
@@ -177,9 +178,9 @@ const ContactPage = () => {
       <Footer />
 
       {/* Back To Start */}
-      <a href="#" className="back-to-top">
+      <Link to="#" className="back-to-top">
         <i className="icofont-simple-up"></i>
-      </a>
+      </Link>
       {/* Back To End */}
     </>
   );

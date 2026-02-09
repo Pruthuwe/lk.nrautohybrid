@@ -22,7 +22,7 @@ const TestimonialsSection = () => (
 
         {/* Testimonials Items Start */}
         <div className="testimonials-items testimonial-active" style={{position: 'relative'}}>
-          <img className="shape" src="/assets/images/testimonials.webp" alt="Testimonials" />
+          <img className="shape" src="/assets/images/testimonials.png" alt="Testimonials" />
           <img className="quote" src="/assets/images/quote.svg" alt="quote" />
 
           <Swiper
@@ -42,14 +42,14 @@ const TestimonialsSection = () => (
             </SwiperSlide>
             <SwiperSlide key={1}>
               <Testimonial 
-                author="/assets/images/author/author-02.jpg"
+                author="/assets/images/author/author-17.webp"
                 name="Crystopher Lopez"
                 text="Great service makes me happy, my car is like the most the new one is our main goal extremely painful again is there anyone who loves our to take"
               />
             </SwiperSlide>
             <SwiperSlide key={2}>
               <Testimonial 
-                author="/assets/images/author/author-03.jpg"
+                author="/assets/images/author/author-18.webp"
                 name="Crystopher Lopez"
                 text="Great service makes me happy, my car is like the most the new one is our main goal extremely painful again is there anyone who loves our to take"
               />

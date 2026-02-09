@@ -101,18 +101,18 @@ const BlogDetailsLeftSidebar = () => {
                   <div className="blog-details-tags">
                     <span className="label">Tags:</span>
                     <ul className="tags">
-                      <li><a href="#">Automobile</a></li>
-                      <li><a href="#">Repari</a></li>
-                      <li><a href="#">Car Wash</a></li>
+                      <li><Link to="#">Automobile</Link></li>
+                      <li><Link to="#">Repari</Link></li>
+                      <li><Link to="#">Car Wash</Link></li>
                     </ul>
                   </div>
                   <div className="blog-details-share">
                     <span className="label">Share:</span>
                     <ul className="social">
-                      <li><a href="#"><i className="fa fa-whatsapp"></i></a></li>
-                      <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-                      <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
+                      <li><Link to="#"><i className="fa fa-whatsapp"></i></Link></li>
+                      <li><Link to="#"><i className="fa fa-facebook-f"></i></Link></li>
+                      <li><Link to="#"><i className="fa fa-twitter"></i></Link></li>
+                      <li><Link to="#"><i className="fa fa-linkedin"></i></Link></li>
                     </ul>
                   </div>
                 </div>
@@ -121,16 +121,16 @@ const BlogDetailsLeftSidebar = () => {
                 {/* Blog Details Next & Previews Start */}
                 <div className="blog-details-next-previews">
                   <div className="blog-details-next">
-                    <a href="#">
+                    <Link to="#">
                       <i className="fa fa-angle-left"></i>
                       <span>Don&apos;t do these 4 things if you want your car to retain its value</span>
-                    </a>
+                    </Link>
                   </div>
                   <div className="blog-details-previews">
-                    <a href="#">
+                    <Link to="#">
                       <span>Latest Interior design concept for moder Vehicals</span>
                       <i className="fa fa-angle-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 {/* Blog Details Next & Previews End */}
@@ -153,7 +153,7 @@ const BlogDetailsLeftSidebar = () => {
                               <li> <i className="fa fa-clock-o"></i> 12.45 PM</li>
                             </ul>
                             <p>Car servicing rationally encounter consequences extremely painful. Nor again is the there anyone who loves pursues take a trivial example, which of us undertakes chooses pleasure rationally encounter consequence that are extremely painful. loves or pursues or desires to obtain pain </p>
-                            <a href="#" className="reply"><i className="fa fa-reply"></i> Reply</a>
+                            <Link to="#" className="reply"><i className="fa fa-reply"></i> Reply</Link>
                           </div>
                         </div>
                         {/* Blog Details Comment End */}
@@ -171,7 +171,7 @@ const BlogDetailsLeftSidebar = () => {
                               <li> <i className="fa fa-clock-o"></i> 12.45 PM</li>
                             </ul>
                             <p>Car servicing rationally encounter consequences extremely painful. Nor again is the there anyone who loves pursues take a trivial example, which of us undertakes chooses pleasure rationally encounter consequence that are extremely painful. loves or pursues or desires to obtain pain </p>
-                            <a href="#" className="reply"><i className="fa fa-reply"></i> Reply</a>
+                            <Link to="#" className="reply"><i className="fa fa-reply"></i> Reply</Link>
                           </div>
                         </div>
                         {/* Blog Details Comment End */}
@@ -252,12 +252,12 @@ const BlogDetailsLeftSidebar = () => {
 
                     <div className="widget-link">
                       <ul className="link">
-                        <li><a href="#">Anti Lock Brake Servicing <span>(25)</span></a></li>
-                        <li><a href="#">Car Wash Service <span>(38)</span></a></li>
-                        <li><a href="#">Entire Engine Servicing <span>(45)</span></a></li>
-                        <li><a href="#">Change Oil and Filter <span>(22)</span></a></li>
-                        <li><a href="#">Battery Replacement <span>(18)</span></a></li>
-                        <li><a href="#">Tire Change and Repair <span>(33)</span></a></li>
+                        <li><Link to="#">Anti Lock Brake Servicing <span>(25)</span></Link></li>
+                        <li><Link to="#">Car Wash Service <span>(38)</span></Link></li>
+                        <li><Link to="#">Entire Engine Servicing <span>(45)</span></Link></li>
+                        <li><Link to="#">Change Oil and Filter <span>(22)</span></Link></li>
+                        <li><Link to="#">Battery Replacement <span>(18)</span></Link></li>
+                        <li><Link to="#">Tire Change and Repair <span>(33)</span></Link></li>
                       </ul>
                     </div>
                   </div>
@@ -320,15 +320,15 @@ const BlogDetailsLeftSidebar = () => {
                     </div>
 
                     <ul className="tags">
-                      <li><a href="#">Automobile</a></li>
-                      <li><a href="#">Car Repair</a></li>
-                      <li><a href="#">Car</a></li>
-                      <li><a href="#">Engine</a></li>
-                      <li><a href="#">Auto Repair</a></li>
-                      <li><a href="#">Car Wash</a></li>
-                      <li><a href="#">Mechanics</a></li>
-                      <li><a href="#">Oil Change</a></li>
-                      <li><a href="#">Wheels</a></li>
+                      <li><Link to="#">Automobile</Link></li>
+                      <li><Link to="#">Car Repair</Link></li>
+                      <li><Link to="#">Car</Link></li>
+                      <li><Link to="#">Engine</Link></li>
+                      <li><Link to="#">Auto Repair</Link></li>
+                      <li><Link to="#">Car Wash</Link></li>
+                      <li><Link to="#">Mechanics</Link></li>
+                      <li><Link to="#">Oil Change</Link></li>
+                      <li><Link to="#">Wheels</Link></li>
                     </ul>
                   </div>
                   {/* Widget Sidebar End */}
@@ -347,9 +347,9 @@ const BlogDetailsLeftSidebar = () => {
       <Footer />
 
       {/* Back To Start */}
-      <a href="#" className="back-to-top">
+      <Link to="#" className="back-to-top">
         <i className="icofont-simple-up"></i>
-      </a>
+      </Link>
       {/* Back To End */}
     </>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
 
@@ -24,7 +25,7 @@ const LoginPage = () => {
               {/* Section Title End */}
 
               <ul className="breadcrumb">
-                <li className="breadcrumb-item"><a href="/">Home</a></li>
+                <li className="breadcrumb-item"><Link to="/">Home</Link></li>
                 <li className="breadcrumb-item active">Login</li>
               </ul>
             </div>
@@ -74,7 +75,7 @@ const LoginPage = () => {
                       </div>
                       {/* Single Form End */}
                       <p><a href="#">Lost your password?</a></p>
-                      <p>No account? <a href="/register">Create one here.</a></p>
+                      <p>No account? <Link to="/register">Create one here.</Link></p>
                     </form>
                   </div>
                 </div>

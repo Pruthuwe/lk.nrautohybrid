@@ -204,14 +204,14 @@ const BlogRightSidebar = () => {
                 {/* Page Pagination Start */}
                 <div className="page-pagination">
                   <ul className="pagination justify-content-center">
-                    <li><a href="#"><i className="fa fa-angle-left"></i></a></li>
-                    <li><a className="active" href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
+                    <li><Link to="#"><i className="fa fa-angle-left"></i></Link></li>
+                    <li><Link className="active" to="#">1</Link></li>
+                    <li><Link to="#">2</Link></li>
+                    <li><Link to="#">3</Link></li>
+                    <li><Link to="#">4</Link></li>
                     <li>...</li>
-                    <li><a href="#">15</a></li>
-                    <li><a href="#"><i className="fa fa-angle-right"></i></a></li>
+                    <li><Link to="#">15</Link></li>
+                    <li><Link to="#"><i className="fa fa-angle-right"></i></Link></li>
                   </ul>
                 </div>
                 {/* Page Pagination End */}
@@ -241,12 +241,12 @@ const BlogRightSidebar = () => {
 
                     <div className="widget-link">
                       <ul className="link">
-                        <li><a href="#">Anti Lock Brake Servicing <span>(25)</span></a></li>
-                        <li><a href="#">Car Wash Service <span>(38)</span></a></li>
-                        <li><a href="#">Entire Engine Servicing <span>(45)</span></a></li>
-                        <li><a href="#">Change Oil and Filter <span>(22)</span></a></li>
-                        <li><a href="#">Battery Replacement <span>(18)</span></a></li>
-                        <li><a href="#">Tire Change and Repair <span>(33)</span></a></li>
+                        <li><Link to="#">Anti Lock Brake Servicing <span>(25)</span></Link></li>
+                        <li><Link to="#">Car Wash Service <span>(38)</span></Link></li>
+                        <li><Link to="#">Entire Engine Servicing <span>(45)</span></Link></li>
+                        <li><Link to="#">Change Oil and Filter <span>(22)</span></Link></li>
+                        <li><Link to="#">Battery Replacement <span>(18)</span></Link></li>
+                        <li><Link to="#">Tire Change and Repair <span>(33)</span></Link></li>
                       </ul>
                     </div>
                   </div>
@@ -254,7 +254,7 @@ const BlogRightSidebar = () => {
 
                   {/* Widget Sidebar Start */}
                   <div className="widget-sidebar text-center">
-                    <a className="banner" href="#"><img src="/assets/images/banner-1.webp" alt="Banner" /></a>
+                    <Link className="banner" to="#"><img src="/assets/images/banner-1.webp" alt="Banner" /></Link>
                   </div>
                   {/* Widget Sidebar End */}
 
@@ -309,15 +309,15 @@ const BlogRightSidebar = () => {
                     </div>
 
                     <ul className="tags">
-                      <li><a href="#">Automobile</a></li>
-                      <li><a href="#">Car Repair</a></li>
-                      <li><a href="#">Car</a></li>
-                      <li><a href="#">Engine</a></li>
-                      <li><a href="#">Auto Repair</a></li>
-                      <li><a href="#">Car Wash</a></li>
-                      <li><a href="#">Mechanics</a></li>
-                      <li><a href="#">Oil Change</a></li>
-                      <li><a href="#">Wheels</a></li>
+                      <li><Link to="#">Automobile</Link></li>
+                      <li><Link to="#">Car Repair</Link></li>
+                      <li><Link to="#">Car</Link></li>
+                      <li><Link to="#">Engine</Link></li>
+                      <li><Link to="#">Auto Repair</Link></li>
+                      <li><Link to="#">Car Wash</Link></li>
+                      <li><Link to="#">Mechanics</Link></li>
+                      <li><Link to="#">Oil Change</Link></li>
+                      <li><Link to="#">Wheels</Link></li>
                     </ul>
                   </div>
                   {/* Widget Sidebar End */}
@@ -336,9 +336,9 @@ const BlogRightSidebar = () => {
       <Footer />
 
       {/* Back To Start */}
-      <a href="#" className="back-to-top">
+      <Link to="#" className="back-to-top">
         <i className="icofont-simple-up"></i>
-      </a>
+      </Link>
       {/* Back To End */}
     </>
   );

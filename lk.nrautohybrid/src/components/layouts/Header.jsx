@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,48 +66,48 @@ const Header = () => {
                   <li>
                     <a href="#">Services</a>
                     <ul className="sub-menu">
-                      <li><Link to="/service">Services</Link></li>
-                      <li><Link to="/service-details">Services Details</Link></li>
+                      <li><Link to="/service" className={location.pathname === '/service' ? 'active' : ''}>Services</Link></li>
+                      <li><Link to="/service-details" className={location.pathname === '/service-details' ? 'active' : ''}>Services Details</Link></li>
                     </ul>
                   </li>
                   <li>
                     <a href="#">Shop</a>
                     <ul className="sub-menu">
-                      <li><a href="/shop-grid">Shop Grid</a></li>
-                      <li><a href="/shop-left-sidebar">Shop left Sidebar</a></li>
-                      <li><a href="/shop-right-sidebar">Shop Right Sidebar</a></li>
-                      <li><a href="/product-details-left-sidebar">Product Details Left Sidebar</a></li>
-                      <li><a href="/product-details-right-sidebar">Product Details Right Sidebar</a></li>
+                      <li><Link to="/shop-grid" className={location.pathname === '/shop-grid' ? 'active' : ''}>Shop Grid</Link></li>
+                      <li><Link to="/shop-left-sidebar" className={location.pathname === '/shop-left-sidebar' ? 'active' : ''}>Shop left Sidebar</Link></li>
+                      <li><Link to="/shop-right-sidebar" className={location.pathname === '/shop-right-sidebar' ? 'active' : ''}>Shop Right Sidebar</Link></li>
+                      <li><Link to="/product-details-left-sidebar" className={location.pathname === '/product-details-left-sidebar' ? 'active' : ''}>Product Details Left Sidebar</Link></li>
+                      <li><Link to="/product-details-right-sidebar" className={location.pathname === '/product-details-right-sidebar' ? 'active' : ''}>Product Details Right Sidebar</Link></li>
                     </ul>
                   </li>
                   <li>
                     <a href="#">Pages </a>
                     <ul className="sub-menu">
-                      <li><a href="/about">About Us</a></li>
-                      <li><a href="/cart">Cart</a></li>
-                      <li><a href="/compare">Compare</a></li>
-                      <li><a href="/wishlist">Wishlist</a></li>
-                      <li><a href="/empty-cart">Empty Cart</a></li>
-                      <li><a href="/checkout">Checkout</a></li>
-                      <li><a href="/my-account">My Account</a></li>
-                      <li><Link to="/login">Login</Link></li>
-                      <li><Link to="/register">Register</Link></li>
-                      <li><a href="/project-gallery">Project Gallery</a></li>
-                      <li><a href="/project-details">Project Details</a></li>
-                      <li><a href="/our-team">Team</a></li>
-                      <li><a href="/team-profile">Team Profile</a></li>
-                      <li><a href="/faq">FAQ</a></li>
-                      <li><a href="/404-error">404 Error</a></li>
+                      <li><Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>About Us</Link></li>
+                      <li><Link to="/cart" className={location.pathname === '/cart' ? 'active' : ''}>Cart</Link></li>
+                      <li><Link to="/compare" className={location.pathname === '/compare' ? 'active' : ''}>Compare</Link></li>
+                      <li><Link to="/wishlist" className={location.pathname === '/wishlist' ? 'active' : ''}>Wishlist</Link></li>
+                      <li><Link to="/empty-cart" className={location.pathname === '/empty-cart' ? 'active' : ''}>Empty Cart</Link></li>
+                      <li><Link to="/checkout" className={location.pathname === '/checkout' ? 'active' : ''}>Checkout</Link></li>
+                      <li><Link to="/my-account" className={location.pathname === '/my-account' ? 'active' : ''}>My Account</Link></li>
+                      <li><Link to="/login" className={location.pathname === '/login' ? 'active' : ''}>Login</Link></li>
+                      <li><Link to="/register" className={location.pathname === '/register' ? 'active' : ''}>Register</Link></li>
+                      <li><Link to="/project-gallery" className={location.pathname === '/project-gallery' ? 'active' : ''}>Project Gallery</Link></li>
+                      <li><Link to="/project-details" className={location.pathname === '/project-details' ? 'active' : ''}>Project Details</Link></li>
+                      <li><Link to="/our-team" className={location.pathname === '/our-team' ? 'active' : ''}>Team</Link></li>
+                      <li><Link to="/team-profile" className={location.pathname === '/team-profile' ? 'active' : ''}>Team Profile</Link></li>
+                      <li><Link to="/faq" className={location.pathname === '/faq' ? 'active' : ''}>FAQ</Link></li>
+                      <li><Link to="/404-error" className={location.pathname === '/404-error' ? 'active' : ''}>404 Error</Link></li>
                     </ul>
                   </li>
                   <li>
                     <a href="#">Blog</a>
                     <ul className="sub-menu">
-                      <li><a href="/blog-grid">Blog Grid</a></li>
-                      <li><a href="/blog-left-sidebar">Blog Left Sidebar</a></li>
-                      <li><a href="/blog-right-sidebar">Blog Right Sidebar</a></li>
-                      <li><a href="/blog-details-left-sidebar">Blog Details Left Sidebar</a></li>
-                      <li><a href="/blog-details-right-sidebar">Blog Details Right Sidebar</a></li>
+                      <li><Link to="/blog-grid" className={location.pathname === '/blog-grid' ? 'active' : ''}>Blog Grid</Link></li>
+                      <li><Link to="/blog-left-sidebar" className={location.pathname === '/blog-left-sidebar' ? 'active' : ''}>Blog Left Sidebar</Link></li>
+                      <li><Link to="/blog-right-sidebar" className={location.pathname === '/blog-right-sidebar' ? 'active' : ''}>Blog Right Sidebar</Link></li>
+                      <li><Link to="/blog-details-left-sidebar" className={location.pathname === '/blog-details-left-sidebar' ? 'active' : ''}>Blog Details Left Sidebar</Link></li>
+                      <li><Link to="/blog-details-right-sidebar" className={location.pathname === '/blog-details-right-sidebar' ? 'active' : ''}>Blog Details Right Sidebar</Link></li>
                     </ul>
                   </li>
 
@@ -135,7 +136,7 @@ const Header = () => {
                               <span className="product-quantity">1x</span>
                             </div>
                             <div className="cart-item-content">
-                              <h6 className="product-name"><a href="/product-details-left-sidebar">Madden by Steve Madden Cale 6</a></h6>
+                              <h6 className="product-name"><Link to="/product-details-left-sidebar">Madden by Steve Madden Cale 6</Link></h6>
                               <span className="product-price">$19.12</span>
                               <div className="attributes-content">
                                 <span><strong>Color:</strong> White </span>
@@ -153,7 +154,7 @@ const Header = () => {
                               <span className="product-quantity">1x</span>
                             </div>
                             <div className="cart-item-content">
-                              <h6 className="product-name"><a href="/product-details-left-sidebar">New Balance Fresh Foam LAZR v1 Sport</a> </h6>
+                              <h6 className="product-name"><Link to="/product-details-left-sidebar">New Balance Fresh Foam LAZR v1 Sport</Link> </h6>
                               <span className="product-price">$19.12</span>
                               <div className="attributes-content">
                                 <span><strong>Color:</strong> White </span>
@@ -171,7 +172,7 @@ const Header = () => {
                               <span className="product-quantity">1x</span>
                             </div>
                             <div className="cart-item-content">
-                              <h6 className="product-name"><a href="/product-details-left-sidebar">Water and Wind Resistant Insulated Jacket</a></h6>
+                              <h6 className="product-name"><Link to="/product-details-left-sidebar">Water and Wind Resistant Insulated Jacket</Link></h6>
                               <span className="product-price">$19.12</span>
                               <div className="attributes-content">
                                 <span><strong>Color:</strong> White </span>
@@ -211,7 +212,7 @@ const Header = () => {
                     {/* Cart Price Start */}
 
                     <div className="checkout-btn">
-                      <a href="/checkout" className="btn btn-outline-dark btn-hover-primary d-block">Checkout</a>
+                      <Link to="/checkout" className="btn btn-outline-dark btn-hover-primary d-block">Checkout</Link>
                     </div>
                   </div>
                 </div>
@@ -274,48 +275,48 @@ const Header = () => {
               <li>
                 <a href="#">Services</a>
                 <ul className="sub-menu">
-                  <li><Link to="/service">Services</Link></li>
-                  <li><Link to="/service-details">Services Details</Link></li>
+                  <li><Link to="/service" className={location.pathname === '/service' ? 'active' : ''}>Services</Link></li>
+                  <li><Link to="/service-details" className={location.pathname === '/service-details' ? 'active' : ''}>Services Details</Link></li>
                 </ul>
               </li>
               <li>
                 <a href="#">Shop</a>
                 <ul className="sub-menu">
-                  <li><a href="/shop-grid">Shop Grid</a></li>
-                  <li><a href="/shop-left-sidebar">Shop left Sidebar</a></li>
-                  <li><a href="/shop-right-sidebar">Shop Right Sidebar</a></li>
-                  <li><a href="/product-details-left-sidebar">Product Details Left Sidebar</a></li>
-                  <li><a href="/product-details-right-sidebar">Product Details Right Sidebar</a></li>
+                  <li><Link to="/shop-grid" className={location.pathname === '/shop-grid' ? 'active' : ''}>Shop Grid</Link></li>
+                  <li><Link to="/shop-left-sidebar" className={location.pathname === '/shop-left-sidebar' ? 'active' : ''}>Shop left Sidebar</Link></li>
+                  <li><Link to="/shop-right-sidebar" className={location.pathname === '/shop-right-sidebar' ? 'active' : ''}>Shop Right Sidebar</Link></li>
+                  <li><Link to="/product-details-left-sidebar" className={location.pathname === '/product-details-left-sidebar' ? 'active' : ''}>Product Details Left Sidebar</Link></li>
+                  <li><Link to="/product-details-right-sidebar" className={location.pathname === '/product-details-right-sidebar' ? 'active' : ''}>Product Details Right Sidebar</Link></li>
                 </ul>
               </li>
               <li>
                 <a href="#">Pages </a>
                 <ul className="sub-menu">
-                  <li><a href="/about">About Us</a></li>
-                  <li><a href="/cart">Cart</a></li>
-                  <li><a href="/compare">Compare</a></li>
-                  <li><a href="/wishlist">Wishlist</a></li>
-                  <li><a href="/empty-cart">Empty Cart</a></li>
-                  <li><a href="/checkout">Checkout</a></li>
-                  <li><a href="/my-account">My Account</a></li>
-                  <li><Link to="/login">Login</Link></li>
-                  <li><Link to="/register">Register</Link></li>
-                  <li><a href="/project-gallery">Project Gallery</a></li>
-                  <li><a href="/project-details">Project Details</a></li>
-                  <li><a href="/our-team">Team</a></li>
-                  <li><a href="/team-profile">Team Profile</a></li>
-                  <li><a href="/faq">FAQ</a></li>
-                  <li><a href="/404-error">404 Error</a></li>
+                  <li><Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>About Us</Link></li>
+                  <li><Link to="/cart" className={location.pathname === '/cart' ? 'active' : ''}>Cart</Link></li>
+                  <li><Link to="/compare" className={location.pathname === '/compare' ? 'active' : ''}>Compare</Link></li>
+                  <li><Link to="/wishlist" className={location.pathname === '/wishlist' ? 'active' : ''}>Wishlist</Link></li>
+                  <li><Link to="/empty-cart" className={location.pathname === '/empty-cart' ? 'active' : ''}>Empty Cart</Link></li>
+                  <li><Link to="/checkout" className={location.pathname === '/checkout' ? 'active' : ''}>Checkout</Link></li>
+                  <li><Link to="/my-account" className={location.pathname === '/my-account' ? 'active' : ''}>My Account</Link></li>
+                  <li><Link to="/login" className={location.pathname === '/login' ? 'active' : ''}>Login</Link></li>
+                  <li><Link to="/register" className={location.pathname === '/register' ? 'active' : ''}>Register</Link></li>
+                  <li><Link to="/project-gallery" className={location.pathname === '/project-gallery' ? 'active' : ''}>Project Gallery</Link></li>
+                  <li><Link to="/project-details" className={location.pathname === '/project-details' ? 'active' : ''}>Project Details</Link></li>
+                  <li><Link to="/our-team" className={location.pathname === '/our-team' ? 'active' : ''}>Team</Link></li>
+                  <li><Link to="/team-profile" className={location.pathname === '/team-profile' ? 'active' : ''}>Team Profile</Link></li>
+                  <li><Link to="/faq" className={location.pathname === '/faq' ? 'active' : ''}>FAQ</Link></li>
+                  <li><Link to="/404-error" className={location.pathname === '/404-error' ? 'active' : ''}>404 Error</Link></li>
                 </ul>
               </li>
               <li>
                 <a href="#">Blog</a>
                 <ul className="sub-menu">
-                  <li><a href="/blog-grid">Blog Grid</a></li>
-                  <li><a href="/blog-left-sidebar">Blog Left Sidebar</a></li>
-                  <li><a href="/blog-right-sidebar">Blog Right Sidebar</a></li>
-                  <li><a href="/blog-details-left-sidebar">Blog Details Left Sidebar</a></li>
-                  <li><a href="/blog-details-right-sidebar">Blog Details Right Sidebar</a></li>
+                  <li><Link to="/blog-grid" className={location.pathname === '/blog-grid' ? 'active' : ''}>Blog Grid</Link></li>
+                  <li><Link to="/blog-left-sidebar" className={location.pathname === '/blog-left-sidebar' ? 'active' : ''}>Blog Left Sidebar</Link></li>
+                  <li><Link to="/blog-right-sidebar" className={location.pathname === '/blog-right-sidebar' ? 'active' : ''}>Blog Right Sidebar</Link></li>
+                  <li><Link to="/blog-details-left-sidebar" className={location.pathname === '/blog-details-left-sidebar' ? 'active' : ''}>Blog Details Left Sidebar</Link></li>
+                  <li><Link to="/blog-details-right-sidebar" className={location.pathname === '/blog-details-right-sidebar' ? 'active' : ''}>Blog Details Right Sidebar</Link></li>
                 </ul>
               </li>
               <li><Link to="/contact">Contact</Link></li>

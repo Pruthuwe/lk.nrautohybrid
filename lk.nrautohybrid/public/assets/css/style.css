@@ -8085,3 +8085,17 @@ select {
   color: #ffffff;
   background-color: #ee0f39;
 }
+
+/* Custom Active Submenu Styles */
+.sub-menu .active {
+  background-color: #f8f9fa !important;
+  color: #0046e2 !important;
+  font-weight: 600 !important;
+  border-left: 3px solid #0046e2 !important;
+  padding-left: 17px !important;
+}
+
+.sub-menu .active:hover {
+  background-color: #e9ecef !important;
+  color: #003399 !important;
+}
