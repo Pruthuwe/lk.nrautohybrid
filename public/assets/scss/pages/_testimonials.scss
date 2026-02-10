@@ -20,7 +20,7 @@
 // Testimonials Title
 .testimonials-title{
     width: 43.5%;
-    background-color: #cee3f3;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d5a3d 100%);
     padding: 60px;
 
     @media #{$desktop-device, $large-mobile}{
@@ -37,15 +37,19 @@
     & .section-title{
         margin-top: 0;
         
-        & .sub-title{}
-        & .main-title{}
+        & .sub-title{
+            color: #4CAF50;
+        }
+        & .main-title{
+            color: #ffffff;
+        }
     }
 }
 
 // Testimonials Items
 .testimonials-items{
     width: 56.5%;
-    background-color: $primary;
+    background: linear-gradient(135deg, #000000 0%, #4CAF50 100%);
     overflow: hidden;
     position: relative;
     padding: 45px 80px;

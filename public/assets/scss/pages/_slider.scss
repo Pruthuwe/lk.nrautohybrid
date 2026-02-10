@@ -11,7 +11,7 @@
 .single-slider{
     height: 950px;
     position: relative;
-    background-color: #cee3f3;
+    background: #5acd5a;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #cee3f3;
+        background: #90EE90;
         opacity: 0.97;
         z-index: -1;
     }
@@ -106,7 +106,7 @@
 
     & .sub-title{
         text-transform: uppercase;
-        color: $body-color;
+        color: #000000;
         font-size: 18px;
         letter-spacing: 2px;
         font-weight: 400;
@@ -124,7 +124,7 @@
             content: '';
             width: 2px;
             height: 15px;
-            background-color: $secondary;
+            background-color: #4CAF50;
             top: 50%;
             transform: translateY(-50%);
             left: 0;
@@ -134,7 +134,7 @@
     & .main-title{
         font-size: 80px;
         font-weight: 700;
-        color: $primary;
+        color: #000000;
         line-height: 1;
         margin-top: 10px;
 
@@ -148,6 +148,7 @@
     & p{
         font-size: 18px;
         font-weight: 400;
+        color: #000000;
         margin-top: 20px;
         max-width: 510px;
     }

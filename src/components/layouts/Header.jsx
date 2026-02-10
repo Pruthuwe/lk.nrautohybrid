@@ -33,8 +33,8 @@ const Header = () => {
           <div className="container">
             <div className="header-top-wrapper">
               <div className="header-top-info">
-                <p>328D, Marid Drive, Ackloand</p>
-                <p>Call us: <a href="tel:+12025256214">+12(025) 256 214</a></p>
+                <p>Kurunegala, Sri Lanka</p>
+                <p>Call us: <a href="tel:+12025256214">+94 77 216 6306</a></p>
               </div>
 
               <div className="header-top-btn">

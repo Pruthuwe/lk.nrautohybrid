@@ -5,7 +5,7 @@
 
 // Call to Action Wrapper
 .call-to-action-wrapper{
-    background-color: $primary; 
+    background: linear-gradient(135deg, #000000 0%, #4CAF50 100%); 
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
@@ -64,7 +64,7 @@
             border-bottom-color: $white;
 
             &:hover{
-                border-bottom-color: $secondary;
+                border-bottom-color: #4CAF50;
             }
         }
     }

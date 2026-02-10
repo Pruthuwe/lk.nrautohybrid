@@ -12,7 +12,7 @@
 
 // Header Main Wrapper
 .header-main-wrapper{
-    background-color: $primary;
+    background: linear-gradient(135deg, #000000 0%, #4CAF50 100%);
     border-radius: 10px;
     padding: 0px 30px;
     display: flex;
@@ -137,9 +137,9 @@
         top: 110%;
         left: 0;
         width: 220px;
-        background-color: $white;
-        box-shadow: 2px 2px 20px rgba($dark, 0.1);
-        border-top: 2px solid $secondary;
+        background: linear-gradient(135deg, #333333 0%, #4CAF50 100%);
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+        border-top: 2px solid #4CAF50;
         padding: 10px 0;
         z-index: 9;
         opacity: 0;
@@ -151,7 +151,7 @@
 
             & a{
                 padding: 3px 20px;
-                color: $body-color;
+                color: #ffffff;
                 font-weight: 600;
 
                 &::before{
@@ -159,13 +159,13 @@
                 }
 
                 &.active{
-                    color: $primary;
+                    color: #4CAF50;
                 }
             }
             &.active,
             &:hover{
                 & > a{
-                    color: $primary;
+                    color: #4CAF50;
                 }
             }
             & .sub-menu{
@@ -226,11 +226,11 @@
                 width: 28px;
                 height: 28px;
                 line-height: 26px;
-                background-color: $secondary;
-                border: 1px solid $white;
+                background-color: #4CAF50;
+                border: 1px solid #ffffff;
                 border-radius: 50%;
                 display: inline-block;
-                color: $white;
+                color: #ffffff;
                 font-family: $heading-font;
                 font-size: 16px;
                 font-weight: 500;
@@ -521,7 +521,7 @@
     left: 0;
     width: 100%;
     z-index: 111111;
-    background-color: $primary;
+    background: linear-gradient(135deg, #000000 0%, #4CAF50 100%);
     padding: 0;
 
     & .header-main-wrapper{

@@ -58,13 +58,13 @@
 
             & li{
                 font-size: 14px;
-                color: $primary;
+                color: #4CAF50;
                 margin-right: 15px;
                 position: relative;
 
                 &::before{
                     content: '|';
-                    color: $primary;
+                    color: #4CAF50;
                     margin-right: 2px;
                 }
                 & i{
@@ -88,18 +88,18 @@
                 }
 
                 &:hover{
-                    color: $primary;
+                    color: #4CAF50;
                 }
             }
         }
         & .more{
             font-size: 16px;
             font-weight: 500;
-            color: $secondary;
+            color: #4CAF50;
             margin-top: 10px;
 
             &:hover{
-                color: $primary;
+                color: #4CAF50;
             }
         }
     }
