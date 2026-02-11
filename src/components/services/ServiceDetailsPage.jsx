@@ -181,12 +181,18 @@ const ServiceDetailsPage = () => {
                   {/* Widget Sidebar Start */}
                   <div className="widget-sidebar">
                     <ul className="category">
-                      <li><Link to="/service-details">Anti Lock Brake Servicing</Link></li>
-                      <li><Link to="/service-details">Car Wash Service</Link></li>
-                      <li><Link to="/service-details">Entire Engine Servicing</Link></li>
-                      <li><Link to="/service-details">Change Oil and Filter</Link></li>
-                      <li><Link to="/service-details">Battery Replacement</Link></li>
-                      <li><Link to="/service-details">Tire Change and Repair</Link></li>
+                      <li><Link to="/service-details">Turbocharger Repairs</Link></li>
+                      <li><Link to="/service-details">ABS Repairs</Link></li>
+                      <li><Link to="/service-details">Dual-Clutch Repairs</Link></li>
+                      <li><Link to="/service-details">Turbocharger Replacement</Link></li>
+                      <li><Link to="/service-details">Turbocharger Upgrades</Link></li>
+                      <li><Link to="/service-details">Diagnostic Services</Link></li>
+                      <li><Link to="/service-details">Technical Consultation</Link></li>
+                      <li><Link to="/service-details">Spare Parts</Link></li>
+                      <li><Link to="/service-details">Quality Assurance</Link></li>
+                      <li><Link to="/service-details">Emergency Repairs</Link></li>
+                      <li><Link to="/service-details">Performance Tuning</Link></li>
+                      <li><Link to="/service-details">Hybrid Repairs</Link></li>
                     </ul>
                   </div>
                   {/* Widget Sidebar End */}

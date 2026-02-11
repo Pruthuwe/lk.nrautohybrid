@@ -907,3 +907,23 @@
 		border-color: darken($youtube, 5);
 	}
 }
+// Black to Green Gradient
+.btn-black-to-green-gradient {
+	background-image: $black-to-green-gradient;
+	border: none;
+	color: $white;
+	&:hover {
+		background-image: linear-gradient(to right, #333333, #218838);
+		color: $white;
+	}
+}
+// Black to Ash Gradient
+.btn-black {
+	background-image: linear-gradient(to right, #000000, #717171);
+	border: none;
+	color: $white;
+	&:hover {
+		background-image: linear-gradient(to right, #333333, #717171);
+		color: $white;
+	}
+}

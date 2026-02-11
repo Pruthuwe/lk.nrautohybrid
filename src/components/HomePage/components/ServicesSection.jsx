@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const ServicesSection = () => (
+const ServicesSection = () => {
+  const [showAll, setShowAll] = useState(false);
+  return (
   <div className="section">
     <div className="container">
       <div className="section-padding-02 position-relative">
@@ -20,7 +22,7 @@ const ServicesSection = () => (
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="200">
-                <h4 className="title"><Link to="/service-details">Anti Lock Brake <br /> Servicing</Link></h4>
+                <h4 className="title"><Link to="/service-details">Turbocharger <br /> Repairs</Link></h4>
                 <Link to="/service-details" className="more">Learn more</Link>
 
                 <div className="service-icon">
@@ -45,7 +47,7 @@ const ServicesSection = () => (
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="400">
-                <h4 className="title"><Link to="/service-details">Entire Engine <br /> Servicing</Link></h4>
+                <h4 className="title"><Link to="/service-details">ABS <br /> Repairs</Link></h4>
                 <Link to="/service-details" className="more">Learn more</Link>
 
                 <div className="service-icon">
@@ -76,7 +78,7 @@ const ServicesSection = () => (
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="600">
-                <h4 className="title"><Link to="/service-details">Car Wash <br /> Service</Link></h4>
+                <h4 className="title"><Link to="/service-details">Dual-Clutch <br /> Repairs</Link></h4>
                 <Link to="/service-details" className="more">Learn more</Link>
 
                 <div className="service-icon">
@@ -151,7 +153,7 @@ const ServicesSection = () => (
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="200">
-                <h4 className="title"><Link to="/service-details">Battery <br /> Replacement</Link></h4>
+                <h4 className="title"><Link to="/service-details">Turbocharger <br /> Replacement</Link></h4>
                 <Link to="/service-details" className="more">Learn more</Link>
 
                 <div className="service-icon">
@@ -193,7 +195,7 @@ const ServicesSection = () => (
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="400">
-                <h4 className="title"><Link to="/service-details">Change Oil <br /> and Filter</Link></h4>
+                <h4 className="title"><Link to="/service-details">Turbocharger <br /> Upgrades</Link></h4>
                 <Link to="/service-details" className="more">Learn more</Link>
 
                 <div className="service-icon">
@@ -243,7 +245,7 @@ const ServicesSection = () => (
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="600">
-                <h4 className="title"><Link to="/service-details">Tire Change <br /> and Repair</Link></h4>
+                <h4 className="title"><Link to="/service-details">Diagnostic <br /> Services</Link></h4>
                 <Link to="/service-details" className="more">Learn more</Link>
 
                 <div className="service-icon">
@@ -281,12 +283,197 @@ const ServicesSection = () => (
               </div>
               {/* Single Service End */}
             </div>
+            {showAll && (
+            <React.Fragment>
+            <div className="col-lg-4 col-sm-6">
+              {/* Single Service Start */}
+              <div className="single-service" data-aos="fade-up" data-aos-delay="800">
+                <h4 className="title"><Link to="/service-details">Cleaning and <br /> Maintenance</Link></h4>
+                <Link to="/service-details" className="more">Learn more</Link>
+
+                <div className="service-icon">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
+                    <g>
+                      <path className="icon-path" d="M308.62,162.75c-75.19,0-136.36,61.17-136.36,136.37c0,32.84,11.84,64.57,33.34,89.34
+                      c3,3.45,8.23,3.83,11.69,0.82c3.46-3,3.83-8.23,0.83-11.69c-18.88-21.76-29.29-49.63-29.29-78.48
+                      c0-66.06,53.74-119.79,119.79-119.79c66.05,0,119.8,53.73,119.8,119.79c0,66.05-53.74,119.79-119.8,119.79
+                      c-22.01,0-43.53-6.02-62.23-17.41c-3.91-2.38-9-1.15-11.39,2.77c-2.38,3.91-1.15,9.01,2.77,11.39
+                      c21.29,12.97,45.79,19.83,70.85,19.83c75.2,0,136.37-61.17,136.37-136.37C444.99,223.93,383.82,162.75,308.62,162.75L308.62,162.75
+                      z M308.62,162.75" />
+                      <path className="icon-path" d="M268.81,299.12c0,21.96,17.86,39.82,39.82,39.82c21.96,0,39.82-17.86,39.82-39.82
+                      c0-21.96-17.87-39.82-39.82-39.82C286.67,259.3,268.81,277.17,268.81,299.12L268.81,299.12z M308.62,275.87
+                      c12.82,0,23.25,10.43,23.25,23.25c0,12.81-10.43,23.24-23.25,23.24c-12.82,0-23.24-10.43-23.24-23.24
+                      C285.38,286.3,295.8,275.87,308.62,275.87L308.62,275.87z M308.62,275.87" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              {/* Single Service End */}
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              {/* Single Service Start */}
+              <div className="single-service" data-aos="fade-up" data-aos-delay="1000">
+                <h4 className="title"><Link to="/service-details">Technical <br /> Consultation</Link></h4>
+                <Link to="/service-details" className="more">Learn more</Link>
+
+                <div className="service-icon">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
+                    <g>
+                      <path className="icon-path" d="M308.62,162.75c-75.19,0-136.36,61.17-136.36,136.37c0,32.84,11.84,64.57,33.34,89.34
+                      c3,3.45,8.23,3.83,11.69,0.82c3.46-3,3.83-8.23,0.83-11.69c-18.88-21.76-29.29-49.63-29.29-78.48
+                      c0-66.06,53.74-119.79,119.79-119.79c66.05,0,119.8,53.73,119.8,119.79c0,66.05-53.74,119.79-119.8,119.79
+                      c-22.01,0-43.53-6.02-62.23-17.41c-3.91-2.38-9-1.15-11.39,2.77c-2.38,3.91-1.15,9.01,2.77,11.39
+                      c21.29,12.97,45.79,19.83,70.85,19.83c75.2,0,136.37-61.17,136.37-136.37C444.99,223.93,383.82,162.75,308.62,162.75L308.62,162.75
+                      z M308.62,162.75" />
+                      <path className="icon-path" d="M268.81,299.12c0,21.96,17.86,39.82,39.82,39.82c21.96,0,39.82-17.86,39.82-39.82
+                      c0-21.96-17.87-39.82-39.82-39.82C286.67,259.3,268.81,277.17,268.81,299.12L268.81,299.12z M308.62,275.87
+                      c12.82,0,23.25,10.43,23.25,23.25c0,12.81-10.43,23.24-23.25,23.24c-12.82,0-23.24-10.43-23.24-23.24
+                      C285.38,286.3,295.8,275.87,308.62,275.87L308.62,275.87z M308.62,275.87" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              {/* Single Service End */}
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              {/* Single Service Start */}
+              <div className="single-service" data-aos="fade-up" data-aos-delay="1200">
+                <h4 className="title"><Link to="/service-details">Spare <br /> Parts</Link></h4>
+                <Link to="/service-details" className="more">Learn more</Link>
+
+                <div className="service-icon">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
+                    <g>
+                      <path className="icon-path" d="M308.62,162.75c-75.19,0-136.36,61.17-136.36,136.37c0,32.84,11.84,64.57,33.34,89.34
+                      c3,3.45,8.23,3.83,11.69,0.82c3.46-3,3.83-8.23,0.83-11.69c-18.88-21.76-29.29-49.63-29.29-78.48
+                      c0-66.06,53.74-119.79,119.79-119.79c66.05,0,119.8,53.73,119.8,119.79c0,66.05-53.74,119.79-119.8,119.79
+                      c-22.01,0-43.53-6.02-62.23-17.41c-3.91-2.38-9-1.15-11.39,2.77c-2.38,3.91-1.15,9.01,2.77,11.39
+                      c21.29,12.97,45.79,19.83,70.85,19.83c75.2,0,136.37-61.17,136.37-136.37C444.99,223.93,383.82,162.75,308.62,162.75L308.62,162.75
+                      z M308.62,162.75" />
+                      <path className="icon-path" d="M268.81,299.12c0,21.96,17.86,39.82,39.82,39.82c21.96,0,39.82-17.86,39.82-39.82
+                      c0-21.96-17.87-39.82-39.82-39.82C286.67,259.3,268.81,277.17,268.81,299.12L268.81,299.12z M308.62,275.87
+                      c12.82,0,23.25,10.43,23.25,23.25c0,12.81-10.43,23.24-23.25,23.24c-12.82,0-23.24-10.43-23.24-23.24
+                      C285.38,286.3,295.8,275.87,308.62,275.87L308.62,275.87z M308.62,275.87" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              {/* Single Service End */}
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              {/* Single Service Start */}
+              <div className="single-service" data-aos="fade-up" data-aos-delay="1400">
+                <h4 className="title"><Link to="/service-details">Quality <br /> Assurance</Link></h4>
+                <Link to="/service-details" className="more">Learn more</Link>
+
+                <div className="service-icon">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
+                    <g>
+                      <path className="icon-path" d="M308.62,162.75c-75.19,0-136.36,61.17-136.36,136.37c0,32.84,11.84,64.57,33.34,89.34
+                      c3,3.45,8.23,3.83,11.69,0.82c3.46-3,3.83-8.23,0.83-11.69c-18.88-21.76-29.29-49.63-29.29-78.48
+                      c0-66.06,53.74-119.79,119.79-119.79c66.05,0,119.8,53.73,119.8,119.79c0,66.05-53.74,119.79-119.8,119.79
+                      c-22.01,0-43.53-6.02-62.23-17.41c-3.91-2.38-9-1.15-11.39,2.77c-2.38,3.91-1.15,9.01,2.77,11.39
+                      c21.29,12.97,45.79,19.83,70.85,19.83c75.2,0,136.37-61.17,136.37-136.37C444.99,223.93,383.82,162.75,308.62,162.75L308.62,162.75
+                      z M308.62,162.75" />
+                      <path className="icon-path" d="M268.81,299.12c0,21.96,17.86,39.82,39.82,39.82c21.96,0,39.82-17.86,39.82-39.82
+                      c0-21.96-17.87-39.82-39.82-39.82C286.67,259.3,268.81,277.17,268.81,299.12L268.81,299.12z M308.62,275.87
+                      c12.82,0,23.25,10.43,23.25,23.25c0,12.81-10.43,23.24-23.25,23.24c-12.82,0-23.24-10.43-23.24-23.24
+                      C285.38,286.3,295.8,275.87,308.62,275.87L308.62,275.87z M308.62,275.87" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              {/* Single Service End */}
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              {/* Single Service Start */}
+              <div className="single-service" data-aos="fade-up" data-aos-delay="1600">
+                <h4 className="title"><Link to="/service-details">Emergency <br /> Repairs</Link></h4>
+                <Link to="/service-details" className="more">Learn more</Link>
+
+                <div className="service-icon">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
+                    <g>
+                      <path className="icon-path" d="M308.62,162.75c-75.19,0-136.36,61.17-136.36,136.37c0,32.84,11.84,64.57,33.34,89.34
+                      c3,3.45,8.23,3.83,11.69,0.82c3.46-3,3.83-8.23,0.83-11.69c-18.88-21.76-29.29-49.63-29.29-78.48
+                      c0-66.06,53.74-119.79,119.79-119.79c66.05,0,119.8,53.73,119.8,119.79c0,66.05-53.74,119.79-119.8,119.79
+                      c-22.01,0-43.53-6.02-62.23-17.41c-3.91-2.38-9-1.15-11.39,2.77c-2.38,3.91-1.15,9.01,2.77,11.39
+                      c21.29,12.97,45.79,19.83,70.85,19.83c75.2,0,136.37-61.17,136.37-136.37C444.99,223.93,383.82,162.75,308.62,162.75L308.62,162.75
+                      z M308.62,162.75" />
+                      <path className="icon-path" d="M268.81,299.12c0,21.96,17.86,39.82,39.82,39.82c21.96,0,39.82-17.86,39.82-39.82
+                      c0-21.96-17.87-39.82-39.82-39.82C286.67,259.3,268.81,277.17,268.81,299.12L268.81,299.12z M308.62,275.87
+                      c12.82,0,23.25,10.43,23.25,23.25c0,12.81-10.43,23.24-23.25,23.24c-12.82,0-23.24-10.43-23.24-23.24
+                      C285.38,286.3,295.8,275.87,308.62,275.87L308.62,275.87z M308.62,275.87" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              {/* Single Service End */}
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              {/* Single Service Start */}
+              <div className="single-service" data-aos="fade-up" data-aos-delay="1800">
+                <h4 className="title"><Link to="/service-details">Performance <br /> Tuning</Link></h4>
+                <Link to="/service-details" className="more">Learn more</Link>
+
+                <div className="service-icon">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
+                    <g>
+                      <path className="icon-path" d="M308.62,162.75c-75.19,0-136.36,61.17-136.36,136.37c0,32.84,11.84,64.57,33.34,89.34
+                      c3,3.45,8.23,3.83,11.69,0.82c3.46-3,3.83-8.23,0.83-11.69c-18.88-21.76-29.29-49.63-29.29-78.48
+                      c0-66.06,53.74-119.79,119.79-119.79c66.05,0,119.8,53.73,119.8,119.79c0,66.05-53.74,119.79-119.8,119.79
+                      c-22.01,0-43.53-6.02-62.23-17.41c-3.91-2.38-9-1.15-11.39,2.77c-2.38,3.91-1.15,9.01,2.77,11.39
+                      c21.29,12.97,45.79,19.83,70.85,19.83c75.2,0,136.37-61.17,136.37-136.37C444.99,223.93,383.82,162.75,308.62,162.75L308.62,162.75
+                      z M308.62,162.75" />
+                      <path className="icon-path" d="M268.81,299.12c0,21.96,17.86,39.82,39.82,39.82c21.96,0,39.82-17.86,39.82-39.82
+                      c0-21.96-17.87-39.82-39.82-39.82C286.67,259.3,268.81,277.17,268.81,299.12L268.81,299.12z M308.62,275.87
+                      c12.82,0,23.25,10.43,23.25,23.25c0,12.81-10.43,23.24-23.25,23.24c-12.82,0-23.24-10.43-23.24-23.24
+                      C285.38,286.3,295.8,275.87,308.62,275.87L308.62,275.87z M308.62,275.87" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              {/* Single Service End */}
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              {/* Single Service Start */}
+              <div className="single-service" data-aos="fade-up" data-aos-delay="2000">
+                <h4 className="title"><Link to="/service-details">Hybrid <br /> Repairs</Link></h4>
+                <Link to="/service-details" className="more">Learn more</Link>
+
+                <div className="service-icon">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
+                    <g>
+                      <path className="icon-path" d="M308.62,162.75c-75.19,0-136.36,61.17-136.36,136.37c0,32.84,11.84,64.57,33.34,89.34
+                      c3,3.45,8.23,3.83,11.69,0.82c3.46-3,3.83-8.23,0.83-11.69c-18.88-21.76-29.29-49.63-29.29-78.48
+                      c0-66.06,53.74-119.79,119.79-119.79c66.05,0,119.8,53.73,119.8,119.79c0,66.05-53.74,119.79-119.8,119.79
+                      c-22.01,0-43.53-6.02-62.23-17.41c-3.91-2.38-9-1.15-11.39,2.77c-2.38,3.91-1.15,9.01,2.77,11.39
+                      c21.29,12.97,45.79,19.83,70.85,19.83c75.2,0,136.37-61.17,136.37-136.37C444.99,223.93,383.82,162.75,308.62,162.75L308.62,162.75
+                      z M308.62,162.75" />
+                      <path className="icon-path" d="M268.81,299.12c0,21.96,17.86,39.82,39.82,39.82c21.96,0,39.82-17.86,39.82-39.82
+                      c0-21.96-17.87-39.82-39.82-39.82C286.67,259.3,268.81,277.17,268.81,299.12L268.81,299.12z M308.62,275.87
+                      c12.82,0,23.25,10.43,23.25,23.25c0,12.81-10.43,23.24-23.25,23.24c-12.82,0-23.24-10.43-23.24-23.24
+                      C285.38,286.3,295.8,275.87,308.62,275.87L308.62,275.87z M308.62,275.87" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              {/* Single Service End */}
+            </div>
+            </React.Fragment>
+            )}
+            <div className="col-12 text-center mt-4">
+              <button className="btn btn-black" onClick={() => setShowAll(!showAll)}>
+                {showAll ? 'Show Less' : 'Show More'}
+              </button>
+            </div>
           </div>
         </div>
         {/* Service Wrapper End */}
       </div>
     </div>
   </div>
-);
+  );
+};
 
 export default ServicesSection;

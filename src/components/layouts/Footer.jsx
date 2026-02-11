@@ -21,8 +21,8 @@ const Footer = () => {
                   </Link>
 
                   <p>
-                    Trusted and reliable service is our to main goal extremely
-                    painful. again a there anyone loves our chooses
+                    Green Auto is your one-stop shop for expert vehicle repair services.
+                    We specialize in turbo, ABS, and dual-clutch repairs.
                   </p>
 
                   <div className="widget-info">
@@ -31,7 +31,7 @@ const Footer = () => {
                       328D, Parley Street, Ackland <br />
                       Bronex Tower, Australia
                     </p>
-                    <p><span>Phone</span>: +12 (654) 521 789</p>
+                    <p><span>Phone</span>: +94 77 216 6306</p>
                     <p><span>Email</span>: info@carserv.com</p>
                   </div>
                 </div>
@@ -87,13 +87,13 @@ const Footer = () => {
                   </div>
 
                   <div className="widget-opening">
-                    <h6 className="title">Opening Hour</h6>
-                    <p>
+                    <h6 className="title">24 Hour Service</h6>
+                    {/* <p>
                       Monday to Friday <i className="fa fa-long-arrow-right"></i> 9.30 am – 11.30 pm
                     </p>
                     <p>
                       Saturday to Sunday <i className="fa fa-long-arrow-right"></i> 10.30 am – 8.00 pm
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
@@ -117,7 +117,7 @@ const Footer = () => {
             </div>
 
             <div className="copyright-social">
-              <a href="#"><i className="fa fa-facebook-f"></i></a>
+              <a href="https://web.facebook.com/greenauto.lk"><i className="fa fa-facebook-f"></i></a>
               <a href="#"><i className="fa fa-twitter"></i></a>
               <a href="#"><i className="fa fa-instagram"></i></a>
               <a href="#"><i className="fa fa-pinterest-p"></i></a>

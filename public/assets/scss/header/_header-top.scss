@@ -3,9 +3,7 @@
 /*----------------------------------------*/
 
 // Header Top 
-.header-top {
-    // No background - transparent
-}
+.header-top {}
 
 // Header Top Wrapper
 .header-top-wrapper{
@@ -37,13 +35,13 @@
     & p{
         font-size: 14px;
         font-weight: 500;
-        color: #ffffff;
+        color: $body-color;
         position: relative;
 
         & + p{
             &::before{
                 content: '||';
-                color: #4CAF50;
+                color: $body-color;
                 font-size: 16px;
                 margin: 0 8px;
                 position: relative;
@@ -74,13 +72,13 @@
     & a{
         font-size: 14px;
         font-weight: 500;
-        color: #ffffff;
+        color: $body-color;
         position: relative;
 
         & + a{
             &::before{
                 content: '/';
-                color: #4CAF50;
+                color: $body-color;
                 font-size: 16px;
                 margin: 0 2px;
                 position: relative;
@@ -88,7 +86,7 @@
         }
 
         &:hover{
-            color: #4CAF50;
+            color: #858484;
         }
     }
 }

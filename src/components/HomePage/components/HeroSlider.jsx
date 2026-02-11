@@ -5,7 +5,7 @@ const HeroSlider = () => (
   <div className="section slider-section">
     <div 
       className="single-slider" 
-      style={{ backgroundImage: 'url(/assets/images/slider/slider-bg.webp)' }}
+      style={{ backgroundImage: 'url(/assets/images/slider/slider-bg.jpg)' }}
     >
       <div className="container">
         {/* Slider Content Start */}
