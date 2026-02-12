@@ -526,6 +526,8 @@
 
     & .header-main-wrapper{
         padding: 0;
+        border-radius: 0;
+        background: none;
 
         @media #{$tablet-device, $large-mobile}{
             padding: 15px 0px;

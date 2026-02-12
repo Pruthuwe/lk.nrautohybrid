@@ -201,6 +201,7 @@ input, textarea {
 }
 .section-padding-02 {
     padding-top: 130px;
+    background-color: #bcfdad;
     // Responsive
     @media #{$desktop-device} {
         padding-top: 100px;
@@ -234,7 +235,7 @@ input, textarea {
         }
 
         & strong{
-            color: $secondary;
+            color: $success;
         }
 
         &::before{
@@ -265,6 +266,7 @@ input, textarea {
     }
     & p{
         margin-top: 20px;
+        color: #000000;
 
         & br{
             @media #{$large-mobile}{

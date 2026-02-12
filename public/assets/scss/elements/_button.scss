@@ -113,17 +113,17 @@
 
 // Button Custom
 .btn-custom-01 {
-	background-color: $secondary;
-	border-color: $secondary;
-	border-bottom: 2px solid $primary;
+	background-color: $black;
+	border-color: $success;
+	border-bottom: 2px solid $success;
 	color: $white;
 
 	&:focus,
 	&:active,
 	&:hover{
-		background-color: $primary;
-		border-color: $primary;
-		border-bottom-color: $secondary;
+		background-color: $success;
+		border-color: $success;
+		border-bottom-color: $black;
 		color: $white;
 	}
 }

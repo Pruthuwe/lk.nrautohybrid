@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div
       className="section footer-section"
-      style={{ backgroundImage: "url(/assets/images/footer-bg.jpg)" }}
+      style={{ backgroundImage: "url(/assets/images/footer-bg-1.png)" }}
     >
       {/* Footer Widget Section */}
       <div className="footer-widget-section section-padding">
@@ -17,7 +17,7 @@ const Footer = () => {
               <div className="col-lg-3 col-md-6 order-md-1 order-lg-1">
                 <div className="footer-widget" data-aos="fade-up" data-aos-delay="100">
                   <Link className="footer-logo" to="/">
-                    <img src="/assets/images/logo.png" alt="Logo" />
+                    <img src="/assets/images/logo-1.png" alt="Logo" />
                   </Link>
 
                   <p>
@@ -28,8 +28,9 @@ const Footer = () => {
                   <div className="widget-info">
                     <h6 className="title">Contact info</h6>
                     <p>
-                      328D, Parley Street, Ackland <br />
-                      Bronex Tower, Australia
+                      <a href="#" style={{color: 'white'}}>
+                        <i className="fa fa-map-marker" style={{marginRight: '8px'}}></i> Kurunegala, Sri Lanka
+                      </a>
                     </p>
                     <p><span>Phone</span>: +94 77 216 6306</p>
                     <p><span>Email</span>: info@carserv.com</p>

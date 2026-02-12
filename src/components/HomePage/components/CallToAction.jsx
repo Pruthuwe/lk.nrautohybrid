@@ -12,11 +12,11 @@ const CallToAction = () => (
             {/* Section Title Start */}
             <div className="section-title section-title-white">
               <h5 className="sub-title">Emergency Calls 24/7</h5>
-              <h2 className="main-title">+12(254) 258 741</h2>
+              <h2 className="main-title">+94 77 216 6306</h2>
             </div>
             {/* Section Title End */}
             <p>Car servicing rationally encounter consequences extremely painful. Nor again is there anyone who loves or pursues of more than a quality servicing is very important</p>
-            <Link to="/contact" className="btn btn-custom-01 btn-hover-white">
+            <Link to="/contact" className="btn btn-custom-01">
               Get a Quote
             </Link>
           </div>

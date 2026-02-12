@@ -26,8 +26,8 @@ const BrandSection = () => {
   };
 
   return (
-    <div className="section section-padding">
-      <div className="container">
+    <div className="section section-padding" style={{ backgroundColor: '#bcfdad' }}>
+      <div className="container ">
         {/* Brand Wrapper Start */}
         <div className="brand-wrapper brand-active">
           <Swiper

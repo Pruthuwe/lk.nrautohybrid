@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const ServicesSection = () => {
   const [showAll, setShowAll] = useState(false);
   return (
-  <div className="section">
+  <div className="section section-padding-02">
     <div className="container">
-      <div className="section-padding-02 position-relative">
+      <div className="position-relative">
         <img className="services-shape" src="/assets/images/services.webp" alt="Service" />
 
         {/* Section Title Start */}
@@ -463,7 +463,7 @@ const ServicesSection = () => {
             </React.Fragment>
             )}
             <div className="col-12 text-center mt-4">
-              <button className="btn btn-black" onClick={() => setShowAll(!showAll)}>
+              <button className="btn btn-custom-01" onClick={() => setShowAll(!showAll)}>
                 {showAll ? 'Show Less' : 'Show More'}
               </button>
             </div>
