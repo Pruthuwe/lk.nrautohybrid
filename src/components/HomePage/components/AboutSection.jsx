@@ -14,7 +14,7 @@ const AboutSection = () => (
                 <img src="/assets/images/about/about.webp" alt="About" />
               </div>
               <div className="exprience" data-aos="fade-up" data-aos-delay="400">
-                <p><strong>30</strong> years Exprience</p>
+                <p><strong>20</strong> years Exprience</p>
               </div>
             </div>
             {/* About Images End */}
@@ -24,36 +24,14 @@ const AboutSection = () => (
             <div className="about-content" data-aos="fade-left" data-aos-delay="200">
               {/* Section Title Start */}
               <div className="section-title">
-                <h5 className="sub-title">Welcome to <strong>Carserv</strong>.</h5>
+                <h5 className="sub-title">Welcome to <strong>Green Auto</strong>.</h5>
                 <h2 className="main-title">Latest Equipments with Trusted Service</h2>
               </div>
               {/* Section Title End */}
 
-              <p>Car servicing rationally encounter consequences extremely painful. Nor again is there anyone who loves or pursues take a trivial example, which of us undertakes chooses</p>
-              <p>Car servicing rationally encounter consequences extremely painful. Nor again is there anyone who loves or pursues </p>
+              <p>Turbocharger and hybrid system repairs demand precision and expertise. Our technicians diagnose performance issues, boost pressure faults, and electrical system errors to ensure your vehicle operates at peak efficiency without risking further engine or battery damage.</p>
 
-              {/* About Count Start */}
-              <div className="about-count">
-                {/* About Count Start */}
-                <div className="single-count">
-                  <span className="count">5000+</span>
-                  <p>Clients</p>
-                </div>
-                {/* About Count End */}
-                {/* About Count Start */}
-                <div className="single-count">
-                  <span className="count">35+</span>
-                  <p>Branch</p>
-                </div>
-                {/* About Count End */}
-                {/* About Count Start */}
-                <div className="single-count">
-                  <span className="count">110+</span>
-                  <p>Awards</p>
-                </div>
-                {/* About Count End */}
-              </div>
-              {/* About Count End */}
+              <p>We specialize in advanced turbo and hybrid repairs using industry-grade tools and genuine components, helping you restore fuel efficiency, power delivery, and long-term reliability with minimal downtime.</p>
 
               <Link to="#" className="btn btn-custom-01">Get Appointment</Link>
             </div>

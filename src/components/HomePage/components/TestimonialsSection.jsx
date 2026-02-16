@@ -14,7 +14,7 @@ const TestimonialsSection = () => (
           <div className="section-title">
             <h5 className="sub-title">Testimonials</h5>
             <h2 className="main-title">What our Happy Clients says</h2>
-            <p>Trusted and reliable service is our main goal extremely painful. Nor again is there anyone who loves our to take a trivial example, which of us undertakes chooses</p>
+            <p style={{ color: 'white' }}>Trusted and reliable service is our main goal extremely painful. Nor again is there anyone who loves our to take a trivial example, which of us undertakes chooses</p>
           </div>
           {/* Section Title End */}
         </div>

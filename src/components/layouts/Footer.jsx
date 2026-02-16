@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Appointment from "../appointment/Appointment";
 
 const Footer = () => {
+  const [showAppointmentModal, setShowAppointmentModal] = useState(false);
+
   return (
+    <>
     <div
       className="section footer-section"
       style={{ backgroundImage: "url(/assets/images/footer-bg-1.png)" }}
@@ -46,10 +50,9 @@ const Footer = () => {
                     <h3 className="footer-widget-title">Quick Links</h3>
                     <ul className="widget-link">
                       <li><Link to="/about">About us</Link></li>
-                      <li><Link to="/service">Our Services</Link></li>
+                      <li><Link to="/service-details">Our Services</Link></li>
                       <li><Link to="/our-team">Our Mechanics</Link></li>
                       <li><Link to="/blog">Blog Post</Link></li>
-                      <li><Link to="/login">Login / Register</Link></li>
                       <li><Link to="/contact">Contact</Link></li>
                     </ul>
                   </div>
@@ -57,12 +60,22 @@ const Footer = () => {
                   <div className="footer-widget" data-aos="fade-up" data-aos-delay="300">
                     <h3 className="footer-widget-title">Information</h3>
                     <ul className="widget-link">
-                      <li><Link to="/contact">Book Appointment</Link></li>
-                      <li><Link to="/terms">Terms & Conditions</Link></li>
-                      <li><Link to="/return-policy">Return Policy</Link></li>
-                      <li><Link to="/payment">Payment</Link></li>
+                      <li>
+                        <a 
+                          href="#" 
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setShowAppointmentModal(true);
+                          }}
+                          style={{ cursor: 'pointer' }}
+                        >
+                          Book Appointment
+                        </a>
+                      </li>
+                      <li><Link to="#">Terms & Conditions</Link></li>
+                      <li><Link to="#">Return Policy</Link></li>
                       <li><Link to="/emergency">Emergency Call</Link></li>
-                      <li><Link to="/tracking">Tracking Service</Link></li>
+                      <li><Link to="/service-details">Tracking Service</Link></li>
                     </ul>
                   </div>
 
@@ -111,23 +124,42 @@ const Footer = () => {
 
             <div className="copyright-text">
               <p>
-                © {new Date().getFullYear()} <span>Carserv</span> Made with{" "}
+                © {new Date().getFullYear()} <span>Green Auto</span> Made with{" "}
                 <i className="icofont-heart-alt"></i> by{" "}
-                <a href="#" rel="noreferrer">Codecarnival</a>
+                <a href="https://deviitor.com/" rel="noreferrer">Deviitor.com</a>
               </p>
             </div>
 
             <div className="copyright-social">
-              <a href="https://web.facebook.com/greenauto.lk"><i className="fa fa-facebook-f"></i></a>
-              <a href="#"><i className="fa fa-twitter"></i></a>
-              <a href="#"><i className="fa fa-instagram"></i></a>
-              <a href="#"><i className="fa fa-pinterest-p"></i></a>
+              <a href="https://web.facebook.com/greenauto.lk"><i className="icofont-facebook"></i></a>
+              <a href="#"><i className="icofont-instagram"></i></a>
+              <a href="https://wa.me/94772166306"><i className="icofont-whatsapp"></i></a>
+              <a href="#"><i className="fab fa-tiktok"></i></a>
             </div>
 
           </div>
         </div>
       </div>
     </div>
+
+    {/* Appointment Modal */}
+    {showAppointmentModal && (
+      <>
+        <div className="modal fade show d-block" tabIndex="-1" role="dialog" style={{zIndex: 1050}}>
+          <div className="modal-dialog modal-lg" role="document">
+            <div className="modal-content">
+              <div className="modal-body p-4">
+                <Appointment 
+                  onClose={() => setShowAppointmentModal(false)}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="modal-backdrop fade show" onClick={() => setShowAppointmentModal(false)} style={{zIndex: 1040}}></div>
+      </>
+    )}
+    </>
   );
 };
 

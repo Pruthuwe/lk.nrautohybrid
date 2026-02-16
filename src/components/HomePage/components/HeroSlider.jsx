@@ -5,7 +5,6 @@ const HeroSlider = () => (
   <div className="section slider-section">
     <div 
       className="single-slider" 
-      style={{ backgroundImage: 'url(/assets/images/slider/slider-bg.jpg)' }}
     >
       <div className="container">
         {/* Slider Content Start */}
@@ -15,7 +14,7 @@ const HeroSlider = () => (
             data-aos="fade-up" 
             data-aos-delay="100"
           >
-            a garage for all models
+            a garage for hybrid models
           </h5>
           <h1 
             className="main-title" 
