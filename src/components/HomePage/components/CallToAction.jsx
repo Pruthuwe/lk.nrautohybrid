@@ -44,7 +44,7 @@ const CallToAction = () => {
       {showAppointmentModal && (
         <>
           <div className="modal fade show d-block" tabIndex="-1" role="dialog" style={{zIndex: 1050}}>
-            <div className="modal-dialog modal-lg" role="document">
+            <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
               <div className="modal-content">
                 <div className="modal-body p-4">
                   <Appointment 

@@ -13,6 +13,7 @@ const Appointment = ({ onClose }) => {
   const [bookedSlots, setBookedSlots] = useState([]);
 
   // Generate time slots from 8:30 AM to 6:30 PM (1 per hour)
+  // All slots reset daily - past date bookings are automatically cleared
   const timeSlots = [
     '08:30 AM',
     '09:30 AM',
@@ -32,7 +33,19 @@ const Appointment = ({ onClose }) => {
     const loadBookedSlots = () => {
       const stored = localStorage.getItem('bookedAppointments');
       if (stored) {
-        setBookedSlots(JSON.parse(stored));
+        const allAppointments = JSON.parse(stored);
+        
+        // Get today's date in YYYY-MM-DD format
+        const today = new Date().toISOString().split('T')[0];
+        
+        // Filter appointments: keep only today and future dates
+        const validAppointments = allAppointments.filter(appointment => {
+          return appointment.date >= today;
+        });
+        
+        // Update localStorage with cleaned data
+        localStorage.setItem('bookedAppointments', JSON.stringify(validAppointments));
+        setBookedSlots(validAppointments);
       }
     };
     loadBookedSlots();
@@ -71,7 +84,7 @@ const Appointment = ({ onClose }) => {
 
     // Check if time slot is still available
     if (!isTimeSlotAvailable(formData.time)) {
-      alert('This time slot is no longer available. Please select another time.');
+      alert('Sorry! This time slot has already been booked for the selected date. Please choose a different time slot.');
       return;
     }
 
@@ -289,6 +302,10 @@ Please confirm this appointment. Thank you!`;
             <p className="text-info small mb-0 mt-1">
               <i className="icofont-info-circle me-2"></i>
               Only available time slots are shown for the selected date
+            </p>
+            <p className="text-success small mb-0 mt-1">
+              <i className="icofont-refresh me-2"></i>
+              All time slots reset daily - each day starts fresh!
             </p>
           </div>
 

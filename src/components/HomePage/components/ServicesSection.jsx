@@ -22,8 +22,8 @@ const ServicesSection = () => {
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="200">
-                <h4 className="title"><Link to="/service-details">Turbocharger <br /> Repairs</Link></h4>
-                <Link to="/service-details" className="more">Learn more</Link>
+                <h4 className="title"><Link to="/service-details" state={{ serviceName: 'Turbocharger Repairs' }}>Turbocharger <br /> Repairs</Link></h4>
+                <Link to="/service-details" state={{ serviceName: 'Turbocharger Repairs' }} className="more">Learn more</Link>
 
                 <div className="service-icon">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
@@ -47,8 +47,8 @@ const ServicesSection = () => {
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="400">
-                <h4 className="title"><Link to="/service-details">ABS <br /> Repairs</Link></h4>
-                <Link to="/service-details" className="more">Learn more</Link>
+                <h4 className="title"><Link to="/service-details" state={{ serviceName: 'ABS Repairs' }}>ABS <br /> Repairs</Link></h4>
+                <Link to="/service-details" state={{ serviceName: 'ABS Repairs' }} className="more">Learn more</Link>
 
                 <div className="service-icon">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
@@ -78,8 +78,8 @@ const ServicesSection = () => {
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="600">
-                <h4 className="title"><Link to="/service-details">Dual-Clutch <br /> Repairs</Link></h4>
-                <Link to="/service-details" className="more">Learn more</Link>
+                <h4 className="title"><Link to="/service-details" state={{ serviceName: 'Dual-Clutch Repairs' }}>Dual-Clutch <br /> Repairs</Link></h4>
+                <Link to="/service-details" state={{ serviceName: 'Dual-Clutch Repairs' }} className="more">Learn more</Link>
 
                 <div className="service-icon">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
@@ -153,8 +153,8 @@ const ServicesSection = () => {
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="200">
-                <h4 className="title"><Link to="/service-details">Turbocharger <br /> Replacement</Link></h4>
-                <Link to="/service-details" className="more">Learn more</Link>
+                <h4 className="title"><Link to="/service-details" state={{ serviceName: 'Turbocharger Replacement' }}>Turbocharger <br /> Replacement</Link></h4>
+                <Link to="/service-details" state={{ serviceName: 'Turbocharger Replacement' }} className="more">Learn more</Link>
 
                 <div className="service-icon">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
@@ -195,8 +195,8 @@ const ServicesSection = () => {
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="400">
-                <h4 className="title"><Link to="/service-details">Turbocharger <br /> Upgrades</Link></h4>
-                <Link to="/service-details" className="more">Learn more</Link>
+                <h4 className="title"><Link to="/service-details" state={{ serviceName: 'Turbocharger Upgrades' }}>Turbocharger <br /> Upgrades</Link></h4>
+                <Link to="/service-details" state={{ serviceName: 'Turbocharger Upgrades' }} className="more">Learn more</Link>
 
                 <div className="service-icon">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
@@ -245,8 +245,8 @@ const ServicesSection = () => {
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="600">
-                <h4 className="title"><Link to="/service-details">Diagnostic <br /> Services</Link></h4>
-                <Link to="/service-details" className="more">Learn more</Link>
+                <h4 className="title"><Link to="/service-details" state={{ serviceName: 'Diagnostic Services' }}>Diagnostic <br /> Services</Link></h4>
+                <Link to="/service-details" state={{ serviceName: 'Diagnostic Services' }} className="more">Learn more</Link>
 
                 <div className="service-icon">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
@@ -288,8 +288,8 @@ const ServicesSection = () => {
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="800">
-                <h4 className="title"><Link to="/service-details">Cleaning and <br /> Maintenance</Link></h4>
-                <Link to="/service-details" className="more">Learn more</Link>
+                <h4 className="title"><Link to="/service-details" state={{ serviceName: 'Turbocharger Repairs' }}>Cleaning and <br /> Maintenance</Link></h4>
+                <Link to="/service-details" state={{ serviceName: 'Turbocharger Repairs' }} className="more">Learn more</Link>
 
                 <div className="service-icon">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
@@ -313,8 +313,8 @@ const ServicesSection = () => {
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="1000">
-                <h4 className="title"><Link to="/service-details">Technical <br /> Consultation</Link></h4>
-                <Link to="/service-details" className="more">Learn more</Link>
+                <h4 className="title"><Link to="/service-details" state={{ serviceName: 'Technical Consultation' }}>Technical <br /> Consultation</Link></h4>
+                <Link to="/service-details" state={{ serviceName: 'Technical Consultation' }} className="more">Learn more</Link>
 
                 <div className="service-icon">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
@@ -338,8 +338,8 @@ const ServicesSection = () => {
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="1200">
-                <h4 className="title"><Link to="/service-details">Spare <br /> Parts</Link></h4>
-                <Link to="/service-details" className="more">Learn more</Link>
+                <h4 className="title"><Link to="/service-details" state={{ serviceName: 'Spare Parts' }}>Spare <br /> Parts</Link></h4>
+                <Link to="/service-details" state={{ serviceName: 'Spare Parts' }} className="more">Learn more</Link>
 
                 <div className="service-icon">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
@@ -363,8 +363,8 @@ const ServicesSection = () => {
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="1400">
-                <h4 className="title"><Link to="/service-details">Quality <br /> Assurance</Link></h4>
-                <Link to="/service-details" className="more">Learn more</Link>
+                <h4 className="title"><Link to="/service-details" state={{ serviceName: 'Quality Assurance' }}>Quality <br /> Assurance</Link></h4>
+                <Link to="/service-details" state={{ serviceName: 'Quality Assurance' }} className="more">Learn more</Link>
 
                 <div className="service-icon">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
@@ -388,8 +388,8 @@ const ServicesSection = () => {
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="1600">
-                <h4 className="title"><Link to="/service-details">Emergency <br /> Repairs</Link></h4>
-                <Link to="/service-details" className="more">Learn more</Link>
+                <h4 className="title"><Link to="/service-details" state={{ serviceName: 'Emergency Repairs' }}>Emergency <br /> Repairs</Link></h4>
+                <Link to="/service-details" state={{ serviceName: 'Emergency Repairs' }} className="more">Learn more</Link>
 
                 <div className="service-icon">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
@@ -413,8 +413,8 @@ const ServicesSection = () => {
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="1800">
-                <h4 className="title"><Link to="/service-details">Performance <br /> Tuning</Link></h4>
-                <Link to="/service-details" className="more">Learn more</Link>
+                <h4 className="title"><Link to="/service-details" state={{ serviceName: 'Performance Tuning' }}>Performance <br /> Tuning</Link></h4>
+                <Link to="/service-details" state={{ serviceName: 'Performance Tuning' }} className="more">Learn more</Link>
 
                 <div className="service-icon">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">
@@ -438,8 +438,8 @@ const ServicesSection = () => {
             <div className="col-lg-4 col-sm-6">
               {/* Single Service Start */}
               <div className="single-service" data-aos="fade-up" data-aos-delay="2000">
-                <h4 className="title"><Link to="/service-details">Hybrid <br /> Repairs</Link></h4>
-                <Link to="/service-details" className="more">Learn more</Link>
+                <h4 className="title"><Link to="/service-details" state={{ serviceName: 'Hybrid Repairs' }}>Hybrid <br /> Repairs</Link></h4>
+                <Link to="/service-details" state={{ serviceName: 'Hybrid Repairs' }} className="more">Learn more</Link>
 
                 <div className="service-icon">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" style={{enableBackground:"new 0 0 600 600"}} xmlSpace="preserve">

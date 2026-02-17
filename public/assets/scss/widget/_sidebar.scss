@@ -114,8 +114,10 @@
                 }
 
                 &:hover{
+                    color: $green-hover;
+                    
                     & span{
-                        background-color: $secondary;
+                        background-color: $green-hover;
                         color: $white;
                     }
                 }

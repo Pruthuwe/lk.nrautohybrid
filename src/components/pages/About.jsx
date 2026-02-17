@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -9,6 +9,7 @@ import 'swiper/css/autoplay';
 // Import components
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
+import Appointment from '../appointment/Appointment';
 
 // Import homepage components
 import WhyChooseSection from '../HomePage/components/WhyChooseSection';
@@ -17,6 +18,8 @@ import TestimonialsSection from '../HomePage/components/TestimonialsSection';
 import BrandSection from '../HomePage/components/BrandSection';
 
 const About = () => {
+  const [showAppointmentModal, setShowAppointmentModal] = useState(false);
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -40,7 +43,7 @@ const About = () => {
               {/* Section Title Start */}
               <div className="section-title">
                 <h5 className="sub-title">About Us</h5>
-                <h2 className="main-title">Learn about Carserv.</h2>
+                <h2 className="main-title">Learn about Green Auto.</h2>
               </div>
               {/* Section Title End */}
 
@@ -77,14 +80,14 @@ const About = () => {
 
                   {/* Section Title Start */}
                   <div className="section-title">
-                    <h5 className="sub-title">Welcome to <strong>Carserv</strong>.</h5>
+                    <h5 className="sub-title">Welcome to <strong>Green Auto</strong>.</h5>
                     <h2 className="main-title">Latest Equipments with Trusted Service</h2>
                   </div>
                   {/* Section Title End */}
 
                   <p>Car servicing rationally encounter consequences extremely painful again there anyone who loves or pursues take trivial undertakes chooses </p>
 
-                  <Link to="/contact" className="btn btn-custom-01">Get Appointment</Link>
+                  <button onClick={() => setShowAppointmentModal(true)} className="btn btn-custom-01">Get Appointment</button>
 
                 </div>
                 {/* About Content End */}
@@ -105,39 +108,6 @@ const About = () => {
                   <img src="/assets/images/about/about-2.webp" alt="About" />
                 </div>
                 {/* About Images End */}
-              </div>
-            </div>
-
-            <div className="row gx-0 justify-content-center">
-              <div className="col-lg-8">
-                {/* About Count Start */}
-                <div className="about-count about-count-02">
-                  {/* About Count Start */}
-                  <div className="single-count" data-aos="fade-up" data-aos-delay="100">
-                    <span className="count">5000+</span>
-                    <p>Clients</p>
-                  </div>
-                  {/* About Count End */}
-                  {/* About Count Start */}
-                  <div className="single-count" data-aos="fade-up" data-aos-delay="200">
-                    <span className="count">35+</span>
-                    <p>Branch</p>
-                  </div>
-                  {/* About Count End */}
-                  {/* About Count Start */}
-                  <div className="single-count" data-aos="fade-up" data-aos-delay="300">
-                    <span className="count">252+</span>
-                    <p>Mechanics</p>
-                  </div>
-                  {/* About Count End */}
-                  {/* About Count Start */}
-                  <div className="single-count" data-aos="fade-up" data-aos-delay="400">
-                    <span className="count">110+</span>
-                    <p>Awards</p>
-                  </div>
-                  {/* About Count End */}
-                </div>
-                {/* About Count End */}
               </div>
             </div>
 
@@ -162,16 +132,16 @@ const About = () => {
 
           {/* Section Title Start */}
           <div className="section-title text-center">
-            <h5 className="sub-title">Our team</h5>
-            <h2 className="main-title">Talented Mechanics</h2>
-            <p>Trusted and reliable service is our main goal extremely <br /> painful. Nor again is there anyone who loves </p>
+            <h5 className="sub-title">Meet Our Leader</h5>
+            <h2 className="main-title">Experienced Leadership at Green Auto</h2>
+            <p>With over 8 years of dedicated expertise in hybrid vehicle technology, <br /> our team leader ensures every service meets the highest standards of excellence</p>
           </div>
           {/* Section Title End */}
 
           {/* Team Wrapper Start */}
           <div className="team-wrapper">
-            <div className="row">
-              <div className="col-lg-3 col-sm-6">
+            <div className="row align-items-center">
+              <div className="col-lg-5 col-md-6">
                 {/* Single Team Start */}
                 <div className="single-team" data-aos="fade-up" data-aos-delay="100">
                   <div className="team-images">
@@ -180,96 +150,36 @@ const About = () => {
                   <div className="team-content">
                     <div className="content-wrapper">
                       <h4 className="name"><Link to="/team-profile">Daniel Williams</Link></h4>
-                      <span className="designation">Engine Mechanic</span>
+                      <span className="designation">Chief Mechanic & Team Leader</span>
                       <div className="team-meta">
-                        <p className="meta">Exprience: <strong>8 years</strong></p>
-                        <p className="meta">Rating: <span>5</span></p>
+                        <p className="meta">Experience: <strong>8+ years</strong></p>
                       </div>
                       <ul className="social">
-                        <li><a href="#"><i className="fa fa-whatsapp"></i></a></li>
-                        <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+                        <li><a href="https://web.facebook.com/greenauto.lk"><i className="icofont-facebook"></i></a></li>
+                        <li><a href="#"><i className="icofont-instagram"></i></a></li>
+                        <li><a href="https://wa.me/94772166306"><i className="icofont-whatsapp"></i></a></li>
+                        <li><a href="#"><i className="fab fa-tiktok"></i></a></li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 {/* Single Team End */}
               </div>
-              <div className="col-lg-3 col-sm-6">
-                {/* Single Team Start */}
-                <div className="single-team" data-aos="fade-up" data-aos-delay="200">
-                  <div className="team-images">
-                    <Link to="/team-profile"><img src="/assets/images/team/team-2.webp" alt="Team" /></Link>
-                  </div>
-                  <div className="team-content">
-                    <div className="content-wrapper">
-                      <h4 className="name"><Link to="/team-profile">Stuart Macgil</Link></h4>
-                      <span className="designation">Interior Mechanic</span>
-                      <div className="team-meta">
-                        <p className="meta">Exprience: <strong>8 years</strong></p>
-                        <p className="meta">Rating: <span>4.9</span></p>
-                      </div>
-                      <ul className="social">
-                        <li><a href="#"><i className="fa fa-whatsapp"></i></a></li>
-                        <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
+              <div className="col-lg-7 col-md-6">
+                {/* Team Description Start */}
+                <div className="team-description" data-aos="fade-up" data-aos-delay="200">
+                  <h3 className="mb-4">Leading with Passion and Expertise</h3>
+                  <p className="mb-3" style={{textAlign: 'justify'}}>
+                    Daniel Williams, our Chief Mechanic and team leader, brings over 8 years of specialized experience in hybrid vehicle technology and engine diagnostics. His commitment to excellence has made Green Auto the trusted choice for hybrid car owners across the region.
+                  </p>
+                  <p className="mb-3" style={{textAlign: 'justify'}}>
+                    Under his leadership, our workshop has achieved consistently high customer satisfaction ratings and built a reputation for technical precision and reliability. Daniel personally oversees every major service, ensuring that each vehicle receives meticulous attention and expert care.
+                  </p>
+                  <p className="mb-0" style={{textAlign: 'justify'}}>
+                    His vision for Green Auto is simple yet powerful: to provide world-class hybrid vehicle service with integrity, transparency, and a customer-first approach. When you trust us with your vehicle, you're trusting a team led by someone who treats every car as if it were his own.
+                  </p>
                 </div>
-                {/* Single Team End */}
-              </div>
-              <div className="col-lg-3 col-sm-6">
-                {/* Single Team Start */}
-                <div className="single-team" data-aos="fade-up" data-aos-delay="300">
-                  <div className="team-images">
-                    <Link to="/team-profile"><img src="/assets/images/team/team-3.webp" alt="Team" /></Link>
-                  </div>
-                  <div className="team-content">
-                    <div className="content-wrapper">
-                      <h4 className="name"><Link to="/team-profile">Ricardo Powel</Link></h4>
-                      <span className="designation">Wheels Specialist</span>
-                      <div className="team-meta">
-                        <p className="meta">Exprience: <strong>8 years</strong></p>
-                        <p className="meta">Rating: <span>5</span></p>
-                      </div>
-                      <ul className="social">
-                        <li><a href="#"><i className="fa fa-whatsapp"></i></a></li>
-                        <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                {/* Single Team End */}
-              </div>
-              <div className="col-lg-3 col-sm-6">
-                {/* Single Team Start */}
-                <div className="single-team" data-aos="fade-up" data-aos-delay="400">
-                  <div className="team-images">
-                    <Link to="/team-profile"><img src="/assets/images/team/team-4.webp" alt="Team" /></Link>
-                  </div>
-                  <div className="team-content">
-                    <div className="content-wrapper">
-                      <h4 className="name"><Link to="/team-profile">Albert Thomas</Link></h4>
-                      <span className="designation">Lead Painter</span>
-                      <div className="team-meta">
-                        <p className="meta">Exprience: <strong>8 years</strong></p>
-                        <p className="meta">Rating: <span>4.7</span></p>
-                      </div>
-                      <ul className="social">
-                        <li><a href="#"><i className="fa fa-whatsapp"></i></a></li>
-                        <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                {/* Single Team End */}
+                {/* Team Description End */}
               </div>
             </div>
           </div>
@@ -294,6 +204,24 @@ const About = () => {
         <i className="icofont-simple-up"></i>
       </a>
       {/*Back To End*/}
+
+      {/* Appointment Modal */}
+      {showAppointmentModal && (
+        <>
+          <div className="modal fade show d-block" tabIndex="-1" role="dialog" style={{zIndex: 1050}}>
+            <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
+              <div className="modal-content">
+                <div className="modal-body p-4">
+                  <Appointment 
+                    onClose={() => setShowAppointmentModal(false)}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="modal-backdrop fade show" onClick={() => setShowAppointmentModal(false)} style={{zIndex: 1040}}></div>
+        </>
+      )}
 
     </div>
   );

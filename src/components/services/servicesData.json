@@ -1,0 +1,362 @@
+{
+  "Turbocharger Repairs": {
+    "title": "Turbocharger Repairs",
+    "subtitle": "Expert Turbo Repair & Servicing Solutions",
+    "description": "Our specialized turbocharger repair services ensure your vehicle's turbo system operates at peak performance. We use advanced diagnostic tools and genuine parts to deliver top-quality repairs.",
+    "description2": "With years of experience in turbocharger repairs, our certified technicians can handle all types of turbo issues from minor adjustments to complete rebuilds.",
+    "section": {
+      "title": "Turbo Diagnostic",
+      "description": "Comprehensive turbocharger diagnostic and repair services using state-of-the-art equipment and techniques.",
+      "items": [
+        "Turbo pressure check",
+        "Wastegate inspection",
+        "Oil seal replacement",
+        "Shaft play inspection",
+        "Compressor wheel check",
+        "Turbine housing inspection",
+        "Actuator testing",
+        "Boost pressure test",
+        "Oil feed line check",
+        "Complete turbo rebuild"
+      ]
+    },
+    "packages": [
+      { "name": "Turbo Pressure Check", "price": "$65" },
+      { "name": "Wastegate & Actuator Service", "price": "$120" },
+      { "name": "Oil Seal Replacement", "price": "$180" },
+      { "name": "Turbo Bearing Replacement", "price": "$225" },
+      { "name": "Complete Turbo Rebuild", "price": "$450" },
+      { "name": "Turbo Balancing Service", "price": "$280" }
+    ]
+  },
+  "ABS Repairs": {
+    "title": "ABS Repairs",
+    "subtitle": "ABS System Diagnostics & Repair Services",
+    "description": "Our ABS repair service ensures your vehicle's Anti-lock Braking System functions properly for maximum safety. We diagnose and repair all ABS-related issues with precision.",
+    "description2": "From sensor replacements to control module repairs, our team has the expertise to handle all ABS system components.",
+    "section": {
+      "title": "ABS Diagnostic",
+      "description": "Complete ABS system diagnostics and repair services to ensure your safety on the road.",
+      "items": [
+        "ABS sensor replacement",
+        "Control module repair",
+        "Wheel speed sensor check",
+        "Hydraulic unit inspection",
+        "ABS pump repair",
+        "Warning light diagnosis",
+        "Brake line inspection",
+        "ECU programming",
+        "System bleeding",
+        "Complete ABS overhaul"
+      ]
+    },
+    "packages": [
+      { "name": "ABS Sensor Replacement", "price": "$85" },
+      { "name": "ABS Module Repair", "price": "$195" },
+      { "name": "ABS Pump Service", "price": "$240" },
+      { "name": "Wheel Speed Sensor Check", "price": "$60" },
+      { "name": "Complete ABS Overhaul", "price": "$380" },
+      { "name": "ABS System Diagnostic", "price": "$75" }
+    ]
+  },
+  "Dual-Clutch Repairs": {
+    "title": "Dual-Clutch Repairs",
+    "subtitle": "Dual-Clutch Transmission Repair & Maintenance",
+    "description": "Specialized dual-clutch transmission repair services for smooth gear shifts and optimal performance. We handle all DCT issues with expert care.",
+    "description2": "Our technicians are trained in the latest dual-clutch technology to provide efficient repairs and maintenance services.",
+    "section": {
+      "title": "DCT Diagnostic",
+      "description": "Professional dual-clutch transmission diagnostics and repair using manufacturer-approved procedures.",
+      "items": [
+        "Clutch pack replacement",
+        "Mechatronic unit repair",
+        "Transmission fluid service",
+        "Shift fork inspection",
+        "Actuator calibration",
+        "Pressure sensor check",
+        "TCU diagnostics",
+        "Gear synchronization",
+        "Clutch wear inspection",
+        "Complete DCT rebuild"
+      ]
+    },
+    "packages": [
+      { "name": "DCT Fluid Service", "price": "$95" },
+      { "name": "Clutch Pack Replacement", "price": "$450" },
+      { "name": "Mechatronic Unit Repair", "price": "$580" },
+      { "name": "Actuator Calibration", "price": "$140" },
+      { "name": "TCU Programming", "price": "$165" },
+      { "name": "Complete DCT Rebuild", "price": "$890" }
+    ]
+  },
+  "Turbocharger Replacement": {
+    "title": "Turbocharger Replacement",
+    "subtitle": "Complete Turbocharger Replacement Services",
+    "description": "When repairs aren't enough, we provide complete turbocharger replacement services using quality OEM or aftermarket turbos.",
+    "description2": "Our replacement service includes proper installation, testing, and warranty coverage for your peace of mind.",
+    "section": {
+      "title": "Replacement Process",
+      "description": "Professional turbocharger replacement with quality parts and expert installation.",
+      "items": [
+        "Old turbo removal",
+        "Engine inspection",
+        "New turbo installation",
+        "Oil line replacement",
+        "Gasket replacement",
+        "Boost testing",
+        "ECU mapping",
+        "Performance verification",
+        "System leak check",
+        "Post-installation service"
+      ]
+    },
+    "packages": [
+      { "name": "OEM Turbo Replacement", "price": "$680" },
+      { "name": "Aftermarket Turbo Install", "price": "$520" },
+      { "name": "Oil Line Replacement", "price": "$110" },
+      { "name": "Gasket Kit Installation", "price": "$85" },
+      { "name": "Complete Replacement Kit", "price": "$750" },
+      { "name": "Premium OEM Package", "price": "$920" }
+    ]
+  },
+  "Turbocharger Upgrades": {
+    "title": "Turbocharger Upgrades",
+    "subtitle": "High-Performance Turbo Upgrade Solutions",
+    "description": "Upgrade your vehicle's performance with our high-performance turbocharger upgrade services. Get more power and efficiency.",
+    "description2": "We offer custom turbo upgrades tailored to your performance goals while maintaining reliability.",
+    "section": {
+      "title": "Upgrade Options",
+      "description": "Performance turbocharger upgrades for increased power and efficiency.",
+      "items": [
+        "Larger turbo installation",
+        "Twin-turbo setup",
+        "Hybrid turbo upgrade",
+        "Enhanced intercooler",
+        "Performance mapping",
+        "Wastegate upgrade",
+        "Boost controller install",
+        "Exhaust modification",
+        "Intake upgrade",
+        "Dyno testing"
+      ]
+    },
+    "packages": [
+      { "name": "Hybrid Turbo Upgrade", "price": "$850" },
+      { "name": "Twin-Turbo Setup", "price": "$1,450" },
+      { "name": "Performance Intercooler", "price": "$380" },
+      { "name": "Boost Controller Install", "price": "$195" },
+      { "name": "ECU Performance Tune", "price": "$320" },
+      { "name": "Complete Stage 3 Kit", "price": "$2,100" }
+    ]
+  },
+  "Diagnostic Services": {
+    "title": "Diagnostic Services",
+    "subtitle": "Advanced Vehicle Diagnostic Solutions",
+    "description": "Comprehensive diagnostic services using the latest scanning tools and equipment to identify any vehicle issues accurately.",
+    "description2": "Our diagnostic services cover all vehicle systems to ensure complete health assessment.",
+    "section": {
+      "title": "Diagnostic Scope",
+      "description": "Complete vehicle diagnostics using advanced tools and expertise.",
+      "items": [
+        "Engine diagnostics",
+        "Transmission scan",
+        "ABS system check",
+        "Airbag diagnostics",
+        "Emission testing",
+        "Electrical system check",
+        "Sensor diagnostics",
+        "Error code reading",
+        "Performance analysis",
+        "Comprehensive report"
+      ]
+    },
+    "packages": [
+      { "name": "Basic System Scan", "price": "$55" },
+      { "name": "Engine Diagnostics", "price": "$85" },
+      { "name": "Transmission Scan", "price": "$95" },
+      { "name": "Emission Testing", "price": "$70" },
+      { "name": "Electrical System Check", "price": "$110" },
+      { "name": "Complete Vehicle Scan", "price": "$180" }
+    ]
+  },
+  "Technical Consultation": {
+    "title": "Technical Consultation",
+    "subtitle": "Professional Automotive Technical Advice",
+    "description": "Get expert technical consultation for your vehicle needs. Our experienced team provides guidance on repairs, upgrades, and maintenance.",
+    "description2": "We help you make informed decisions about your vehicle with honest, professional advice.",
+    "section": {
+      "title": "Consultation Services",
+      "description": "Expert technical advice and consultation for all automotive needs.",
+      "items": [
+        "Performance consultation",
+        "Repair recommendations",
+        "Upgrade planning",
+        "Cost estimation",
+        "Timeline planning",
+        "Parts selection advice",
+        "Maintenance schedules",
+        "Problem diagnosis",
+        "Custom solutions",
+        "Follow-up support"
+      ]
+    },
+    "packages": [
+      { "name": "30-Min Consultation", "price": "$45" },
+      { "name": "1-Hour Consultation", "price": "$80" },
+      { "name": "Performance Review", "price": "$120" },
+      { "name": "Upgrade Planning", "price": "$95" },
+      { "name": "Custom Project Plan", "price": "$150" },
+      { "name": "Annual Consultation", "price": "$400" }
+    ]
+  },
+  "Spare Parts": {
+    "title": "Spare Parts",
+    "subtitle": "Genuine & High-Quality Automotive Spare Parts",
+    "description": "We supply genuine OEM and high-quality aftermarket spare parts for all your vehicle repair needs.",
+    "description2": "Our parts come with warranty coverage and are sourced from trusted suppliers worldwide.",
+    "section": {
+      "title": "Available Parts",
+      "description": "Wide range of genuine and quality aftermarket automotive parts.",
+      "items": [
+        "Turbochargers",
+        "ABS components",
+        "DCT parts",
+        "Engine parts",
+        "Transmission parts",
+        "Sensors & actuators",
+        "Gaskets & seals",
+        "Filters & fluids",
+        "Electronic components",
+        "Custom order service"
+      ]
+    },
+    "packages": [
+      { "name": "Turbo Rebuild Kit", "price": "$280" },
+      { "name": "ABS Sensor Set", "price": "$145" },
+      { "name": "DCT Clutch Pack", "price": "$390" },
+      { "name": "Engine Gasket Set", "price": "$95" },
+      { "name": "Filter & Fluid Package", "price": "$75" },
+      { "name": "Custom Parts Order", "price": "Varies" }
+    ]
+  },
+  "Quality Assurance": {
+    "title": "Quality Assurance",
+    "subtitle": "Guaranteed Quality Workmanship",
+    "description": "Every service we provide comes with our quality assurance guarantee. We stand behind our work with comprehensive warranties.",
+    "description2": "Our quality control process ensures that every repair meets the highest standards before your vehicle leaves our facility.",
+    "section": {
+      "title": "QA Process",
+      "description": "Rigorous quality assurance procedures for every service.",
+      "items": [
+        "Initial inspection",
+        "Work documentation",
+        "Quality parts only",
+        "Certified technicians",
+        "Testing procedures",
+        "Performance verification",
+        "Final inspection",
+        "Customer approval",
+        "Warranty coverage",
+        "Follow-up service"
+      ]
+    },
+    "packages": [
+      { "name": "6-Month Warranty", "price": "$0" },
+      { "name": "1-Year Warranty", "price": "$50" },
+      { "name": "Extended Warranty", "price": "$120" },
+      { "name": "Premium Warranty", "price": "$180" },
+      { "name": "Lifetime Warranty", "price": "$350" },
+      { "name": "Fleet Warranty Plan", "price": "$800" }
+    ]
+  },
+  "Emergency Repairs": {
+    "title": "Emergency Repairs",
+    "subtitle": "24/7 Emergency Vehicle Repair Services",
+    "description": "Need urgent repairs? Our emergency service team is available 24/7 to get you back on the road quickly and safely.",
+    "description2": "From breakdowns to urgent repairs, we provide fast and reliable emergency services.",
+    "section": {
+      "title": "Emergency Services",
+      "description": "Round-the-clock emergency repair services for urgent situations.",
+      "items": [
+        "24/7 availability",
+        "Rapid response",
+        "Mobile service",
+        "Towing assistance",
+        "On-site diagnosis",
+        "Quick repairs",
+        "Emergency parts",
+        "Safety inspection",
+        "Temporary fixes",
+        "Priority service"
+      ]
+    },
+    "packages": [
+      { "name": "Emergency Callout", "price": "$120" },
+      { "name": "Mobile Diagnostics", "price": "$95" },
+      { "name": "Roadside Repair", "price": "$150" },
+      { "name": "Towing Service", "price": "$80" },
+      { "name": "Weekend Emergency", "price": "$180" },
+      { "name": "24hr Priority Service", "price": "$250" }
+    ]
+  },
+  "Performance Tuning": {
+    "title": "Performance Tuning",
+    "subtitle": "ECU Remapping & Performance Enhancement",
+    "description": "Unlock your vehicle's full potential with our professional performance tuning services. ECU remapping, chip tuning, and more.",
+    "description2": "Our custom tuning solutions are tailored to your specific vehicle and performance goals.",
+    "section": {
+      "title": "Tuning Services",
+      "description": "Professional ECU tuning and performance enhancement services.",
+      "items": [
+        "ECU remapping",
+        "Chip tuning",
+        "Stage 1/2/3 tunes",
+        "Dyno testing",
+        "Performance mapping",
+        "Economy tuning",
+        "DPF deletion",
+        "EGR solutions",
+        "Custom tuning",
+        "Power verification"
+      ]
+    },
+    "packages": [
+      { "name": "Stage 1 ECU Remap", "price": "$280" },
+      { "name": "Stage 2 Performance", "price": "$450" },
+      { "name": "Stage 3 Custom Tune", "price": "$680" },
+      { "name": "Economy Remap", "price": "$220" },
+      { "name": "Dyno Testing", "price": "$150" },
+      { "name": "Full Power Package", "price": "$950" }
+    ]
+  },
+  "Hybrid Repairs": {
+    "title": "Hybrid Repairs",
+    "subtitle": "Hybrid System Diagnostics & Repair Solutions",
+    "description": "Specialized hybrid vehicle repair services covering both electric and conventional systems. Expert hybrid technology solutions.",
+    "description2": "Our technicians are certified in hybrid technology to provide safe and effective repairs.",
+    "section": {
+      "title": "Hybrid Services",
+      "description": "Comprehensive hybrid vehicle diagnostics and repair services.",
+      "items": [
+        "Battery diagnostics",
+        "Inverter repair",
+        "Electric motor service",
+        "Hybrid ECU repair",
+        "Cooling system check",
+        "High voltage safety",
+        "Regenerative braking",
+        "Power control unit",
+        "Hybrid transmission",
+        "Complete hybrid service"
+      ]
+    },
+    "packages": [
+      { "name": "Hybrid Battery Test", "price": "$95" },
+      { "name": "Inverter Diagnostics", "price": "$140" },
+      { "name": "Battery Cell Replacement", "price": "$580" },
+      { "name": "Electric Motor Service", "price": "$320" },
+      { "name": "Hybrid Cooling Service", "price": "$195" },
+      { "name": "Complete Hybrid Check", "price": "$450" }
+    ]
+  }
+}

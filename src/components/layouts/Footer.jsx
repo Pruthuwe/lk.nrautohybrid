@@ -36,7 +36,9 @@ const Footer = () => {
                         <i className="fa fa-map-marker" style={{marginRight: '8px'}}></i> Kurunegala, Sri Lanka
                       </a>
                     </p>
-                    <p><span>Phone</span>: +94 77 216 6306</p>
+                    <p>
+                      <span>Phone</span>: <a href="tel:+94772166306" style={{color: 'white'}}>+94 77 216 6306</a>
+                    </p>
                     <p><span>Email</span>: info@carserv.com</p>
                   </div>
                 </div>
@@ -146,7 +148,7 @@ const Footer = () => {
     {showAppointmentModal && (
       <>
         <div className="modal fade show d-block" tabIndex="-1" role="dialog" style={{zIndex: 1050}}>
-          <div className="modal-dialog modal-lg" role="document">
+          <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div className="modal-content">
               <div className="modal-body p-4">
                 <Appointment 

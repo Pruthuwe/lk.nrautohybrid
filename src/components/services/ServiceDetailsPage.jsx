@@ -1,9 +1,31 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
+import servicesData from './servicesData.json';
+import { generateServiceBrochurePDF, generateCompanyDetailsPDF } from './pdfGenerator';
 
 const ServiceDetailsPage = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [localSelectedService, setLocalSelectedService] = useState('Turbocharger Repairs');
+
+  // Scroll to top when location key changes (new navigation)
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.key]);
+
+  // Use location state if available, otherwise use local state
+  const selectedService = location.state?.serviceName || localSelectedService;
+  const currentService = servicesData[selectedService];
+
+  const handleServiceClick = (serviceName) => {
+    setLocalSelectedService(serviceName);
+    // Clear the location state by replacing current location
+    navigate('/service-details', { replace: true, state: null });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <>
       <Header />
@@ -20,7 +42,7 @@ const ServiceDetailsPage = () => {
               {/* Section Title Start */}
               <div className="section-title">
                 <h5 className="sub-title">Services</h5>
-                <h2 className="main-title">Entire Engine Servicing</h2>
+                <h2 className="main-title">{currentService.title}</h2>
               </div>
               {/* Section Title End */}
 
@@ -45,7 +67,7 @@ const ServiceDetailsPage = () => {
       {/* Page Banner Section End */}
 
       {/* Service Details Section Start */}
-      <div className="section section-padding">
+      <div className="section section-padding service-details-section">
         <div className="container">
 
           {/* Service Details Wrapper Start */}
@@ -58,25 +80,18 @@ const ServiceDetailsPage = () => {
                   <div className="details-image">
                     <img src="/assets/images/service/service-details.webp" alt="Service" />
                   </div>
-                  <h2 className="title">Entire Engine Servicing</h2>
-                  <p>Car servicing rationally encounter consequences extremely painful. Nor again is the there anyone who loves or pursues take a trivial example, which of us undertakes chooses pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure</p>
-                  <p>Car servicing rationally encounter consequences extremely painful. Nor again is the there anyone who loves or pursues take a trivial example, which of us undertakes chooses pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because is pain,</p>
+                  <h2 className="title">{currentService.title}</h2>
+                  <p>{currentService.description}</p>
+                  <p>{currentService.description2}</p>
 
                   <div className="details-description">
                     <div className="description">
-                      <h3>Engine Diognostic</h3>
-                      <p>Car servicing rationally encounter consequences extremely painful. Nor again is the there anyone who loves or pursues take a trivial example, which of us undertakes chooses</p>
+                      <h3>{currentService.section.title}</h3>
+                      <p>{currentService.section.description}</p>
                       <ul>
-                        <li><i className="fa fa-angle-double-right"></i> Engine check</li>
-                        <li><i className="fa fa-angle-double-right"></i> Spark plug replacement</li>
-                        <li><i className="fa fa-angle-double-right"></i> Lights check</li>
-                        <li><i className="fa fa-angle-double-right"></i> Air-conditioner filter check</li>
-                        <li><i className="fa fa-angle-double-right"></i> Suspension check</li>
-                        <li><i className="fa fa-angle-double-right"></i> Brake fluid and brakes check</li>
-                        <li><i className="fa fa-angle-double-right"></i> Air and fuel filter check</li>
-                        <li><i className="fa fa-angle-double-right"></i> Transmission service</li>
-                        <li><i className="fa fa-angle-double-right"></i> Repack wheel bearings</li>
-                        <li><i className="fa fa-angle-double-right"></i> Engine oil and oil filter change</li>
+                        {currentService.section.items.map((item, index) => (
+                          <li key={index}><i className="fa fa-angle-double-right"></i> {item}</li>
+                        ))}
                       </ul>
                     </div>
                     <div className="images">
@@ -84,91 +99,32 @@ const ServiceDetailsPage = () => {
                     </div>
                   </div>
 
-                  <p>Car servicing rationally encounter consequences extremely painful. Nor again is the there anyone who loves or pursues take a trivial example, which of us undertakes chooses pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure</p>
+                  <p>We provide comprehensive {currentService.title.toLowerCase()} with attention to detail and commitment to excellence. Our services are designed to restore and enhance your vehicle's performance.</p>
 
-                  <p>Car servicing rationally encounter consequences extremely painful. Nor again is the there anyone who loves or pursues take a trivial example, which of us undertakes chooses pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because is pain,</p>
+                  <p>All our services come with quality assurance and warranty coverage. We use only genuine or high-quality parts to ensure long-lasting results.</p>
 
-                  <h3>Service Costing</h3>
+                  <h3>Service Packages</h3>
 
-                  <p>Car servicing rationally encounter consequences extremely painful. Nor again is the there anyone who loves or pursues take a trivial example, which of us undertakes chooses price ar included and can be pay online</p>
+                  <p>Choose from our range of service packages tailored to meet your specific needs. All prices are competitive and transparent with no hidden charges.</p>
                 </div>
                 {/* Service Details Content End */}
 
                 {/* Service Details Price Start */}
                 <div className="service-details-price">
                   <div className="row">
-                    <div className="col-xl-4 col-lg-6 col-md-4 col-sm-6">
-                      {/* Service Price Start */}
-                      <div className="service-price">
-                        <h4 className="title"><a href="#">Regular Engine <br />Check</a></h4>
-                        <a href="#" className="more">Select now</a>
+                    {currentService.packages.map((pkg, index) => (
+                      <div key={index} className="col-xl-4 col-lg-6 col-md-4 col-sm-6">
+                        {/* Service Price Start */}
+                        <div className="service-price">
+                          <h4 className="title"><a href="#">{pkg.name}</a></h4>
 
-                        <div className="price">
-                          <span>$79</span>
+                          <div className="price">
+                            <span>{pkg.price}</span>
+                          </div>
                         </div>
+                        {/* Service Price End */}
                       </div>
-                      {/* Service Price End */}
-                    </div>
-                    <div className="col-xl-4 col-lg-6 col-md-4 col-sm-6">
-                      {/* Service Price Start */}
-                      <div className="service-price">
-                        <h4 className="title"><a href="#">Full Engine <br /> Diagnostic</a></h4>
-                        <a href="#" className="more">Select now</a>
-
-                        <div className="price">
-                          <span>$145</span>
-                        </div>
-                      </div>
-                      {/* Service Price End */}
-                    </div>
-                    <div className="col-xl-4 col-lg-6 col-md-4 col-sm-6">
-                      {/* Service Price Start */}
-                      <div className="service-price">
-                        <h4 className="title"><a href="#">Engine Oil and <br /> Filter Change</a></h4>
-                        <a href="#" className="more">Select now</a>
-
-                        <div className="price">
-                          <span>$65</span>
-                        </div>
-                      </div>
-                      {/* Service Price End */}
-                    </div>
-                    <div className="col-xl-4 col-lg-6 col-md-4 col-sm-6">
-                      {/* Service Price Start */}
-                      <div className="service-price">
-                        <h4 className="title"><a href="#">Air and Fuel <br /> Filter Check</a></h4>
-                        <a href="#" className="more">Select now</a>
-
-                        <div className="price">
-                          <span>$50</span>
-                        </div>
-                      </div>
-                      {/* Service Price End */}
-                    </div>
-                    <div className="col-xl-4 col-lg-6 col-md-4 col-sm-6">
-                      {/* Service Price Start */}
-                      <div className="service-price">
-                        <h4 className="title"><a href="#">Spark plug <br /> Replacement</a></h4>
-                        <a href="#" className="more">Select now</a>
-
-                        <div className="price">
-                          <span>$110</span>
-                        </div>
-                      </div>
-                      {/* Service Price End */}
-                    </div>
-                    <div className="col-xl-4 col-lg-6 col-md-4 col-sm-6">
-                      {/* Service Price Start */}
-                      <div className="service-price">
-                        <h4 className="title"><a href="#">New Engine <br /> Replacement</a></h4>
-                        <a href="#" className="more">Select now</a>
-
-                        <div className="price">
-                          <span>$280</span>
-                        </div>
-                      </div>
-                      {/* Service Price End */}
-                    </div>
+                    ))}
                   </div>
                 </div>
                 {/* Service Details Price End */}
@@ -181,18 +137,23 @@ const ServiceDetailsPage = () => {
                   {/* Widget Sidebar Start */}
                   <div className="widget-sidebar">
                     <ul className="category">
-                      <li><Link to="/service-details">Turbocharger Repairs</Link></li>
-                      <li><Link to="/service-details">ABS Repairs</Link></li>
-                      <li><Link to="/service-details">Dual-Clutch Repairs</Link></li>
-                      <li><Link to="/service-details">Turbocharger Replacement</Link></li>
-                      <li><Link to="/service-details">Turbocharger Upgrades</Link></li>
-                      <li><Link to="/service-details">Diagnostic Services</Link></li>
-                      <li><Link to="/service-details">Technical Consultation</Link></li>
-                      <li><Link to="/service-details">Spare Parts</Link></li>
-                      <li><Link to="/service-details">Quality Assurance</Link></li>
-                      <li><Link to="/service-details">Emergency Repairs</Link></li>
-                      <li><Link to="/service-details">Performance Tuning</Link></li>
-                      <li><Link to="/service-details">Hybrid Repairs</Link></li>
+                      {Object.keys(servicesData).map((serviceName) => (
+                        <li key={serviceName} className={selectedService === serviceName ? 'active' : ''}>
+                          <a 
+                            href="#" 
+                            onClick={(e) => {
+                              e.preventDefault();
+                              handleServiceClick(serviceName);
+                            }}
+                            style={{
+                              color: selectedService === serviceName ? '#007bff' : 'inherit',
+                              fontWeight: selectedService === serviceName ? 'bold' : 'normal'
+                            }}
+                          >
+                            {serviceName}
+                          </a>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                   {/* Widget Sidebar End */}
@@ -206,8 +167,28 @@ const ServiceDetailsPage = () => {
                   {/* Widget Sidebar Start */}
                   <div className="widget-sidebar">
                     <ul className="download">
-                      <li><a href="#"><i className="fa fa-file-pdf-o"></i> Download Brochure <span className="fa fa-download"></span></a></li>
-                      <li><a href="#"><i className="fa fa-file-word-o"></i> Download Brochure <span className="fa fa-download"></span></a></li>
+                      <li>
+                        <a 
+                          href="#" 
+                          onClick={(e) => {
+                            e.preventDefault();
+                            generateServiceBrochurePDF(currentService);
+                          }}
+                        >
+                          <i className="fa fa-file-pdf-o"></i> Download Brochure <span className="fa fa-download"></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a 
+                          href="#" 
+                          onClick={(e) => {
+                            e.preventDefault();
+                            generateCompanyDetailsPDF(servicesData);
+                          }}
+                        >
+                          <i className="fa fa-file-pdf-o"></i> Company Details <span className="fa fa-download"></span>
+                        </a>
+                      </li>
                     </ul>
                   </div>
                   {/* Widget Sidebar End */}
