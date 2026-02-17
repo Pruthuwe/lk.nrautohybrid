@@ -36,11 +36,13 @@ function App() {
       <div className="main-wrapper">
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/our-jobs" element={<ProjectGallery />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/service" element={<ServicePage />} />
-          <Route path="/service-details" element={<ServiceDetailsPage />} />
-          <Route path="/blog-details-left-sidebar" element={<BlogDetailsLeftSidebar />} />
+          <Route path="/service" element={<ServiceDetailsPage />} />
+          <Route path="/team" element={<OurTeam />} />
+          {/* <Route path="/service" element={<ServicePage />} /> */}
+          {/* <Route path="/blog-details-left-sidebar" element={<BlogDetailsLeftSidebar />} />
           <Route path="/blog-details-right-sidebar" element={<BlogDetailsRightSidebar />} />
           <Route path="/blog-grid" element={<BlogGrid />} />
           <Route path="/blog-left-sidebar" element={<BlogLeftSidebar />} />
@@ -51,19 +53,17 @@ function App() {
           <Route path="/empty-cart" element={<EmptyCart />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/my-account" element={<MyAccount />} />
-          <Route path="/our-team" element={<OurTeam />} />
-          <Route path="/product-details-left-sidebar" element={<ProductDetailsLeftSidebar />} />
+          <Route path="/my-account" element={<MyAccount />} /> */}
+          {/* <Route path="/product-details-left-sidebar" element={<ProductDetailsLeftSidebar />} />
           <Route path="/product-details-right-sidebar" element={<ProductDetailsRightSidebar />} />
-          <Route path="/project-details" element={<ProjectDetails />} />
-          <Route path="/project-gallery" element={<ProjectGallery />} />
-          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/project-details" element={<ProjectDetails />} /> */}
+          {/* <Route path="/register" element={<RegisterPage />} />
           <Route path="/shop-grid" element={<ShopGrid />} />
           <Route path="/shop-left-sidebar" element={<ShopLeftSidebar />} />
-          <Route path="/shop-right-sidebar" element={<ShopRightSidebar />} />
-          <Route path="/team-profile" element={<TeamProfile />} />
+          <Route path="/shop-right-sidebar" element={<ShopRightSidebar />} /> */}
+          {/* <Route path="/team-profile" element={<TeamProfile />} />
           <Route path="/wishlist" element={<Wishlist />} />
-          <Route path="/404" element={<Error404 />} />
+          <Route path="/404" element={<Error404 />} /> */}
         </Routes>
       </div>
     </Router>

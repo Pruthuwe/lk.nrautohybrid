@@ -492,6 +492,71 @@
     }
 }
 
+// Search Results Dropdown
+.search-results-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, #000000, #4a4a4a);
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    max-height: 400px;
+    overflow-y: auto;
+
+    &__header {
+        padding: 8px 16px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-bottom: 1px solid #555;
+        font-size: 12px;
+        color: #ddd;
+        font-weight: 500;
+    }
+
+    &__item {
+        display: block;
+        padding: 12px 16px;
+        text-decoration: none;
+        color: #ffffff;
+        border-bottom: 1px solid #555;
+        transition: background-color 0.2s;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    &__item-title {
+        font-weight: 600;
+        margin-bottom: 4px;
+        color: #0046e2;
+    }
+
+    &__item-description {
+        font-size: 14px;
+        color: #cccccc;
+    }
+
+    &__no-results {
+        padding: 20px 16px;
+        text-align: center;
+        color: #aaa;
+
+        i {
+            font-size: 24px;
+            margin-bottom: 8px;
+            display: block;
+        }
+    }
+}
+
 // Header Toggle 
 .header-toggle{
     & .menu-toggle{

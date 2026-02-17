@@ -6,24 +6,99 @@
 // Offcanvas Start
 .offcanvas-start {
     width: 300px;
+    background: linear-gradient(135deg, #000000 0%, #4CAF50 100%) !important;
+    pointer-events: auto;
 
     @media #{$small-mobile}{
         width: 280px;
+    }
+
+    .btn-close-white {
+        filter: brightness(0) invert(1);
     }
 }
 
 // Offcanvas Body
 .offcanvas-body {
-    padding: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: transparent;
+    pointer-events: auto;
+}
+
+// Header Top Info in Mobile Menu
+.offcanvas-body .header-top-info {
+    margin-bottom: 0;
+    color: #ffffff;
+    pointer-events: auto;
+
+    p {
+        margin: 0 0 5px 0;
+        font-size: 14px;
+        color: #ffffff;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            cursor: pointer;
+            
+            &:hover {
+                color: #4CAF50;
+            }
+        }
+    }
+}
+
+// Header Social Links in Mobile Menu
+.offcanvas-body .header-top-social {
+    margin: 0;
+    justify-content: center;
+    color: #ffffff;
+    pointer-events: auto;
+
+    a {
+        color: #ffffff;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            color: #4CAF50;
+            transform: scale(1.1);
+        }
+    }
+}
+
+// Header Search in Mobile Menu
+.offcanvas-body .header-search {
+    position: relative;
+    margin: 0;
+    pointer-events: auto;
+    z-index: 10;
 }
 
 // Mobile Menu
 .mobile-menu-items{
-    padding: 30px 0;
-    background: linear-gradient(135deg, #000000 0%, #4CAF50 100%);
+    margin: 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 1px solid rgba(76, 175, 80, 0.3);
+    position: relative;
+    z-index: 5;
 
     & ul{
+        margin: 0;
+        padding: 0;
         border-top: 1px solid rgba(76, 175, 80, 0.3);
+        list-style: none;
 
         & li{
             position: relative;
@@ -36,10 +111,46 @@
                 padding: 10px 20px;
                 border: 0;
                 border-bottom: 1px solid rgba(76, 175, 80, 0.3);
+                border-left: 3px solid transparent;
                 font-size: 15px;
                 font-weight: 600;
                 font-family: $heading-font;
                 color: #ffffff;
+                text-decoration: none;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                pointer-events: auto;
+                position: relative;
+
+                &:hover {
+                    background-color: rgba(76, 175, 80, 0.15);
+                    color: #4CAF50;
+                    padding-left: 25px;
+                    border-left-color: rgba(76, 175, 80, 0.5);
+                }
+
+                &.active {
+                    background: linear-gradient(90deg, rgba(76, 175, 80, 0.4) 0%, rgba(76, 175, 80, 0.1) 100%);
+                    color: #4CAF50;
+                    font-weight: 700;
+                    border-left: 4px solid #4CAF50;
+                    padding-left: 24px;
+                    box-shadow: inset 0 0 10px rgba(76, 175, 80, 0.2);
+                    
+                    &::before {
+                        content: '▶';
+                        position: absolute;
+                        left: 8px;
+                        color: #4CAF50;
+                        font-size: 10px;
+                        animation: pulse 2s infinite;
+                    }
+                    
+                    &:hover {
+                        background: linear-gradient(90deg, rgba(76, 175, 80, 0.5) 0%, rgba(76, 175, 80, 0.15) 100%);
+                        padding-left: 24px;
+                    }
+                }
             }
 
             & .mobile-menu-expand{
@@ -101,8 +212,33 @@
     }
 }
 
+// Mobile Quote Button
+.mobile-quote-btn {
+    margin: 10px 0 0 0;
+    pointer-events: auto;
 
+    .btn {
+        padding: 12px 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        pointer-events: auto;
+        
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+    }
+}
 
-
-
-
+// Pulse animation for active menu item
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}

@@ -76,10 +76,10 @@ const ProjectGallery = () => {
                 {/* Single Gallery Start */}
                 <div className="single-gallery" data-aos="fade-up" data-aos-delay="200">
                   <div className="gallery-images">
-                    <Link to="/service-details"><img src="/assets/images/gallery/tb-repair.jpg" alt="Gallery" /></Link>
+                    <Link to="/service"><img src="/assets/images/gallery/tb-repair.jpg" alt="Gallery" /></Link>
                   </div>
                   <div className="gallery-content">
-                    <h4 className="title"><Link to="/service-details">Turbocharger Repairs</Link></h4>
+                    <h4 className="title"><Link to="/service">Turbocharger Repairs</Link></h4>
                     <span>Expert turbo repair & servicing solutions</span>
                   </div>
                 </div>
@@ -89,10 +89,10 @@ const ProjectGallery = () => {
                 {/* Single Gallery Start */}
                 <div className="single-gallery" data-aos="fade-up" data-aos-delay="400">
                   <div className="gallery-images">
-                    <Link to="/service-details"><img src="/assets/images/gallery/abs-repair.webp" alt="Gallery" /></Link>
+                    <Link to="/service"><img src="/assets/images/gallery/abs-repair.webp" alt="Gallery" /></Link>
                   </div>
                   <div className="gallery-content">
-                    <h4 className="title"><Link to="/service-details">ABS Repairs</Link></h4>
+                    <h4 className="title"><Link to="/service">ABS Repairs</Link></h4>
                     <span>ABS system diagnostics & repair services</span>
                   </div>
                 </div>
@@ -102,10 +102,10 @@ const ProjectGallery = () => {
                 {/* Single Gallery Start */}
                 <div className="single-gallery" data-aos="fade-up" data-aos-delay="600">
                   <div className="gallery-images">
-                    <Link to="/service-details"><img src="/assets/images/gallery/dc-repair.jpg" alt="Gallery" /></Link>
+                    <Link to="/service"><img src="/assets/images/gallery/dc-repair.jpg" alt="Gallery" /></Link>
                   </div>
                   <div className="gallery-content">
-                    <h4 className="title"><Link to="/service-details">Dual-Clutch Repairs</Link></h4>
+                    <h4 className="title"><Link to="/service">Dual-Clutch Repairs</Link></h4>
                     <span>Dual-clutch transmission repair & maintenance</span>
                   </div>
                 </div>
@@ -115,10 +115,10 @@ const ProjectGallery = () => {
                 {/* Single Gallery Start */}
                 <div className="single-gallery" data-aos="fade-up" data-aos-delay="200">
                   <div className="gallery-images">
-                    <Link to="/service-details"><img src="/assets/images/gallery/tb-replace.webp" alt="Gallery" /></Link>
+                    <Link to="/service"><img src="/assets/images/gallery/tb-replace.webp" alt="Gallery" /></Link>
                   </div>
                   <div className="gallery-content">
-                    <h4 className="title"><Link to="/service-details">Turbocharger Replacement</Link></h4>
+                    <h4 className="title"><Link to="/service">Turbocharger Replacement</Link></h4>
                     <span>Complete turbocharger replacement services</span>
                   </div>
                 </div>
@@ -128,10 +128,10 @@ const ProjectGallery = () => {
                 {/* Single Gallery Start */}
                 <div className="single-gallery" data-aos="fade-up" data-aos-delay="400">
                   <div className="gallery-images">
-                    <Link to="/service-details"><img src="/assets/images/gallery/tb-upgrade.webp" alt="Gallery" /></Link>
+                    <Link to="/service"><img src="/assets/images/gallery/tb-upgrade.webp" alt="Gallery" /></Link>
                   </div>
                   <div className="gallery-content">
-                    <h4 className="title"><Link to="/service-details">Turbocharger Upgrades</Link></h4>
+                    <h4 className="title"><Link to="/service">Turbocharger Upgrades</Link></h4>
                     <span>High-performance turbo upgrade solutions</span>
                   </div>
                 </div>
@@ -141,10 +141,10 @@ const ProjectGallery = () => {
                 {/* Single Gallery Start */}
                 <div className="single-gallery" data-aos="fade-up" data-aos-delay="600">
                   <div className="gallery-images">
-                    <Link to="/service-details"><img src="/assets/images/gallery/gallery-6.webp" alt="Gallery" /></Link>
+                    <Link to="/service"><img src="/assets/images/gallery/gallery-6.webp" alt="Gallery" /></Link>
                   </div>
                   <div className="gallery-content">
-                    <h4 className="title"><Link to="/service-details">Emergency Repairs</Link></h4>
+                    <h4 className="title"><Link to="/service">Emergency Repairs</Link></h4>
                     <span>24/7 emergency vehicle repair services</span>
                   </div>
                 </div>
@@ -154,10 +154,10 @@ const ProjectGallery = () => {
                 {/* Single Gallery Start */}
                 <div className="single-gallery" data-aos="fade-up" data-aos-delay="200">
                   <div className="gallery-images">
-                    <Link to="/service-details"><img src="/assets/images/gallery/t-consult.webp" alt="Gallery" /></Link>
+                    <Link to="/service"><img src="/assets/images/gallery/t-consult.webp" alt="Gallery" /></Link>
                   </div>
                   <div className="gallery-content">
-                    <h4 className="title"><Link to="/service-details">Technical Consultation</Link></h4>
+                    <h4 className="title"><Link to="/service">Technical Consultation</Link></h4>
                     <span>Professional automotive technical advice</span>
                   </div>
                 </div>
@@ -167,10 +167,10 @@ const ProjectGallery = () => {
                 {/* Single Gallery Start */}
                 <div className="single-gallery" data-aos="fade-up" data-aos-delay="400">
                   <div className="gallery-images">
-                    <Link to="/service-details"><img src="/assets/images/gallery/spare.webp" alt="Gallery" /></Link>
+                    <Link to="/service"><img src="/assets/images/gallery/spare.webp" alt="Gallery" /></Link>
                   </div>
                   <div className="gallery-content">
-                    <h4 className="title"><Link to="/service-details">Spare Parts</Link></h4>
+                    <h4 className="title"><Link to="/service">Spare Parts</Link></h4>
                     <span>Genuine & high-quality automotive spare parts</span>
                   </div>
                 </div>
@@ -180,10 +180,10 @@ const ProjectGallery = () => {
                 {/* Single Gallery Start */}
                 <div className="single-gallery" data-aos="fade-up" data-aos-delay="600">
                   <div className="gallery-images">
-                    <Link to="/service-details"><img src="/assets/images/gallery/gallery-9.webp" alt="Gallery" /></Link>
+                    <Link to="/service"><img src="/assets/images/gallery/gallery-9.webp" alt="Gallery" /></Link>
                   </div>
                   <div className="gallery-content">
-                    <h4 className="title"><Link to="/service-details">Hybrid Repairs</Link></h4>
+                    <h4 className="title"><Link to="/service">Hybrid Repairs</Link></h4>
                     <span>Hybrid system diagnostics & repair solutions</span>
                   </div>
                 </div>

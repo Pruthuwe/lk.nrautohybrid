@@ -4,6 +4,7 @@ import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
 import servicesData from './servicesData.json';
 import { generateServiceBrochurePDF, generateCompanyDetailsPDF } from './pdfGenerator';
+import './ServiceDetailsPage.css';
 
 const ServiceDetailsPage = () => {
   const location = useLocation();
@@ -22,7 +23,7 @@ const ServiceDetailsPage = () => {
   const handleServiceClick = (serviceName) => {
     setLocalSelectedService(serviceName);
     // Clear the location state by replacing current location
-    navigate('/service-details', { replace: true, state: null });
+    navigate('/service', { replace: true, state: null });
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -31,7 +32,7 @@ const ServiceDetailsPage = () => {
       <Header />
 
       {/* Page Banner Section Start */}
-      <div className="section page-banner-section" style={{backgroundImage: 'url(/assets/images/page-banner-bg.webp)'}}>
+      <div className="section page-banner-section">
         <div className="container">
           {/* Page Banner Wrapper Start */}
           <div className="page-banner-wrapper">
@@ -144,10 +145,6 @@ const ServiceDetailsPage = () => {
                             onClick={(e) => {
                               e.preventDefault();
                               handleServiceClick(serviceName);
-                            }}
-                            style={{
-                              color: selectedService === serviceName ? '#007bff' : 'inherit',
-                              fontWeight: selectedService === serviceName ? 'bold' : 'normal'
                             }}
                           >
                             {serviceName}

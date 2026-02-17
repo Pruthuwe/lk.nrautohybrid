@@ -196,7 +196,7 @@ const GetaQuote = ({ onClose }) => {
         <button 
           type="submit" 
           className="btn w-100 py-3 text-white fw-bold d-flex justify-content-center align-items-center" 
-          style={{backgroundColor: '#ff4d00', border: 'none'}}
+          style={{backgroundColor: '#0046e2', border: 'none'}}
           disabled={isSubmitting}
         >
           {isSubmitting ? (

@@ -320,5 +320,29 @@ input, textarea {
     }
 }
 
+/*-- Quote Modal --*/
+.quote-modal {
+    z-index: 1050;
+
+    .modal-dialog {
+        max-width: 800px;
+    }
+
+    .modal-content {
+        background: linear-gradient(135deg, #000000 0%, #4a4a4a 100%);
+        border-radius: 10px;
+        border: 1px solid #333;
+    }
+
+    .modal-body {
+        padding: 2rem;
+    }
+}
+
+.quote-modal-backdrop {
+    z-index: 1040;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 
 

@@ -52,7 +52,7 @@ const Footer = () => {
                     <h3 className="footer-widget-title">Quick Links</h3>
                     <ul className="widget-link">
                       <li><Link to="/about">About us</Link></li>
-                      <li><Link to="/service-details">Our Services</Link></li>
+                      <li><Link to="/service">Our Services</Link></li>
                       <li><Link to="/our-team">Our Mechanics</Link></li>
                       <li><Link to="/blog">Blog Post</Link></li>
                       <li><Link to="/contact">Contact</Link></li>
@@ -77,7 +77,7 @@ const Footer = () => {
                       <li><Link to="#">Terms & Conditions</Link></li>
                       <li><Link to="#">Return Policy</Link></li>
                       <li><Link to="/emergency">Emergency Call</Link></li>
-                      <li><Link to="/service-details">Tracking Service</Link></li>
+                      <li><Link to="/service">Tracking Service</Link></li>
                     </ul>
                   </div>
 
