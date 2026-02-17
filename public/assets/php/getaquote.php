@@ -21,7 +21,7 @@
     $smtp_host = 'smtp.gmail.com';
     $smtp_port = 587;
     $smtp_username = 'ruchirakavinda17@gmail.com';  // CHANGE THIS to your Gmail
-    $smtp_password = 'mijm tfux vslc lrdn';      // CHANGE THIS to your App Password
+    $smtp_password = 'mijmtfuxvslclrdn';      // CHANGE THIS to your App Password
     $recipient_email = 'kavinda.jayawardhana24@gmail.com';
     $from_email = 'noreply@greenauto.lk';
     $from_name = 'Green Auto Quote System';
@@ -153,6 +153,10 @@
             $mail->Password   = $smtp_password;
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = $smtp_port;
+            
+            // Enable verbose debug output (comment out in production)
+            // $mail->SMTPDebug = 2;
+            // $mail->Debugoutput = 'error_log';
 
             // Recipients
             $mail->setFrom($from_email, $from_name);
@@ -190,11 +194,13 @@
 
         } catch (Exception $e) {
             // Log detailed error
-            error_log("Quote email failed to send. Error: {$mail->ErrorInfo}");
-            error_log("Mailer Error Details: " . $e->getMessage());
+            error_log("Quote email failed to send.");
+            error_log("Error Info: {$mail->ErrorInfo}");
+            error_log("Exception: " . $e->getMessage());
+            error_log("From: $name, Phone: $phone");
             
             http_response_code(500);
-            echo "Oops! Something went wrong sending your request. Please call us directly at +94 77 216 6306.";
+            echo "Oops! Something went wrong sending your request. Please call us directly at +94 77 216 6306 or email kavinda.jayawardhana24@gmail.com.";
         }
 
     } else {

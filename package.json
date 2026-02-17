@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start:dev": "powershell -NoProfile -ExecutionPolicy Bypass -File ./start-servers.ps1"
   },
   "dependencies": {
     "aos": "^2.3.4",

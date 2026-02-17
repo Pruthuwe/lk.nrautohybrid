@@ -1,10 +1,28 @@
 <?php
 
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+
+    require 'PHPMailer/Exception.php';
+    require 'PHPMailer/PHPMailer.php';
+    require 'PHPMailer/SMTP.php';
+
     header("Access-Control-Allow-Origin: *");
+    header("Access-Control-Allow-Methods: POST");
+    header("Access-Control-Allow-Headers: Content-Type");
 
+    // =================================
+    // EMAIL CONFIGURATION
+    // =================================
+    $smtp_host = 'smtp.gmail.com';
+    $smtp_port = 587;
+    $smtp_username = 'ruchirakavinda17@gmail.com';
+    $smtp_password = 'mijmtfuxvslclrdn';
+    $recipient_email = 'kavinda.jayawardhana24@gmail.com';
+    $from_email = 'noreply@greenauto.lk';
+    $from_name = 'Green Auto Contact Form';
 
-
-    // Only process POST reqeusts.
+    // Only process POST requests.
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -36,13 +54,9 @@
         }
 
 
-        // Set the recipient email address.
-
-        $recipient = "mailcheck@whizthemes.com";
-
         // Set the email subject.
 
-        $subject = "Carserv - Mail From $first_name";
+        $subject = "Green Auto - Contact Form from $first_name";
 
         // Build the email content.
 
@@ -550,21 +564,52 @@
 
 
 
-        // Build the email headers.
+        // =================================
+        // SEND EMAIL USING PHPMAILER
+        // =================================
 
-        $email_headers = "MIME-Version: 1.0" . "\r\n";
+        $mail = new PHPMailer(true);
 
-        $email_headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+        try {
+            // Server settings
+            $mail->isSMTP();
+            $mail->Host       = $smtp_host;
+            $mail->SMTPAuth   = true;
+            $mail->Username   = $smtp_username;
+            $mail->Password   = $smtp_password;
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->Port       = $smtp_port;
+            
+            // Enable verbose debug output (comment out in production)
+            // $mail->SMTPDebug = 2;
+            // $mail->Debugoutput = 'error_log';
 
-        $email_headers .= 'From:' . $first_name . ' ' . 'noreply@yourdomain.com' . "\r\n";
+            // Recipients
+            $mail->setFrom($from_email, $from_name);
+            $mail->addAddress($recipient_email);
+            
+            // Reply-to address
+            if (!empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $mail->addReplyTo($email, $first_name);
+            }
 
-        $email_headers .= 'Reply-To:' . $email . "\r\n";
+            // Content
+            $mail->isHTML(true);
+            $mail->Subject = $subject;
+            $mail->Body    = $email_content;
+            
+            // Alternative plain text version
+            $mail->AltBody = "Contact Form Message\n\n" .
+                            "Name: $first_name\n" .
+                            "Email: $email\n" .
+                            "Phone: $phone\n" .
+                            "\nMessage:\n$message";
 
-
-
-        // Send the email.
-
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
+            // Send email
+            $mail->send();
+            
+            // Log success
+            error_log("Contact email sent successfully to: $recipient_email from $first_name ($email)");
 
             // Set a 200 (okay) response code.
 
@@ -572,13 +617,18 @@
 
             echo "Thank You! Your message has been sent.";
 
-        } else {
+        } catch (Exception $e) {
+            // Log detailed error
+            error_log("Contact email failed to send.");
+            error_log("Error Info: {$mail->ErrorInfo}");
+            error_log("Exception: " . $e->getMessage());
+            error_log("From: $first_name, Email: $email");
 
             // Set a 500 (internal server error) response code.
 
             http_response_code(500);
 
-            echo "Oops! Something went wrong and we couldn't send your message.";
+            echo "Oops! Something went wrong and we couldn't send your message. Please call us at +94 77 216 6306 or email kavinda.jayawardhana24@gmail.com.";
 
         }
 
