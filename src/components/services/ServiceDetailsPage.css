@@ -1,8 +1,7 @@
-/* ServiceDetailsPage Component Styles */
+/* ServiceDetailsPage – from scss/pages/_page-banner.scss, _service-details.scss, widget/_sidebar.scss */
 
-/* Page Banner Section */
+/* ========== 4.10 Page Banner (_page-banner.scss) ========== */
 .page-banner-section {
-  background-image: url(/assets/images/page-banner-bg.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -44,7 +43,6 @@
   z-index: -1;
 }
 
-/* Page Banner Wrapper */
 .page-banner-wrapper {
   display: flex;
   align-items: center;
@@ -57,7 +55,6 @@
   }
 }
 
-/* Page Banner Content */
 .page-banner-content {
   max-width: 470px;
   padding-right: 30px;
@@ -109,7 +106,6 @@
   content: '//';
 }
 
-/* Page Banner Images */
 @media only screen and (max-width: 575px) {
   .page-banner-images {
     text-align: center;
@@ -124,22 +120,21 @@
   }
 }
 
-/* Service Details Section */
+/* ========== 4.12 Service Details (_service-details.scss) ========== */
 .service-details-section.section-padding {
   background-color: #A5FF90;
 }
 
-/* Service Details Wrapper */
 .service-details-wrapper {
   margin-top: -50px;
 }
 
-/* Service Details Content */
 .service-details-content {
   margin-top: 50px;
 }
 
-@media only screen and (min-width: 1500px), only screen and (min-width: 1200px) and (max-width: 1499px) {
+@media only screen and (min-width: 1500px),
+  only screen and (min-width: 1200px) and (max-width: 1499px) {
   .service-details-content {
     padding-right: 40px;
   }
@@ -207,8 +202,8 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
-       only screen and (min-width: 768px) and (max-width: 991px),
-       only screen and (max-width: 767px) {
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (max-width: 767px) {
   .service-details-content .details-description .description {
     width: 100%;
   }
@@ -244,8 +239,8 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
-       only screen and (min-width: 768px) and (max-width: 991px),
-       only screen and (max-width: 767px) {
+  only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (max-width: 767px) {
   .service-details-content .details-description .images {
     width: 100%;
   }
@@ -261,12 +256,10 @@
   }
 }
 
-/* Service Details Price */
 .service-details-price {
   padding-top: 10px;
 }
 
-/* Service Price */
 .service-price {
   background-color: #e4f3ff;
   border-radius: 10px;
@@ -278,7 +271,7 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
-       only screen and (min-width: 768px) and (max-width: 991px) {
+  only screen and (min-width: 768px) and (max-width: 991px) {
   .service-price {
     padding: 25px;
   }
@@ -325,7 +318,7 @@
 }
 
 @media only screen and (max-width: 767px),
-       only screen and (min-width: 768px) and (max-width: 991px) {
+  only screen and (min-width: 768px) and (max-width: 991px) {
   .service-price .title a {
     font-size: 26px;
   }
@@ -375,12 +368,36 @@
   color: #28a745;
 }
 
-/* Sidebar */
+/* ========== 5.1 Sidebar Widget (_sidebar.scss) ========== */
 .sidebar {
   padding-top: 20px;
 }
 
-/* Widget Sidebar */
+.widget-title {
+  position: relative;
+  z-index: 1;
+  margin-top: -2px;
+}
+
+.widget-title::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #e4f3ff;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.widget-title .title {
+  display: inline-block;
+  background-color: #ffffff;
+  padding-right: 15px;
+  line-height: 1;
+}
+
 .widget-sidebar {
   margin-top: 30px;
 }
@@ -405,11 +422,6 @@
 .widget-sidebar .category li a:hover {
   background-color: #0046e2;
   color: #ffffff;
-}
-
-.widget-sidebar .category li.active a {
-  color: #007bff;
-  font-weight: bold;
 }
 
 .widget-sidebar .banner {
@@ -462,37 +474,4 @@
 .widget-sidebar .download li a:hover span {
   background-color: #28a745;
   color: #ffffff;
-}
-
-/* Back to Top */
-.back-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  background-color: #0046e2;
-  color: #ffffff;
-  border-radius: 5px;
-  font-size: 20px;
-  z-index: 999;
-  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.back-to-top:hover {
-  background-color: #28a745;
-  color: #ffffff;
-}
-
-@media only screen and (max-width: 575px) {
-  .back-to-top {
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 16px;
-  }
 }

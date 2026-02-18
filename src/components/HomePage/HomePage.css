@@ -1,6 +1,6 @@
-/* HomePage – converted from scss/pages/_slider, _page-banner, _call-to-action, _services, _choose, _work, _testimonials, _blog, _brand */
+/* HomePage – from scss/pages/_slider, _about, _services, _call-to-action, _choose, _work, _testimonials, _blog, _brand */
 
-/* ========== Slider (_slider.scss) ========== */
+/* ========== 4.1 Slider (_slider.scss) ========== */
 .slider-section {
 }
 
@@ -179,218 +179,192 @@
   margin-top: 35px;
 }
 
-/* ========== Page Banner (_page-banner.scss) ========== */
-.page-banner-section {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  padding-top: 280px;
-  padding-bottom: 120px;
+/* ========== 4.2 About (_about.scss) ========== */
+.about-wrapper {
+  margin-top: -50px;
+}
+
+.about-images {
   position: relative;
-  z-index: 1;
+  margin-top: 50px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .page-banner-section {
-    padding-top: 180px;
-    padding-bottom: 70px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .page-banner-section {
-    padding-top: 180px;
-    padding-bottom: 70px;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  .page-banner-section {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-images {
     padding-top: 140px;
   }
 }
 
-.page-banner-section::before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #4CAF50;
-  opacity: 0.92;
-  z-index: -1;
+.about-images .images img {
 }
 
-.page-banner-wrapper {
+.about-images .exprience {
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(135deg, #333333 0%, #4CAF50 100%);
+  border-bottom: 3px solid #4CAF50;
   display: flex;
   align-items: center;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1500px),
+  only screen and (min-width: 1200px) and (max-width: 1499px) {
+  .about-images .exprience {
+    right: -70px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .about-images .exprience {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.about-images .exprience p {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 1.3;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+@media only screen and (max-width: 575px) {
+  .about-images .exprience p {
+    font-size: 18px;
+  }
+}
+
+.about-images .exprience p strong {
+  color: #4CAF50;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 575px) {
+  .about-images .exprience p strong {
+    font-size: 24px;
+  }
+}
+
+.about-images.images-03 .exprience {
+  right: 10px;
+}
+
+.about-content {
+  max-width: 450px;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (max-width: 767px) {
+  .about-content {
+    margin-left: 0;
+  }
+}
+
+.about-content.content-02 {
+  max-width: none;
+}
+
+.about-content > p {
+  margin-top: 15px;
+}
+
+.about-content .btn {
+  margin-top: 45px;
+}
+
+.about-count {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 575px) {
-  .page-banner-wrapper {
-    display: block;
-  }
-}
-
-.page-banner-content {
-  max-width: 470px;
-  padding-right: 30px;
-  width: 100%;
+.about-count.about-count-02 {
+  padding-top: 65px;
 }
 
 @media only screen and (max-width: 767px) {
-  .page-banner-content {
-    padding-right: 10px;
-    max-width: 280px;
-  }
-}
-
-.page-banner-content .section-title .main-title {
-  font-size: 80px;
-  line-height: 1;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .page-banner-content .section-title .main-title {
-    font-size: 48px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .page-banner-content .section-title .main-title {
-    font-size: 40px;
+  .about-count.about-count-02 {
+    padding-top: 25px;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  .page-banner-content .section-title .main-title {
-    font-size: 36px;
+  .about-count.about-count-02 .single-count {
+    width: 50%;
   }
 }
 
-.page-banner-content .breadcrumb {
-  margin-bottom: 0;
-  margin-top: 10px;
-}
-
-.page-banner-content .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
-  content: '//';
-}
-
-.page-banner-content .breadcrumb .breadcrumb-item {
-  font-size: 16px;
-  letter-spacing: 2px;
-  color: #4b4b4b;
-}
-
-@media only screen and (max-width: 575px) {
-  .page-banner-images {
-    text-align: center;
-    padding: 0 15px;
-    margin-top: 30px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .page-banner-images img {
-    width: 350px;
-  }
-}
-
-/* ========== Call to Action (_call-to-action.scss) ========== */
-.call-to-action-wrapper {
-  background: linear-gradient(135deg, #000000 0%, #4CAF50 100%);
-  display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-  border-radius: 30px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px),
-  only screen and (max-width: 767px) {
-  .call-to-action-wrapper {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .call-to-action-wrapper {
-    border-radius: 15px;
-  }
-}
-
-.call-to-action-content {
-  width: 50%;
-  display: flex;
-  align-items: center;
+.about-count .single-count {
+  padding-left: 18px;
   position: relative;
-  padding: 40px 70px;
-  height: 385px;
+  margin-top: 25px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px),
-  only screen and (max-width: 767px) {
-  .call-to-action-content {
-    padding: 40px;
-  }
+.about-count .single-count::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #cf0000;
+  left: 0;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px),
-  only screen and (max-width: 767px) {
-  .call-to-action-content {
-    width: 100%;
-  }
+.about-count .single-count .count {
+  display: block;
+  font-size: 40px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  color: #000000;
+  line-height: 0.9;
+  white-space: nowrap;
 }
 
 @media only screen and (max-width: 575px) {
-  .call-to-action-content {
-    padding: 30px;
+  .about-count .single-count .count {
+    font-size: 30px;
   }
 }
 
-.call-to-action-content .shape {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  opacity: 0.15;
+.about-count .single-count p {
+  font-size: 24px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1;
+  white-space: nowrap;
 }
 
-.call-to-action-content .content-wrapper .main-title {
-  margin-top: 20px;
-}
-
-.call-to-action-content .content-wrapper p {
-  color: #d8d6d6;
-  margin-top: 20px;
-}
-
-.call-to-action-content .content-wrapper .btn {
-  margin-top: 32px;
-  border-bottom-color: #ffffff;
-}
-
-.call-to-action-content .content-wrapper .btn:hover {
-  border-bottom-color: #4CAF50;
-}
-
-.call-to-action-images {
-  width: 50%;
-  height: 385px;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px),
-  only screen and (max-width: 767px) {
-  .call-to-action-images {
-    width: 100%;
+@media only screen and (max-width: 575px) {
+  .about-count .single-count p {
+    font-size: 20px;
   }
 }
 
-/* ========== Services (_services.scss) ========== */
+.about-images-2 {
+  margin-top: -25px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .about-images-2 {
+    margin-top: 25px;
+  }
+}
+
+.about-images-2 img {
+}
+
+/* ========== 4.3 Services (_services.scss) ========== */
 .services-shape {
   position: absolute;
   top: -30px;
@@ -438,6 +412,22 @@
   only screen and (max-width: 767px) {
   .service-wrapper {
     padding-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 1500px),
+  only screen and (min-width: 1200px) and (max-width: 1499px),
+  only screen and (min-width: 992px) and (max-width: 1199px) {
+  .service-wrapper .row > *:nth-child(3n+1) .single-service {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1500px),
+  only screen and (min-width: 1200px) and (max-width: 1499px),
+  only screen and (min-width: 992px) and (max-width: 1199px) {
+  .service-wrapper .row > *:nth-child(3n+3) .single-service {
+    margin-top: 0;
   }
 }
 
@@ -524,7 +514,112 @@
   transform: translateY(0);
 }
 
-/* ========== Why Choose (_choose.scss) ========== */
+.single-service:hover .more {
+  color: #4CAF50;
+}
+
+.single-service:hover .service-icon .icon-path {
+  fill: #4CAF50;
+}
+
+/* ========== 4.4 Call To Action (_call-to-action.scss) ========== */
+.call-to-action-wrapper {
+  background: linear-gradient(135deg, #000000 0%, #4CAF50 100%);
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (max-width: 767px) {
+  .call-to-action-wrapper {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .call-to-action-wrapper {
+    border-radius: 15px;
+  }
+}
+
+.call-to-action-content {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 40px 70px;
+  height: 385px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (max-width: 767px) {
+  .call-to-action-content {
+    padding: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (max-width: 767px) {
+  .call-to-action-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .call-to-action-content {
+    padding: 30px;
+  }
+}
+
+.call-to-action-content .shape {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0.15;
+}
+
+.call-to-action-content .content-wrapper .section-title .sub-title {
+}
+
+.call-to-action-content .content-wrapper .section-title .main-title {
+  margin-top: 20px;
+}
+
+.call-to-action-content .content-wrapper p {
+  color: #d8d6d6;
+  margin-top: 20px;
+}
+
+.call-to-action-content .content-wrapper .btn {
+  margin-top: 32px;
+  border-bottom-color: #ffffff;
+}
+
+.call-to-action-content .content-wrapper .btn:hover {
+  border-bottom-color: #4CAF50;
+}
+
+.call-to-action-images {
+  width: 50%;
+  height: 385px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (max-width: 767px) {
+  .call-to-action-images {
+    width: 100%;
+  }
+}
+
+/* ========== 4.5 Why Choose (_choose.scss) ========== */
+.choose-wrapper {
+}
+
 .choose-content {
   max-width: 400px;
 }
@@ -535,6 +630,9 @@
 
 .choose-content img {
   margin-top: 20px;
+}
+
+.choose-items-wrapper {
 }
 
 .single-choose-item {
@@ -581,7 +679,7 @@
   margin-top: 12px;
 }
 
-/* ========== How We Work (_work.scss) ========== */
+/* ========== 4.6 How We Work (_work.scss) ========== */
 .how-we-work-wrapper {
   padding-top: 20px;
 }
@@ -633,6 +731,9 @@
   }
 }
 
+.single-work .content-wrapper img {
+}
+
 .single-work .content-wrapper .title {
   margin-top: 10px;
   font-size: 18px;
@@ -652,7 +753,7 @@
   opacity: 1;
 }
 
-/* ========== Testimonials (_testimonials.scss) ========== */
+/* ========== 4.7 Testimonials (_testimonials.scss) ========== */
 .testimonials-wrapper {
   border-radius: 30px;
   overflow: hidden;
@@ -831,7 +932,7 @@
   background-color: #ffffff;
 }
 
-/* ========== Blog (_blog.scss) ========== */
+/* ========== 4.8 Blog (_blog.scss) ========== */
 .blog-wrapper {
   position: relative;
 }
@@ -936,11 +1037,18 @@
   margin-top: 10px;
 }
 
+.single-blog .blog-content .more:hover {
+  color: #4CAF50;
+}
+
 .single-blog:hover .blog-image a img {
   transform: scale(1.1);
 }
 
-/* ========== Brand (_brand.scss) ========== */
+/* ========== 4.9 Brand (_brand.scss) ========== */
+.brand-wrapper {
+}
+
 .single-brand {
   text-align: center;
 }
