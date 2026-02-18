@@ -38,11 +38,11 @@ const BrandSection = () => {
   };
 
   return (
-    <div className="section section-padding" style={{ backgroundColor: '#bcfdad' }}>
+    <div className="section section-padding brand-section" style={{ backgroundColor: '#bcfdad' }}>
       <div className="container">
         {/* Section Title */}
         <div className="text-center mb-5">
-          <h5 className="sub-title" style={{ color: '#28a745' }}>Trusted Brands</h5>
+          <h5 className="sub-title">Trusted Brands</h5>
           <h2 className="main-title">We Service All Major Brands</h2>
         </div>
 

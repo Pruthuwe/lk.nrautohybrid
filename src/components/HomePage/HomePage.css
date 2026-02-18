@@ -362,6 +362,10 @@
   margin-top: 45px;
 }
 
+.about-content .section-title .main-title {
+  color: #0046e2;
+}
+
 .about-count {
   padding-top: 10px;
   display: flex;
@@ -604,6 +608,10 @@
   fill: #4CAF50;
 }
 
+.services-section .section-title .main-title {
+  color: #0046e2 !important;
+}
+
 /* ========== 4.4 Call To Action (_call-to-action.scss) ========== */
 .call-to-action-wrapper {
   background: linear-gradient(135deg, #000000 0%, #4CAF50 100%);
@@ -702,6 +710,10 @@
 .choose-wrapper {
 }
 
+.why-choose-section .section-title .main-title {
+  color: #0046e2 !important;
+}
+
 .choose-content {
   max-width: 400px;
 }
@@ -762,6 +774,10 @@
 }
 
 /* ========== 4.6 How We Work (_work.scss) ========== */
+.how-we-work-section .section-title .main-title {
+  color: #0046e2 !important;
+}
+
 .how-we-work-wrapper {
   padding-top: 20px;
 }
@@ -1015,6 +1031,10 @@
 }
 
 /* ========== 4.8 Blog (_blog.scss) ========== */
+.blog-section .section-title .main-title {
+  color: #0046e2 !important;
+}
+
 .blog-wrapper {
   position: relative;
 }
@@ -1128,6 +1148,10 @@
 }
 
 /* ========== 4.9 Brand (_brand.scss) ========== */
+.brand-section .main-title {
+  color: #0046e2 !important;
+}
+
 .brand-wrapper {
 }
 

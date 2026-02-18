@@ -2,7 +2,7 @@ import React from 'react';
 import BlogPost from './BlogPost';
 
 const BlogSection = () => (
-  <div className="section section-padding-02">
+  <div className="section section-padding-02 blog-section">
     <div className="container">
       {/* Blog Wrapper Start */}
       <div className="blog-wrapper">
@@ -10,14 +10,14 @@ const BlogSection = () => (
         <div className="section-title">
           <h5 className="sub-title">Our V Blog</h5>
           <h2 className="main-title">Latest V Blog</h2>
-          <p>
+          <p style={{color: '#000000'}}>
             Trusted and reliable service is our main goal extremely <br /> painful. Nor again is there anyone who loves
           </p>
         </div>
         {/* Section Title End */}
 
         {/* Blog Items Start */}
-        <div className="blog-items">
+        <div className="blog-items color-black">
           <div className="row">
             <BlogPost 
               image="/assets/images/blog/blog-01.webp"

@@ -2,13 +2,13 @@ import React from 'react';
 import WorkStep from './WorkStep';
 
 const HowWeWorkSection = () => (
-  <div className="section section-padding-02">
+  <div className="section section-padding-02 how-we-work-section">
     <div className="container">
       {/* Section Title Start */}
       <div className="section-title text-center">
         <h5 className="sub-title">Working Process</h5>
         <h2 className="main-title">How we work</h2>
-        <p>
+        <p style={{color: '#000000'}}>
           Trusted and reliable service is our main goal extremely <br /> painful. Nor again is there anyone who loves
         </p>
       </div>

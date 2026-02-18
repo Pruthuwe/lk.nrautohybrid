@@ -33,9 +33,9 @@ const AboutSection = () => {
                   </div>
                   {/* Section Title End */}
 
-                  <p>Turbocharger and hybrid system repairs demand precision and expertise. Our technicians diagnose performance issues, boost pressure faults, and electrical system errors to ensure your vehicle operates at peak efficiency without risking further engine or battery damage.</p>
+                  <p style={{color: '#000000'}}>Turbocharger and hybrid system repairs demand precision and expertise. Our technicians diagnose performance issues, boost pressure faults, and electrical system errors to ensure your vehicle operates at peak efficiency without risking further engine or battery damage.</p>
 
-                  <p>We specialize in advanced turbo and hybrid repairs using industry-grade tools and genuine components, helping you restore fuel efficiency, power delivery, and long-term reliability with minimal downtime.</p>
+                  <p style={{color: '#000000'}}>We specialize in advanced turbo and hybrid repairs using industry-grade tools and genuine components, helping you restore fuel efficiency, power delivery, and long-term reliability with minimal downtime.</p>
 
                   <button
                     type="button"

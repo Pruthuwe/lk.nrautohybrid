@@ -129,7 +129,7 @@ const About = () => {
       {/* Call to Action Section End */}
 
       {/* Our Team Section Start */}
-      <div className="section section-padding-02">
+      <div className="section section-padding-02 about-team-section">
         <div className="container">
 
           {/* Section Title Start */}
@@ -171,13 +171,13 @@ const About = () => {
                 {/* Team Description Start */}
                 <div className="team-description" data-aos="fade-up" data-aos-delay="200">
                   <h3 className="mb-4">Leading with Passion and Expertise</h3>
-                  <p className="mb-3" style={{textAlign: 'justify'}}>
+                  <p className="mb-3" style={{textAlign: 'justify', color: '#000000'}}>
                     Daniel Williams, our Chief Mechanic and team leader, brings over 8 years of specialized experience in hybrid vehicle technology and engine diagnostics. His commitment to excellence has made Green Auto the trusted choice for hybrid car owners across the region.
                   </p>
-                  <p className="mb-3" style={{textAlign: 'justify'}}>
+                  <p className="mb-3" style={{textAlign: 'justify', color: '#000000'}}>
                     Under his leadership, our workshop has achieved consistently high customer satisfaction ratings and built a reputation for technical precision and reliability. Daniel personally oversees every major service, ensuring that each vehicle receives meticulous attention and expert care.
                   </p>
-                  <p className="mb-0" style={{textAlign: 'justify'}}>
+                  <p className="mb-0" style={{textAlign: 'justify', color: '#000000'}}>
                     His vision for Green Auto is simple yet powerful: to provide world-class hybrid vehicle service with integrity, transparency, and a customer-first approach. When you trust us with your vehicle, you're trusting a team led by someone who treats every car as if it were his own.
                   </p>
                 </div>

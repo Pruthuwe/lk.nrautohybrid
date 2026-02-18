@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const ServicesSection = () => {
   const [showAll, setShowAll] = useState(false);
   return (
-  <div className="section section-padding-02">
+  <div className="section section-padding-02 services-section">
     <div className="container">
       <div className="position-relative">
         <img className="services-shape" src="/assets/images/services.webp" alt="Service" />

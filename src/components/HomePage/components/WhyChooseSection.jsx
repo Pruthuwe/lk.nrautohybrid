@@ -2,7 +2,7 @@ import React from 'react';
 import ChooseItem from './ChooseItem';
 
 const WhyChooseSection = () => (
-  <div className="section section-padding-02">
+  <div className="section section-padding-02 why-choose-section">
     <div className="container">
       {/* Why Choose Wrapper Start */}
       <div className="choose-wrapper">
@@ -17,7 +17,7 @@ const WhyChooseSection = () => (
               </div>
               {/* Section Title End */}
 
-              <p>Trusted and reliable service is our main goal extremely painful. Nor again is there anyone who loves our to take a trivial example, which of us undertakes chooses</p>
+              <p style={{color: '#000000'}}>Trusted and reliable service is our main goal extremely painful. Nor again is there anyone who loves our to take a trivial example, which of us undertakes chooses</p>
 
               <img src="assets/images/choose/choose.webp" alt="Choose" />
             </div>
@@ -25,7 +25,7 @@ const WhyChooseSection = () => (
           </div>
           <div className="col-lg-7">
             {/* Why Choose Items Wrapper Start */}
-            <div className="choose-items-wrapper">
+            <div className="choose-items-wrapper color-black">
               <div className="row gx-xl-5 align-items-center">
                 <ChooseItem
                   delay="200"

@@ -641,3 +641,11 @@
 .single-brand {
   text-align: center;
 }
+
+.about-team-section .section-title .main-title {
+  color: #0046e2 !important;
+}
+
+.about-team-section .team-description h3 {
+  color: #000000 !important;
+}
