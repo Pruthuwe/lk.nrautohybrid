@@ -1,0 +1,155 @@
+/* ContactPage – converted from scss/pages/_contact.scss */
+
+.contact-form-wrapper input::placeholder,
+.contact-form-wrapper textarea::placeholder {
+  color: white !important;
+}
+
+.contact-wrapper {
+  margin-top: -50px;
+}
+
+.contact-image {
+  padding-right: 40px;
+  margin-top: 50px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (max-width: 767px) {
+  .contact-image {
+    padding-right: 0;
+  }
+}
+
+.contact-image img {
+  width: 100%;
+  border-radius: 30px;
+  border-bottom: 3px solid #ee0f39;
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-image img {
+    border-radius: 15px;
+  }
+}
+
+.contact-content {
+  margin-top: 50px;
+}
+
+.contact-content .title {
+  font-size: 52px;
+  font-weight: 700;
+  color: #0046e2;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .contact-content .title {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .contact-content .title {
+    font-size: 34px;
+  }
+}
+
+.contact-content .sub-title {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-content .sub-title {
+    font-size: 22px;
+  }
+}
+
+.content-info .single-info {
+  padding-top: 40px;
+}
+
+.content-info .single-info .info-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0046e2;
+}
+
+.content-info .single-info p {
+  font-size: 18px;
+}
+
+.content-info .single-info .social {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.content-info .single-info .social li {
+  margin-right: 15px;
+}
+
+.content-info .single-info .social li:last-child {
+  margin-right: 0;
+}
+
+.content-info .single-info .social li a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #c9d9fc;
+  border-radius: 50%;
+  text-align: center;
+  color: #0046e2;
+  font-size: 16px;
+  border: 0;
+}
+
+.content-info .single-info .social li a:hover {
+  background-color: #0046e2;
+  color: #ffffff;
+}
+
+.form-message {
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.form-message.error,
+.form-message.success {
+  font-size: 16px;
+  color: #333333;
+  background: #ddd;
+  padding: 10px 15px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.form-message.error {
+  color: red;
+}
+
+.contact-form-wrapper {
+  max-width: 770px;
+  margin: -10px auto 0;
+}
+
+.contact-form-wrapper .title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222222;
+  line-height: 1.2;
+}
+
+.contact-form-wrapper .form-wrapper {
+  margin-top: -11px;
+}
+
+.contact-form-wrapper .single-form {
+  margin-top: 30px;
+}

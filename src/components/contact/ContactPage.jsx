@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
 import WhatsAppFloat from '../WhatsAppFloat/WhatsAppFloat';
+import './ContactPage.css';
 
 const ContactPage = () => {
   const handleSubmit = (e) => {
@@ -23,14 +24,6 @@ const ContactPage = () => {
 
   return (
     <>
-      <style>
-        {`
-          .contact-form-wrapper input::placeholder,
-          .contact-form-wrapper textarea::placeholder {
-            color: white !important;
-          }
-        `}
-      </style>
       <Header />
 
       {/* Page Banner Section Start */}
@@ -160,9 +153,9 @@ const ContactPage = () => {
                           <h4 className="info-title">Also Follow us</h4>
                           <ul className="social">
                             <li><a href="https://web.facebook.com/greenauto.lk"><i className="icofont-facebook"></i></a></li>
-                            <li><a href="#"><i className="icofont-instagram"></i></a></li>
+                            <li><a href="https://www.instagram.com/greenauto.lk?igsh=cDR4ZGducHk1Nmhi" target="_blank" rel="noopener noreferrer"><i className="icofont-instagram"></i></a></li>
                             <li><a href="https://wa.me/94772166306"><i className="icofont-whatsapp"></i></a></li>
-                            <li><a href="#"><i className="fab fa-tiktok"></i></a></li>
+                            <li><a href="https://www.tiktok.com/@greensroqj7?lang=en-GB&is_from_webapp=1&sender_device=mobile&sender_web_id=7607352033860322836" target="_blank" rel="noopener noreferrer"><i className="fab fa-tiktok"></i></a></li>
                           </ul>
                         </div>
                         {/* Single Info End */}

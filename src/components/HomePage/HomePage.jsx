@@ -20,6 +20,7 @@ import TestimonialsSection from './components/TestimonialsSection';
 import BlogSection from './components/BlogSection';
 import BrandSection from './components/BrandSection';
 import WhatsAppFloat from '../WhatsAppFloat/WhatsAppFloat';
+import './HomePage.css';
 
 const HomePage = () => {
   useEffect(() => {

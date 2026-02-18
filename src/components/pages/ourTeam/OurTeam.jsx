@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-// Import components
-import Header from '../layouts/Header';
-import Footer from '../layouts/Footer';
-import WhatsAppFloat from '../WhatsAppFloat/WhatsAppFloat';
-import BrandSection from '../HomePage/components/BrandSection';
+// Import components (../../ = from pages/ourTeam/ up to components/)
+import Header from '../../layouts/Header';
+import Footer from '../../layouts/Footer';
+import WhatsAppFloat from '../../WhatsAppFloat/WhatsAppFloat';
+import BrandSection from '../../HomePage/components/BrandSection';
+import './OurTeam.css';
 
 const OurTeam = () => {
   useEffect(() => {

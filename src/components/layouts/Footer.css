@@ -1,0 +1,252 @@
+/* Footer – converted from scss/_footer.scss and scss/widget/_footer.scss */
+
+/* ========== Footer Section (_footer.scss) ========== */
+.footer-section {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-section::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.footer-copyright-section {
+  background: linear-gradient(135deg, #333333 0%, #4CAF50 100%);
+  padding-bottom: 15px;
+}
+
+.copyright-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (max-width: 767px) {
+  .copyright-wrapper {
+    display: block;
+    text-align: center;
+  }
+}
+
+.copyright-text {
+  padding-top: 15px;
+}
+
+.copyright-text p {
+  color: #b8b8b9;
+  font-size: 15px;
+}
+
+.copyright-text p span {
+  color: #ffffff;
+}
+
+.copyright-text p i {
+  color: #ee0f39;
+}
+
+.copyright-text p a {
+  color: #ffffff;
+}
+
+.copyright-text p a:hover {
+  text-decoration: underline;
+}
+
+.copyright-social {
+  padding-top: 5px;
+}
+
+.copyright-social a {
+  color: #ffffff;
+  position: relative;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.copyright-social a:last-child {
+  margin-right: 0;
+}
+
+.copyright-social a:hover {
+  color: #0046e2;
+}
+
+/* ========== Footer Widget (widget/_footer.scss) ========== */
+.footer-widget-wrapper {
+  margin-top: -50px;
+}
+
+.footer-widget-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 575px) {
+  .footer-widget-title {
+    font-size: 22px;
+  }
+}
+
+.footer-widget {
+  margin-top: 50px;
+}
+
+.footer-widget .footer-logo {
+  margin-bottom: 15px;
+}
+
+.footer-widget p {
+  color: #f2f2f2;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.footer-widget p span {
+  font-weight: 400;
+}
+
+.footer-widget .title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+
+.footer-widget .widget-info p {
+  font-size: 14px;
+}
+
+.footer-widget .widget-link {
+  padding-top: 10px;
+}
+
+.footer-widget .widget-link li {
+  margin-top: 10px;
+}
+
+.footer-widget .widget-link li a {
+  color: #f2f2f2;
+  font-weight: 300;
+}
+
+.footer-widget .widget-subscribe {
+  padding-top: 15px;
+}
+
+.footer-widget .widget-subscribe .subscribe-form {
+  position: relative;
+  margin-top: 20px;
+}
+
+.footer-widget .widget-subscribe .subscribe-form input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]) {
+  border: 2px solid #3f75e5;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 60px;
+  background: none;
+  color: #ffffff;
+}
+
+.footer-widget .widget-subscribe .subscribe-form input::-webkit-input-placeholder {
+  opacity: 1;
+  color: #c4c4c4;
+}
+
+.footer-widget .widget-subscribe .subscribe-form input:-moz-placeholder {
+  opacity: 1;
+  color: #c4c4c4;
+}
+
+.footer-widget .widget-subscribe .subscribe-form input::-moz-placeholder {
+  opacity: 1;
+  color: #c4c4c4;
+}
+
+.footer-widget .widget-subscribe .subscribe-form input:-ms-input-placeholder {
+  opacity: 1;
+  color: #c4c4c4;
+}
+
+.footer-widget .widget-subscribe .subscribe-form input:focus {
+  border-color: #ffffff;
+}
+
+.footer-widget .widget-subscribe .subscribe-form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background-color: #0046e2;
+  font-size: 16px;
+  color: #ffffff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0;
+  transition: background-color 0.2s ease;
+}
+
+.footer-widget .widget-subscribe .subscribe-form button:hover {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.footer-widget .widget-subscribe .subscribe-form button .fa-paper-plane,
+.footer-widget .widget-subscribe .subscribe-form button .fa-paper-plane::before,
+.footer-widget .widget-subscribe .subscribe-form button i.fas {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.footer-widget .widget-subscribe .subscribe-form button i.fas {
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.footer-widget .widget-opening p {
+  font-size: 14px;
+}
+
+.footer-widget .widget-opening p i {
+  margin: 0 2px;
+}
+
+.footer-link-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 1500px),
+  only screen and (min-width: 1200px) and (max-width: 1499px) {
+  .footer-link-wrapper {
+    padding-left: 45px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (max-width: 767px) {
+  .footer-link-wrapper {
+    justify-content: flex-end;
+  }
+}
+
+.footer-link-wrapper .footer-widget {
+  width: 50%;
+}

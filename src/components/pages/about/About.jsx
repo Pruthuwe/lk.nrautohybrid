@@ -6,17 +6,18 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
-// Import components
-import Header from '../layouts/Header';
-import Footer from '../layouts/Footer';
-import WhatsAppFloat from '../WhatsAppFloat/WhatsAppFloat';
-import Appointment from '../appointment/Appointment';
+// Import components (../../ = from pages/about/ up to components/)
+import Header from '../../layouts/Header';
+import Footer from '../../layouts/Footer';
+import WhatsAppFloat from '../../WhatsAppFloat/WhatsAppFloat';
+import Appointment from '../../appointment/Appointment';
 
 // Import homepage components
-import WhyChooseSection from '../HomePage/components/WhyChooseSection';
-import CallToAction from '../HomePage/components/CallToAction';
-import TestimonialsSection from '../HomePage/components/TestimonialsSection';
-import BrandSection from '../HomePage/components/BrandSection';
+import WhyChooseSection from '../../HomePage/components/WhyChooseSection';
+import CallToAction from '../../HomePage/components/CallToAction';
+import TestimonialsSection from '../../HomePage/components/TestimonialsSection';
+import BrandSection from '../../HomePage/components/BrandSection';
+import './About.css';
 
 const About = () => {
   const [showAppointmentModal, setShowAppointmentModal] = useState(false);
@@ -157,9 +158,9 @@ const About = () => {
                       </div>
                       <ul className="social">
                         <li><a href="https://web.facebook.com/greenauto.lk"><i className="icofont-facebook"></i></a></li>
-                        <li><a href="#"><i className="icofont-instagram"></i></a></li>
+                        <li><a href="https://www.instagram.com/greenauto.lk?igsh=cDR4ZGducHk1Nmhi" target="_blank" rel="noopener noreferrer"><i className="icofont-instagram"></i></a></li>
                         <li><a href="https://wa.me/94772166306"><i className="icofont-whatsapp"></i></a></li>
-                        <li><a href="#"><i className="fab fa-tiktok"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@greensroqj7?lang=en-GB&is_from_webapp=1&sender_device=mobile&sender_web_id=7607352033860322836" target="_blank" rel="noopener noreferrer"><i className="fab fa-tiktok"></i></a></li>
                       </ul>
                     </div>
                   </div>

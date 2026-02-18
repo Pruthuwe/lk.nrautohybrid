@@ -200,10 +200,10 @@ const Header = () => {
               </div>
 
               <div className="header-top-social d-flex align-items-center gap-3">
-                <a href="https://web.facebook.com/greenauto.lk"><i className="icofont-facebook"></i></a>
-                <a href="#"><i className="icofont-instagram"></i></a>
-                <a href="https://wa.me/94772166306"><i className="icofont-whatsapp"></i></a>
-                <a href="#"><i className="fab fa-tiktok"></i></a>
+                <a href="https://web.facebook.com/greenauto.lk" target="_blank" rel="noopener noreferrer"><i className="icofont-facebook"></i></a>
+                <a href="https://www.instagram.com/greenauto.lk?igsh=cDR4ZGducHk1Nmhi" target="_blank" rel="noopener noreferrer"><i className="icofont-instagram"></i></a>
+                <a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="icofont-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@greensroqj7?lang=en-GB&is_from_webapp=1&sender_device=mobile&sender_web_id=7607352033860322836" target="_blank" rel="noopener noreferrer"><i className="fab fa-tiktok"></i></a>
               </div>
             </div>
           </div>
@@ -327,10 +327,10 @@ const Header = () => {
 
           {/* Header Social Links Start */}
           <div className="header-top-social d-flex align-items-center justify-content-center gap-3">
-            <a href="https://web.facebook.com/greenauto.lk"><i className="icofont-facebook"></i></a>
-            <a href="#"><i className="icofont-instagram"></i></a>
-            <a href="https://wa.me/94772166306"><i className="icofont-whatsapp"></i></a>
-            <a href="#"><i className="fab fa-tiktok"></i></a>
+            <a href="https://web.facebook.com/greenauto.lk" target="_blank" rel="noopener noreferrer"><i className="icofont-facebook"></i></a>
+            <a href="https://www.instagram.com/greenauto.lk?igsh=cDR4ZGducHk1Nmhi" target="_blank" rel="noopener noreferrer"><i className="icofont-instagram"></i></a>
+            <a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="icofont-whatsapp"></i></a>
+            <a href="https://www.tiktok.com/@greensroqj7?lang=en-GB&is_from_webapp=1&sender_device=mobile&sender_web_id=7607352033860322836" target="_blank" rel="noopener noreferrer"><i className="fab fa-tiktok"></i></a>
           </div>
           {/* Header Social Links End */}
 

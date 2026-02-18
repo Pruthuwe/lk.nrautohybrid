@@ -4,11 +4,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // Import components
-import Header from '../layouts/Header';
-import Footer from '../layouts/Footer';
-import WhatsAppFloat from '../WhatsAppFloat/WhatsAppFloat';
-import CallToAction from '../HomePage/components/CallToAction';
-import BrandSection from '../HomePage/components/BrandSection';
+import Header from '../../layouts/Header';
+import Footer from '../../layouts/Footer';
+import WhatsAppFloat from '../../WhatsAppFloat/WhatsAppFloat';
+import CallToAction from '../../HomePage/components/CallToAction';
+import BrandSection from '../../HomePage/components/BrandSection';
+import './ProjectGallery.css';
 
 const ProjectGallery = () => {
   useEffect(() => {
@@ -20,15 +21,6 @@ const ProjectGallery = () => {
 
   return (
     <div>
-      <style>
-        {`
-          .project-gallery-wrapper .gallery-images img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-          }
-        `}
-      </style>
       <Header />
 
       {/* Page Banner Section Start */}

@@ -1,0 +1,179 @@
+/* About – converted from scss/pages/_about.scss */
+
+.about-wrapper {
+  margin-top: -50px;
+}
+
+.about-images {
+  position: relative;
+  margin-top: 50px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-images {
+    padding-top: 140px;
+  }
+}
+
+.about-images .exprience {
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(135deg, #333333 0%, #4CAF50 100%);
+  border-bottom: 3px solid #4CAF50;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1500px),
+  only screen and (min-width: 1200px) and (max-width: 1499px) {
+  .about-images .exprience {
+    right: -70px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .about-images .exprience {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.about-images .exprience p {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 1.3;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+@media only screen and (max-width: 575px) {
+  .about-images .exprience p {
+    font-size: 18px;
+  }
+}
+
+.about-images .exprience p strong {
+  color: #4CAF50;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 575px) {
+  .about-images .exprience p strong {
+    font-size: 24px;
+  }
+}
+
+.about-images.images-03 .exprience {
+  right: 10px;
+}
+
+.about-content {
+  max-width: 450px;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (max-width: 767px) {
+  .about-content {
+    margin-left: 0;
+  }
+}
+
+.about-content.content-02 {
+  max-width: none;
+}
+
+.about-content > p {
+  margin-top: 15px;
+}
+
+.about-content .btn {
+  margin-top: 45px;
+}
+
+.about-count {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-count.about-count-02 {
+  padding-top: 65px;
+}
+
+@media only screen and (max-width: 767px) {
+  .about-count.about-count-02 {
+    padding-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .about-count.about-count-02 .single-count {
+    width: 50%;
+  }
+}
+
+.about-count .single-count {
+  padding-left: 18px;
+  position: relative;
+  margin-top: 25px;
+}
+
+.about-count .single-count::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #cf0000;
+  left: 0;
+}
+
+.about-count .single-count .count {
+  display: block;
+  font-size: 40px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  color: #000000;
+  line-height: 0.9;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 575px) {
+  .about-count .single-count .count {
+    font-size: 30px;
+  }
+}
+
+.about-count .single-count p {
+  font-size: 24px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 575px) {
+  .about-count .single-count p {
+    font-size: 20px;
+  }
+}
+
+.about-images-2 {
+  margin-top: -25px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .about-images-2 {
+    margin-top: 25px;
+  }
+}

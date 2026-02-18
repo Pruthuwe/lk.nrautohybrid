@@ -1,0 +1,89 @@
+/* ProjectGallery – converted from scss/pages/_project-gallery.scss */
+
+.project-gallery-wrapper {
+  margin-top: -30px;
+}
+
+.project-gallery-wrapper .gallery-images img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.single-gallery {
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.single-gallery .gallery-images {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .single-gallery .gallery-images {
+    border-radius: 10px;
+  }
+}
+
+.single-gallery .gallery-images a {
+  display: block;
+}
+
+.single-gallery .gallery-images a img {
+  width: 100%;
+}
+
+.single-gallery .gallery-content {
+  position: absolute;
+  background-color: #e4f3ff;
+  opacity: 0;
+  left: 30px;
+  bottom: 30px;
+  padding: 16px 20px;
+  border-radius: 10px;
+  transform: translateY(100%);
+  visibility: hidden;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (max-width: 767px) {
+  .single-gallery .gallery-content {
+    bottom: 15px;
+    left: 15px;
+  }
+}
+
+.single-gallery .gallery-content .title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #0046e2;
+  line-height: 1;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-gallery .gallery-content .title {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .single-gallery .gallery-content .title {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+  only screen and (max-width: 767px) {
+  .single-gallery .gallery-content span {
+    font-size: 14px;
+  }
+}
+
+.single-gallery:hover .gallery-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
