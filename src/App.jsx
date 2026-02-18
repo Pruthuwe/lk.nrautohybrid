@@ -1,5 +1,14 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
 import HomePage from './components/HomePage/HomePage.jsx'
 import LoginPage from './components/login/LoginPage.jsx'
 import RegisterPage from './components/login/RegisterPage.jsx'
@@ -33,6 +42,7 @@ import Error404 from './components/404/error404.jsx'
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="main-wrapper">
         <Routes>
           <Route path="/" element={<HomePage />} />

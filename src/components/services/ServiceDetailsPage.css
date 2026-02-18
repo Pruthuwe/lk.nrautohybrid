@@ -1,5 +1,87 @@
 /* ServiceDetailsPage – from scss/pages/_page-banner.scss, _service-details.scss, widget/_sidebar.scss */
 
+/* ========== Section Title (_common.scss) ========== */
+.section-title {
+  margin-top: -5px;
+}
+
+.section-title .sub-title {
+  text-transform: uppercase;
+  color: #222222;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 15px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 575px) {
+  .section-title .sub-title {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
+
+.section-title .sub-title strong {
+  color: #4CAF50;
+}
+
+.section-title .sub-title::before {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 15px;
+  background-color: #0046e2;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.section-title .main-title {
+  font-size: 52px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.1;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .section-title .main-title {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .section-title .main-title {
+    font-size: 34px;
+  }
+}
+
+.section-title p {
+  margin-top: 20px;
+  color: #000000;
+}
+
+@media only screen and (max-width: 767px) {
+  .section-title p br {
+    display: none;
+  }
+}
+
+.section-title.section-title-white .sub-title {
+  color: #ffffff;
+}
+
+.section-title.section-title-white .sub-title::before {
+  background-color: #ffffff;
+}
+
+.section-title.section-title-white .main-title {
+  color: #ffffff;
+}
+
 /* ========== 4.10 Page Banner (_page-banner.scss) ========== */
 .page-banner-section {
   background-repeat: no-repeat;
