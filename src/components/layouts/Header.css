@@ -429,6 +429,22 @@
   }
 }
 
+/* Prevent white space on right when offcanvas is open (Bootstrap adds body padding-right) */
+html.offcanvas-active,
+body.offcanvas-active,
+html.modal-open,
+body.modal-open {
+  overflow-x: hidden !important;
+  padding-right: 0 !important;
+}
+
+/* Offcanvas backdrop full width so no gap on right */
+.offcanvas-backdrop {
+  width: 100vw !important;
+  right: 0 !important;
+  left: 0 !important;
+}
+
 /* Offcanvas - Mobile Menu */
 .offcanvas-start {
   width: 300px;
@@ -611,9 +627,13 @@
   }
 }
 
-/* Quote Modal Styles */
+/* Quote Modal Styles - white background for get a quote page */
 .quote-modal {
   z-index: 1050;
+}
+.quote-modal .modal-content {
+  background: #fff;
+  border: 1px solid #e0e0e0;
 }
 
 .quote-modal-backdrop {

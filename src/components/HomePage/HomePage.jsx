@@ -19,6 +19,7 @@ import HowWeWorkSection from './components/HowWeWorkSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import BlogSection from './components/BlogSection';
 import BrandSection from './components/BrandSection';
+import WhatsAppFloat from '../WhatsAppFloat/WhatsAppFloat';
 
 const HomePage = () => {
   useEffect(() => {
@@ -47,7 +48,15 @@ const HomePage = () => {
       <BlogSection />
       <BrandSection />
       <Footer />
+
+      <WhatsAppFloat />
+      {/*Back To Start*/}
+      <a href="#" className="back-to-top">
+        <i className="icofont-simple-up"></i>
+      </a>
+      {/*Back To End*/}
     </>
+    
   );
 };
 

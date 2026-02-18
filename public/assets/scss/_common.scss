@@ -39,6 +39,23 @@ body{
     }
 }
 
+// Full page: no white space on right when header offcanvas/menu is open (Bootstrap adds body padding-right)
+html:has(body.modal-open) {
+    overflow-x: hidden !important;
+    padding-right: 0 !important;
+}
+body.modal-open {
+    overflow-x: hidden !important;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+body.modal-open #root {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: $heading-font;
     color: $heading-color;
@@ -329,9 +346,9 @@ input, textarea {
     }
 
     .modal-content {
-        background: linear-gradient(135deg, #000000 0%, #4a4a4a 100%);
+        background: #fff;
         border-radius: 10px;
-        border: 1px solid #333;
+        border: 1px solid #e0e0e0;
     }
 
     .modal-body {

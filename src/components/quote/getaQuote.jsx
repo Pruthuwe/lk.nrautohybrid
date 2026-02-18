@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const GetaQuote = ({ onClose }) => {
+  const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState({ type: '', text: '' });
 
@@ -30,9 +32,10 @@ const GetaQuote = ({ onClose }) => {
           text: 'Thank you! Your quote request has been sent successfully. We will contact you soon.' 
         });
         e.target.reset();
-        // Redirect to contact page after 3 seconds
+        // Client-side redirect so Contact page content loads correctly (no full page reload)
         setTimeout(() => {
-          window.location.href = '/contact';
+          onClose?.();
+          navigate('/contact', { replace: true });
         }, 3000);
       } else {
         setMessage({ 

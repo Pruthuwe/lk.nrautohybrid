@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import GetaQuote from "../quote/getaQuote";
 import "./Header.css";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isSticky, setIsSticky] = useState(false);
   const [showQuoteModal, setShowQuoteModal] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [showSearchResults, setShowSearchResults] = useState(false);
-  const location = useLocation();
 
   // Search content database - Only pages accessible through header navigation
   const searchContent = [
@@ -73,9 +74,9 @@ const Header = () => {
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     if (searchResults.length > 0) {
-      window.location.href = searchResults[0].url;
       setShowSearchResults(false);
       setSearchQuery('');
+      navigate(searchResults[0].url);
     }
   };
 
@@ -104,6 +105,73 @@ const Header = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [showSearchResults]);
+
+  // Remove white space on right when offcanvas menu opens (clear immediately on click so no flash during open)
+  useEffect(() => {
+    const clearBodyPadding = () => {
+      document.body.style.setProperty('padding-right', '0', 'important');
+      document.body.style.setProperty('overflow', 'hidden', 'important');
+      document.body.style.setProperty('margin-right', '0', 'important');
+      document.documentElement.style.setProperty('padding-right', '0', 'important');
+      document.documentElement.style.setProperty('overflow-x', 'hidden', 'important');
+      const root = document.getElementById('root');
+      if (root) {
+        root.style.setProperty('overflow-x', 'hidden', 'important');
+        root.style.setProperty('max-width', '100%', 'important');
+      }
+      const backdrop = document.querySelector('.offcanvas-backdrop');
+      if (backdrop) {
+        backdrop.style.setProperty('width', '100%', 'important');
+        backdrop.style.setProperty('max-width', '100vw', 'important');
+        backdrop.style.setProperty('right', '0', 'important');
+        backdrop.style.setProperty('left', '0', 'important');
+      }
+    };
+
+    const offcanvasEl = document.getElementById('offcanvasExample');
+    const menuToggle = document.querySelector('.menu-toggle[data-bs-toggle="offcanvas"][data-bs-target="#offcanvasExample"]');
+    if (!offcanvasEl) return;
+
+    // Clear as soon as menu STARTS to open
+    const onShow = () => {
+      clearBodyPadding();
+      requestAnimationFrame(clearBodyPadding);
+      setTimeout(clearBodyPadding, 0);
+    };
+    const onShown = () => {
+      clearBodyPadding();
+      setTimeout(clearBodyPadding, 10);
+    };
+
+    // Clear in next task after toggle click (runs after Bootstrap adds padding) so no white space during transition
+    const onToggleClick = () => {
+      setTimeout(clearBodyPadding, 0);
+      requestAnimationFrame(clearBodyPadding);
+      requestAnimationFrame(() => requestAnimationFrame(clearBodyPadding));
+    };
+
+    const observer = new MutationObserver(() => {
+      if (document.body.classList.contains('modal-open') || document.body.style.paddingRight) {
+        clearBodyPadding();
+      }
+    });
+    observer.observe(document.body, { attributes: true, attributeFilter: ['class', 'style'] });
+
+    offcanvasEl.addEventListener('show.bs.offcanvas', onShow);
+    offcanvasEl.addEventListener('shown.bs.offcanvas', onShown);
+    if (menuToggle) {
+      menuToggle.addEventListener('click', onToggleClick);
+    }
+
+    return () => {
+      offcanvasEl.removeEventListener('show.bs.offcanvas', onShow);
+      offcanvasEl.removeEventListener('shown.bs.offcanvas', onShown);
+      if (menuToggle) {
+        menuToggle.removeEventListener('click', onToggleClick);
+      }
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <>

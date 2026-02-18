@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
+import WhatsAppFloat from '../WhatsAppFloat/WhatsAppFloat';
 
 const ContactPage = () => {
   const handleSubmit = (e) => {
@@ -17,11 +18,7 @@ const ContactPage = () => {
     
     const whatsappUrl = `https://wa.me/94713210583?text=${whatsappMessage}`;
     window.open(whatsappUrl, '_blank');
-    
-    // Refresh the page after a short delay
-    setTimeout(() => {
-      window.location.reload();
-    }, 500);
+    // Do not reload: keeps SPA state and avoids content-not-loading issues
   };
 
   return (
@@ -243,6 +240,7 @@ const ContactPage = () => {
 
       <Footer />
 
+      <WhatsAppFloat />
       {/* Back To Start */}
       <Link to="#" className="back-to-top">
         <i className="icofont-simple-up"></i>

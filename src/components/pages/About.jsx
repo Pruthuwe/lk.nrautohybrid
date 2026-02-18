@@ -9,6 +9,7 @@ import 'swiper/css/autoplay';
 // Import components
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
+import WhatsAppFloat from '../WhatsAppFloat/WhatsAppFloat';
 import Appointment from '../appointment/Appointment';
 
 // Import homepage components
@@ -199,6 +200,7 @@ const About = () => {
 
       <Footer />
 
+      <WhatsAppFloat />
       {/*Back To Start*/}
       <a href="#" className="back-to-top">
         <i className="icofont-simple-up"></i>

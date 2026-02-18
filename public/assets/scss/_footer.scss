@@ -86,6 +86,31 @@
     }
 }
 
+// WhatsApp float (above back to top)
+.whatsapp-float{
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    border-radius: 50%;
+    z-index: 99;
+    text-align: center;
+    box-shadow: 2px 4px 8px rgba($dark, 0.15);
+    transition: all 0.3s linear;
+    color: $white;
+    background: #25D366;
+
+    &:focus,
+    &:hover{
+        color: $white;
+        background: #128C7E;
+        transform: scale(1.05);
+    }
+}
+
 // Back to Top
 .back-to-top{
     position: fixed;

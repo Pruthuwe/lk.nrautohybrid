@@ -39,7 +39,7 @@ const Footer = () => {
                     <p>
                       <span>Phone</span>: <a href="tel:+94772166306" style={{color: 'white'}}>+94 77 216 6306</a>
                     </p>
-                    <p><span>Email</span>: info@carserv.com</p>
+                    <p><span>Email</span>: info@greenauto.lk</p>
                   </div>
                 </div>
               </div>
@@ -53,8 +53,8 @@ const Footer = () => {
                     <ul className="widget-link">
                       <li><Link to="/about">About us</Link></li>
                       <li><Link to="/service">Our Services</Link></li>
-                      <li><Link to="/our-team">Our Mechanics</Link></li>
-                      <li><Link to="/blog">Blog Post</Link></li>
+                      <li><Link to="/team">Our Mechanics</Link></li>
+                      <li><Link to="/our-jobs">Blog Post</Link></li>
                       <li><Link to="/contact">Contact</Link></li>
                     </ul>
                   </div>
@@ -76,7 +76,7 @@ const Footer = () => {
                       </li>
                       <li><Link to="#">Terms & Conditions</Link></li>
                       <li><Link to="#">Return Policy</Link></li>
-                      <li><Link to="/emergency">Emergency Call</Link></li>
+                      <li><Link to="/contact">Emergency Call</Link></li>
                       <li><Link to="/service">Tracking Service</Link></li>
                     </ul>
                   </div>
@@ -96,8 +96,8 @@ const Footer = () => {
 
                     <form className="subscribe-form" onSubmit={(e) => e.preventDefault()}>
                       <input type="email" placeholder="Enter Email" />
-                      <button type="submit">
-                        <i className="fa fa-paper-plane-o"></i>
+                      <button type="submit" className="newsletter-submit-btn" aria-label="Subscribe">
+                        <i className="fas fa-paper-plane"></i>
                       </button>
                     </form>
                   </div>

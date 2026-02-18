@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
+import WhatsAppFloat from '../WhatsAppFloat/WhatsAppFloat';
 import servicesData from './servicesData.json';
 import { generateServiceBrochurePDF, generateCompanyDetailsPDF } from './pdfGenerator';
 import './ServiceDetailsPage.css';
@@ -203,6 +204,7 @@ const ServiceDetailsPage = () => {
 
       <Footer />
 
+      <WhatsAppFloat />
       {/* Back To Start */}
       <a href="#" className="back-to-top">
         <i className="icofont-simple-up"></i>

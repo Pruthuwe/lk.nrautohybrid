@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 // Import components
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
+import WhatsAppFloat from '../WhatsAppFloat/WhatsAppFloat';
 import CallToAction from '../HomePage/components/CallToAction';
 import BrandSection from '../HomePage/components/BrandSection';
 
@@ -207,6 +208,7 @@ const ProjectGallery = () => {
 
       <Footer />
 
+      <WhatsAppFloat />
       {/*Back To Start*/}
       <a href="#" className="back-to-top">
         <i className="icofont-simple-up"></i>
