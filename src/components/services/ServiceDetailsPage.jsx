@@ -92,7 +92,7 @@ const ServiceDetailsPage = () => {
                       <p>{currentService.section.description}</p>
                       <ul>
                         {currentService.section.items.map((item, index) => (
-                          <li key={index}><i className="fa fa-angle-double-right"></i> {item}</li>
+                          <li key={index}><i className="fas fa-angle-double-right"></i> {item}</li>
                         ))}
                       </ul>
                     </div>
@@ -173,7 +173,7 @@ const ServiceDetailsPage = () => {
                             generateServiceBrochurePDF(currentService);
                           }}
                         >
-                          <i className="fa fa-file-pdf-o"></i> Download Brochure <span className="fa fa-download"></span>
+                          <i className="far fa-file-pdf"></i> Download Brochure <span className="fas fa-download"></span>
                         </a>
                       </li>
                       <li>
@@ -184,7 +184,7 @@ const ServiceDetailsPage = () => {
                             generateCompanyDetailsPDF(servicesData);
                           }}
                         >
-                          <i className="fa fa-file-pdf-o"></i> Company Details <span className="fa fa-download"></span>
+                          <i className="far fa-file-pdf"></i> Company Details <span className="fas fa-download"></span>
                         </a>
                       </li>
                     </ul>
@@ -205,11 +205,6 @@ const ServiceDetailsPage = () => {
       <Footer />
 
       <WhatsAppFloat />
-      {/* Back To Start */}
-      <a href="#" className="back-to-top">
-        <i className="icofont-simple-up"></i>
-      </a>
-      {/* Back To End */}
     </>
   );
 };

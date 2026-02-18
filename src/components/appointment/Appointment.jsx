@@ -296,22 +296,22 @@ Please confirm this appointment. Thank you!`;
 
           <div className="col-12 mb-3">
             <p className="text-muted small mb-0">
-              <i className="icofont-clock-time me-2"></i>
+              <i className="far fa-clock me-2"></i>
               Business Hours: Monday - Saturday, 8:30 AM - 6:30 PM
             </p>
             <p className="text-info small mb-0 mt-1">
-              <i className="icofont-info-circle me-2"></i>
+              <i className="fas fa-info-circle me-2"></i>
               Only available time slots are shown for the selected date
             </p>
             <p className="text-success small mb-0 mt-1">
-              <i className="icofont-refresh me-2"></i>
+              <i className="fas fa-sync-alt me-2"></i>
               All time slots reset daily - each day starts fresh!
             </p>
           </div>
 
           <div className="col-12">
             <button type="submit" className="btn btn-primary w-100">
-              <i className="icofont-whatsapp me-2"></i>
+              <i className="fab fa-whatsapp me-2"></i>
               Book Appointment via WhatsApp
             </button>
           </div>

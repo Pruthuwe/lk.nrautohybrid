@@ -7,7 +7,7 @@ const Testimonial = ({ author, name, text }) => (
     <p>{text}</p>
     <div className="rating">
       {[...Array(5)].map((_, i) => (
-        <i key={i} className="fa fa-star"></i>
+        <i key={i} className="fas fa-star"></i>
       ))}
     </div>
   </div>

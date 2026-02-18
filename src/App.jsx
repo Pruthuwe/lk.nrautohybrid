@@ -38,6 +38,7 @@ import ProjectGallery from './components/pages/projectGallery/ProjectGallery.jsx
 import TeamProfile from './components/pages/TeamProfile.jsx'
 import Wishlist from './components/pages/Wishlist.jsx'
 import Error404 from './components/404/error404.jsx'
+import BackToTop from './components/BackToTop/BackToTop.jsx'
 
 function App() {
   return (
@@ -76,6 +77,7 @@ function App() {
           <Route path="/404" element={<Error404 />} /> */}
         </Routes>
       </div>
+      <BackToTop />
     </Router>
   )
 }

@@ -51,11 +51,6 @@ const HomePage = () => {
       <Footer />
 
       <WhatsAppFloat />
-      {/*Back To Start*/}
-      <a href="#" className="back-to-top">
-        <i className="icofont-simple-up"></i>
-      </a>
-      {/*Back To End*/}
     </>
     
   );

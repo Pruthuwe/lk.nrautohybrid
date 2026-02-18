@@ -83,8 +83,8 @@ const ProductDetailsRightSidebar = () => {
                               <img src="/assets/images/shop/product-details-03.jpg" alt="Product Details" />
                             </div>
                           </div>
-                          <div className="swiper-button-prev"><i className="icofont-rounded-left"></i></div>
-                          <div className="swiper-button-next"><i className="icofont-rounded-right"></i></div>
+                          <div className="swiper-button-prev"><i className="fas fa-chevron-left"></i></div>
+                          <div className="swiper-button-next"><i className="fas fa-chevron-right"></i></div>
                         </div>
 
                       </div>
@@ -125,9 +125,9 @@ const ProductDetailsRightSidebar = () => {
                             <button type="button" className="add">+</button>
                           </div>
                           <ul className="product-action">
-                            <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart"><i className="icofont-shopping-cart"></i></button></li>
-                            <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to wishlist"><i className="fa fa-heart-o"></i></button></li>
-                            <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to compare"><i className="fa fa-random"></i></button></li>
+                            <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart"><i className="fas fa-shopping-cart"></i></button></li>
+                            <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to wishlist"><i className="far fa-heart"></i></button></li>
+                            <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to compare"><i className="fas fa-random"></i></button></li>
                           </ul>
                         </div>
 
@@ -205,7 +205,7 @@ const ProductDetailsRightSidebar = () => {
                               </div>
                               <div className="review-content">
                                 <h4 className="name">Alfred Rasel</h4>
-                                <span className="date"><i className="fa fa-calendar"></i> 10 May, 2023</span>
+                                <span className="date"><i className="far fa-calendar-alt"></i> 10 May, 2023</span>
                                 <p>Car servicing rationally encounter consequences extremely painful. Nor again is the there anyone who loves pursues take a trivial example, which of us undertakes chooses pleasure rationally encounter consequence that are extremely painful. </p>
                               </div>
                             </div>
@@ -218,7 +218,7 @@ const ProductDetailsRightSidebar = () => {
                               </div>
                               <div className="review-content">
                                 <h4 className="name">Alfred Rasel</h4>
-                                <span className="date"><i className="fa fa-calendar"></i> 10 May, 2023</span>
+                                <span className="date"><i className="far fa-calendar-alt"></i> 10 May, 2023</span>
                                 <p>Car servicing rationally encounter consequences extremely painful. Nor again is the there anyone who loves pursues take a trivial example, which of us undertakes chooses pleasure rationally encounter consequence that are extremely painful. </p>
                               </div>
                             </div>
@@ -251,11 +251,11 @@ const ProductDetailsRightSidebar = () => {
                                     <div className="reviews-rating">
                                       <label>Rating:</label>
                                       <ul id="rating" className="rating">
-                                        <li className="star" title='Poor' data-value='1'><i className="icofont-star"></i></li>
-                                        <li className="star" title='Poor' data-value='2'><i className="icofont-star"></i></li>
-                                        <li className="star" title='Poor' data-value='3'><i className="icofont-star"></i></li>
-                                        <li className="star" title='Poor' data-value='4'><i className="icofont-star"></i></li>
-                                        <li className="star" title='Poor' data-value='5'><i className="icofont-star"></i></li>
+                                        <li className="star" title='Poor' data-value='1'><i className="fas fa-star"></i></li>
+                                        <li className="star" title='Poor' data-value='2'><i className="fas fa-star"></i></li>
+                                        <li className="star" title='Poor' data-value='3'><i className="fas fa-star"></i></li>
+                                        <li className="star" title='Poor' data-value='4'><i className="fas fa-star"></i></li>
+                                        <li className="star" title='Poor' data-value='5'><i className="fas fa-star"></i></li>
                                       </ul>
                                     </div>
                                     {/* Single Form End */}
@@ -305,9 +305,9 @@ const ProductDetailsRightSidebar = () => {
                             <Link to="/product-details-right-sidebar"><img src="/assets/images/shop/shop-4.webp" alt="Product" /></Link>
 
                             <ul className="product-action">
-                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart"><i className="icofont-shopping-cart"></i></button></li>
-                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickview"><i className="icofont-eye"></i></button></li>
-                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to wishlist"><i className="fa fa-heart-o"></i></button></li>
+                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart"><i className="fas fa-shopping-cart"></i></button></li>
+                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickview"><i className="fas fa-eye"></i></button></li>
+                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to wishlist"><i className="far fa-heart"></i></button></li>
                             </ul>
                           </div>
                           <div className="product-content">
@@ -329,9 +329,9 @@ const ProductDetailsRightSidebar = () => {
                             <Link to="/product-details-right-sidebar"><img src="/assets/images/shop/shop-5.webp" alt="Product" /></Link>
 
                             <ul className="product-action">
-                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart"><i className="icofont-shopping-cart"></i></button></li>
-                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickview"><i className="icofont-eye"></i></button></li>
-                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to wishlist"><i className="fa fa-heart-o"></i></button></li>
+                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart"><i className="fas fa-shopping-cart"></i></button></li>
+                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickview"><i className="fas fa-eye"></i></button></li>
+                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to wishlist"><i className="far fa-heart"></i></button></li>
                             </ul>
                           </div>
                           <div className="product-content">
@@ -353,9 +353,9 @@ const ProductDetailsRightSidebar = () => {
                             <Link to="/product-details-right-sidebar"><img src="/assets/images/shop/shop-6.webp" alt="Product" /></Link>
 
                             <ul className="product-action">
-                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart"><i className="icofont-shopping-cart"></i></button></li>
-                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickview"><i className="icofont-eye"></i></button></li>
-                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to wishlist"><i className="fa fa-heart-o"></i></button></li>
+                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart"><i className="fas fa-shopping-cart"></i></button></li>
+                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickview"><i className="fas fa-eye"></i></button></li>
+                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to wishlist"><i className="far fa-heart"></i></button></li>
                             </ul>
                           </div>
                           <div className="product-content">
@@ -376,9 +376,9 @@ const ProductDetailsRightSidebar = () => {
                             <Link to="/product-details-right-sidebar"><img src="/assets/images/shop/shop-7.webp" alt="Product" /></Link>
 
                             <ul className="product-action">
-                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart"><i className="icofont-shopping-cart"></i></button></li>
-                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickview"><i className="icofont-eye"></i></button></li>
-                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to wishlist"><i className="fa fa-heart-o"></i></button></li>
+                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart"><i className="fas fa-shopping-cart"></i></button></li>
+                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickview"><i className="fas fa-eye"></i></button></li>
+                              <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to wishlist"><i className="far fa-heart"></i></button></li>
                             </ul>
                           </div>
                           <div className="product-content">
@@ -541,8 +541,8 @@ const ProductDetailsRightSidebar = () => {
                           <img src="/assets/images/shop/product-details-03.jpg" alt="Product Details" />
                         </div>
                       </div>
-                      <div className="swiper-button-prev"><i className="icofont-rounded-left"></i></div>
-                      <div className="swiper-button-next"><i className="icofont-rounded-right"></i></div>
+                      <div className="swiper-button-prev"><i className="fas fa-chevron-left"></i></div>
+                      <div className="swiper-button-next"><i className="fas fa-chevron-right"></i></div>
                     </div>
 
                   </div>
@@ -583,9 +583,9 @@ const ProductDetailsRightSidebar = () => {
                         <button type="button" className="add">+</button>
                       </div>
                       <ul className="product-action">
-                        <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart"><i className="icofont-shopping-cart"></i></button></li>
-                        <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to wishlist"><i className="fa fa-heart-o"></i></button></li>
-                        <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to compare"><i className="fa fa-random"></i></button></li>
+                        <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to Cart"><i className="fas fa-shopping-cart"></i></button></li>
+                        <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to wishlist"><i className="far fa-heart"></i></button></li>
+                        <li><button data-bs-tooltip="tooltip" data-bs-placement="top" title="Add to compare"><i className="fas fa-random"></i></button></li>
                       </ul>
                     </div>
 

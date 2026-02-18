@@ -21,7 +21,7 @@ const CallToAction = () => {
                 {/* Section Title End */}
                 <p>Car servicing rationally encounter consequences extremely painful. Nor again is there anyone who loves or pursues of more than a quality servicing is very important</p>
                 <button onClick={() => setShowAppointmentModal(true)} className="btn btn-custom-01">
-                  <i className="icofont-ui-calendar me-2"></i>
+                  <i className="far fa-calendar-alt me-2"></i>
                   Book Appointment
                 </button>
               </div>

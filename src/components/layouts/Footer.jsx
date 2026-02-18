@@ -34,7 +34,7 @@ const Footer = () => {
                     <h6 className="title">Contact info</h6>
                     <p>
                       <a href="#" style={{color: 'white'}}>
-                        <i className="fa fa-map-marker" style={{marginRight: '8px'}}></i> Kurunegala, Sri Lanka
+                        <i className="fas fa-map-marker-alt" style={{marginRight: '8px'}}></i> Kurunegala, Sri Lanka
                       </a>
                     </p>
                     <p>
@@ -106,10 +106,10 @@ const Footer = () => {
                   <div className="widget-opening">
                     <h6 className="title">24 Hour Service</h6>
                     {/* <p>
-                      Monday to Friday <i className="fa fa-long-arrow-right"></i> 9.30 am – 11.30 pm
+                      Monday to Friday <i className="fas fa-long-arrow-alt-right"></i> 9.30 am – 11.30 pm
                     </p>
                     <p>
-                      Saturday to Sunday <i className="fa fa-long-arrow-right"></i> 10.30 am – 8.00 pm
+                      Saturday to Sunday <i className="fas fa-long-arrow-alt-right"></i> 10.30 am – 8.00 pm
                     </p> */}
                   </div>
                 </div>
@@ -128,15 +128,15 @@ const Footer = () => {
             <div className="copyright-text">
               <p>
                 © {new Date().getFullYear()} <span>Green Auto</span> Made with{" "}
-                <i className="icofont-heart-alt"></i> by{" "}
+                <i className="fas fa-heart"></i> by{" "}
                 <a href="https://deviitor.com/" rel="noreferrer">Deviitor.com</a>
               </p>
             </div>
 
             <div className="copyright-social">
-              <a href="https://web.facebook.com/greenauto.lk" target="_blank" rel="noopener noreferrer"><i className="icofont-facebook"></i></a>
-              <a href="https://www.instagram.com/greenauto.lk?igsh=cDR4ZGducHk1Nmhi" target="_blank" rel="noopener noreferrer"><i className="icofont-instagram"></i></a>
-              <a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="icofont-whatsapp"></i></a>
+              <a href="https://web.facebook.com/greenauto.lk" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/greenauto.lk?igsh=cDR4ZGducHk1Nmhi" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+              <a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a>
               <a href="https://www.tiktok.com/@greensroqj7?lang=en-GB&is_from_webapp=1&sender_device=mobile&sender_web_id=7607352033860322836" target="_blank" rel="noopener noreferrer"><i className="fab fa-tiktok"></i></a>
             </div>
 

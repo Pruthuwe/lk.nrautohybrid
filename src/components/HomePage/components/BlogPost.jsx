@@ -36,7 +36,7 @@ const BlogPost = ({ image, date, author, title, videoUrl, delay }) => {
               }}
               className="play-button"
               >
-                <i className="fa fa-play" style={{ 
+                <i className="fas fa-play" style={{ 
                   color: '#28a745', 
                   fontSize: '24px',
                   marginLeft: '5px'
@@ -46,8 +46,8 @@ const BlogPost = ({ image, date, author, title, videoUrl, delay }) => {
           </div>
           <div className="blog-content">
             <ul className="meta">
-              <li><i className="fa fa-calendar"></i> {date}</li>
-              <li><i className="fa fa-user-o"></i> {author}</li>
+              <li><i className="far fa-calendar-alt"></i> {date}</li>
+              <li><i className="far fa-user"></i> {author}</li>
             </ul>
             <h3 className="title" style={{ cursor: 'pointer' }} onClick={handlePlayVideo}>
               {title}

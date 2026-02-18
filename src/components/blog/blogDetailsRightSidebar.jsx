@@ -68,8 +68,8 @@ const BlogDetailsRightSidebar = () => {
                     <img src="/assets/images/blog/blog-details.jpg" alt="Blog Details" />
                   </div>
                   <ul className="meta">
-                    <li> <i className="fa fa-calendar"></i> 28 May, 2023</li>
-                    <li> <i className="fa fa-user-o"></i> Albert Ross</li>
+                    <li> <i className="far fa-calendar-alt"></i> 28 May, 2023</li>
+                    <li> <i className="far fa-user"></i> Albert Ross</li>
                   </ul>
                   <h2 className="title">Anti-lock Brake Servicing is very important for your Vehical</h2>
                   <p>Car servicing rationally encounter consequences extremely painful. Nor again is the there anyone who loves or pursues take a trivial example, which of us undertakes chooses pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because is pain, but because occasionally circumstances occur in which toil and pain can procure Car servicin rationally encounter consequences extremely painful. Nor again is the there anyone who loves or some of the pursues take a trivial example, which of us undertakes chooses pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues </p>
@@ -109,10 +109,10 @@ const BlogDetailsRightSidebar = () => {
                   <div className="blog-details-share">
                     <span className="label">Share:</span>
                     <ul className="social">
-                      <li><Link to="#"><i className="fa fa-whatsapp"></i></Link></li>
-                      <li><Link to="#"><i className="fa fa-facebook-f"></i></Link></li>
-                      <li><Link to="#"><i className="fa fa-twitter"></i></Link></li>
-                      <li><Link to="#"><i className="fa fa-linkedin"></i></Link></li>
+                      <li><Link to="#"><i className="fab fa-whatsapp"></i></Link></li>
+                      <li><Link to="#"><i className="fab fa-facebook-f"></i></Link></li>
+                      <li><Link to="#"><i className="fab fa-twitter"></i></Link></li>
+                      <li><Link to="#"><i className="fab fa-linkedin-in"></i></Link></li>
                     </ul>
                   </div>
                 </div>
@@ -122,14 +122,14 @@ const BlogDetailsRightSidebar = () => {
                 <div className="blog-details-next-previews">
                   <div className="blog-details-next">
                     <Link to="#">
-                      <i className="fa fa-angle-left"></i>
+                      <i className="fas fa-angle-left"></i>
                       <span>Don&apos;t do these 4 things if you want your car to retain its value</span>
                     </Link>
                   </div>
                   <div className="blog-details-previews">
                     <Link to="#">
                       <span>Latest Interior design concept for moder Vehicals</span>
-                      <i className="fa fa-angle-right"></i>
+                      <i className="fas fa-angle-right"></i>
                     </Link>
                   </div>
                 </div>
@@ -149,11 +149,11 @@ const BlogDetailsRightSidebar = () => {
                           <div className="comment-content">
                             <h4 className="name">Alfred Rasel</h4>
                             <ul className="meta">
-                              <li> <i className="fa fa-calendar"></i> 28 May, 2023</li>
-                              <li> <i className="fa fa-clock-o"></i> 12.45 PM</li>
+                              <li> <i className="far fa-calendar-alt"></i> 28 May, 2023</li>
+                              <li> <i className="far fa-clock"></i> 12.45 PM</li>
                             </ul>
                             <p>Car servicing rationally encounter consequences extremely painful. Nor again is the there anyone who loves pursues take a trivial example, which of us undertakes chooses pleasure rationally encounter consequence that are extremely painful. loves or pursues or desires to obtain pain </p>
-                            <Link to="#" className="reply"><i className="fa fa-reply"></i> Reply</Link>
+                            <Link to="#" className="reply"><i className="fas fa-reply"></i> Reply</Link>
                           </div>
                         </div>
                         {/* Blog Details Comment End */}
@@ -167,11 +167,11 @@ const BlogDetailsRightSidebar = () => {
                           <div className="comment-content">
                             <h4 className="name">Christina Lopez</h4>
                             <ul className="meta">
-                              <li> <i className="fa fa-calendar"></i> 28 May, 2023</li>
-                              <li> <i className="fa fa-clock-o"></i> 12.45 PM</li>
+                              <li> <i className="far fa-calendar-alt"></i> 28 May, 2023</li>
+                              <li> <i className="far fa-clock"></i> 12.45 PM</li>
                             </ul>
                             <p>Car servicing rationally encounter consequences extremely painful. Nor again is the there anyone who loves pursues take a trivial example, which of us undertakes chooses pleasure rationally encounter consequence that are extremely painful. loves or pursues or desires to obtain pain </p>
-                            <Link to="#" className="reply"><i className="fa fa-reply"></i> Reply</Link>
+                            <Link to="#" className="reply"><i className="fas fa-reply"></i> Reply</Link>
                           </div>
                         </div>
                         {/* Blog Details Comment End */}
@@ -239,7 +239,7 @@ const BlogDetailsRightSidebar = () => {
 
                     <div className="widget-search">
                       <input type="text" placeholder="Search Here" />
-                      <button><i className="fa fa-search"></i></button>
+                      <button><i className="fas fa-search"></i></button>
                     </div>
                   </div>
                   {/* Widget Sidebar End */}
@@ -282,7 +282,7 @@ const BlogDetailsRightSidebar = () => {
                           <Link to="/blog-details-right-sidebar"><img src="/assets/images/blog/blog-01.webp" alt="Blog" /></Link>
                         </div>
                         <div className="post-content">
-                          <span className="date"><i className="fa fa-calendar"></i> 12 May, 2023</span>
+                          <span className="date"><i className="far fa-calendar-alt"></i> 12 May, 2023</span>
                           <h4 className="title"><Link to="/blog-details-right-sidebar">Proper Servicing can improve performance</Link></h4>
                         </div>
                       </div>
@@ -293,7 +293,7 @@ const BlogDetailsRightSidebar = () => {
                           <Link to="/blog-details-right-sidebar"><img src="/assets/images/blog/blog-04.webp" alt="Blog" /></Link>
                         </div>
                         <div className="post-content">
-                          <span className="date"><i className="fa fa-calendar"></i> 12 May, 2023</span>
+                          <span className="date"><i className="far fa-calendar-alt"></i> 12 May, 2023</span>
                           <h4 className="title"><Link to="/blog-details-right-sidebar">Hydrolic Break system is very important</Link></h4>
                         </div>
                       </div>
@@ -304,7 +304,7 @@ const BlogDetailsRightSidebar = () => {
                           <Link to="/blog-details-right-sidebar"><img src="/assets/images/blog/blog-07.webp" alt="Blog" /></Link>
                         </div>
                         <div className="post-content">
-                          <span className="date"><i className="fa fa-calendar"></i> 12 May, 2023</span>
+                          <span className="date"><i className="far fa-calendar-alt"></i> 12 May, 2023</span>
                           <h4 className="title"><Link to="/blog-details-right-sidebar">Checking Tire condition and Replace system</Link></h4>
                         </div>
                       </div>
@@ -348,7 +348,7 @@ const BlogDetailsRightSidebar = () => {
 
       {/* Back To Start */}
       <Link to="#" className="back-to-top">
-        <i className="icofont-simple-up"></i>
+        <i className="fas fa-arrow-up"></i>
       </Link>
       {/* Back To End */}
     </>

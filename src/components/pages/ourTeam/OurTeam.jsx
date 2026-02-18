@@ -79,10 +79,10 @@ const OurTeam = () => {
                         <p className="meta">Rating: <span>5</span></p>
                       </div>
                       <ul className="social">
-                        <li><a href="#"><i className="fa fa-whatsapp"></i></a></li>
-                        <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
                       </ul>
                     </div>
                   </div>
@@ -104,10 +104,10 @@ const OurTeam = () => {
                         <p className="meta">Rating: <span>4.7</span></p>
                       </div>
                       <ul className="social">
-                        <li><a href="#"><i className="fa fa-whatsapp"></i></a></li>
-                        <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
                       </ul>
                     </div>
                   </div>
@@ -129,10 +129,10 @@ const OurTeam = () => {
                         <p className="meta">Rating: <span>5</span></p>
                       </div>
                       <ul className="social">
-                        <li><a href="#"><i className="fa fa-whatsapp"></i></a></li>
-                        <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
                       </ul>
                     </div>
                   </div>
@@ -154,10 +154,10 @@ const OurTeam = () => {
                         <p className="meta">Rating: <span>4.9</span></p>
                       </div>
                       <ul className="social">
-                        <li><a href="#"><i className="fa fa-whatsapp"></i></a></li>
-                        <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
                       </ul>
                     </div>
                   </div>
@@ -179,10 +179,10 @@ const OurTeam = () => {
                         <p className="meta">Rating: <span>4.8</span></p>
                       </div>
                       <ul className="social">
-                        <li><a href="#"><i className="fa fa-whatsapp"></i></a></li>
-                        <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
                       </ul>
                     </div>
                   </div>
@@ -204,10 +204,10 @@ const OurTeam = () => {
                         <p className="meta">Rating: <span>4.7</span></p>
                       </div>
                       <ul className="social">
-                        <li><a href="#"><i className="fa fa-whatsapp"></i></a></li>
-                        <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
                       </ul>
                     </div>
                   </div>
@@ -229,10 +229,10 @@ const OurTeam = () => {
                         <p className="meta">Rating: <span>5</span></p>
                       </div>
                       <ul className="social">
-                        <li><a href="#"><i className="fa fa-whatsapp"></i></a></li>
-                        <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
                       </ul>
                     </div>
                   </div>
@@ -254,10 +254,10 @@ const OurTeam = () => {
                         <p className="meta">Rating: <span>5</span></p>
                       </div>
                       <ul className="social">
-                        <li><a href="#"><i className="fa fa-whatsapp"></i></a></li>
-                        <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
                       </ul>
                     </div>
                   </div>
@@ -279,11 +279,6 @@ const OurTeam = () => {
       <Footer />
 
       <WhatsAppFloat />
-      {/*Back To Start*/}
-      <a href="#" className="back-to-top">
-        <i className="icofont-simple-up"></i>
-      </a>
-      {/*Back To End*/}
 
     </div>
   );

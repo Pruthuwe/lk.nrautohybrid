@@ -118,12 +118,12 @@ const ContactPage = () => {
                           <h4 className="info-title">Find us here</h4>
                           <p>
                             <a href="https://maps.app.goo.gl/3QXn9kBZr4etijd9A" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>
-                              <i className="fa fa-map-marker" style={{marginRight: '5px'}}></i> Kurunegala, Sri Lanka
+                              <i className="fas fa-map-marker-alt" style={{marginRight: '5px'}}></i> Kurunegala, Sri Lanka
                             </a>
                           </p>
                           <p>
                             <a href="https://maps.app.goo.gl/yPd5ipeRwaCycGfw7" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>
-                              <i className="fa fa-map-marker" style={{marginRight: '5px'}}></i> Thalawathugoda, Sri Lanka
+                              <i className="fas fa-map-marker-alt" style={{marginRight: '5px'}}></i> Thalawathugoda, Sri Lanka
                             </a>
                           </p>
                         </div>
@@ -152,9 +152,9 @@ const ContactPage = () => {
                         <div className="single-info">
                           <h4 className="info-title">Also Follow us</h4>
                           <ul className="social">
-                            <li><a href="https://web.facebook.com/greenauto.lk"><i className="icofont-facebook"></i></a></li>
-                            <li><a href="https://www.instagram.com/greenauto.lk?igsh=cDR4ZGducHk1Nmhi" target="_blank" rel="noopener noreferrer"><i className="icofont-instagram"></i></a></li>
-                            <li><a href="https://wa.me/94772166306"><i className="icofont-whatsapp"></i></a></li>
+                            <li><a href="https://web.facebook.com/greenauto.lk"><i className="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/greenauto.lk?igsh=cDR4ZGducHk1Nmhi" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                            <li><a href="https://wa.me/94772166306"><i className="fab fa-whatsapp"></i></a></li>
                             <li><a href="https://www.tiktok.com/@greensroqj7?lang=en-GB&is_from_webapp=1&sender_device=mobile&sender_web_id=7607352033860322836" target="_blank" rel="noopener noreferrer"><i className="fab fa-tiktok"></i></a></li>
                           </ul>
                         </div>
@@ -234,11 +234,6 @@ const ContactPage = () => {
       <Footer />
 
       <WhatsAppFloat />
-      {/* Back To Start */}
-      <Link to="#" className="back-to-top">
-        <i className="icofont-simple-up"></i>
-      </Link>
-      {/* Back To End */}
     </>
   );
 };

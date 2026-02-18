@@ -96,10 +96,10 @@ const TeamProfile = () => {
                     </div>
                     <div className="info">
                       <ul className="social">
-                        <li><a href="#"><i className="fa fa-whatsapp"></i></a></li>
-                        <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
                       </ul>
                     </div>
                   </div>
@@ -126,7 +126,7 @@ const TeamProfile = () => {
 
       {/*Back To Start*/}
       <a href="#" className="back-to-top">
-        <i className="icofont-simple-up"></i>
+        <i className="fas fa-arrow-up"></i>
       </a>
       {/*Back To End*/}
 

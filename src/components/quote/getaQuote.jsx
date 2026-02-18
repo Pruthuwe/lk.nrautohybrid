@@ -70,7 +70,7 @@ const GetaQuote = ({ onClose }) => {
         {/* Message Display */}
         {message.text && (
           <div className={`alert ${message.type === 'success' ? 'alert-success' : 'alert-danger'} mb-4`} role="alert">
-            <i className={`icofont-${message.type === 'success' ? 'check-circled' : 'warning-alt'} me-2`}></i>
+            <i className={`${message.type === 'success' ? 'fas fa-check-circle' : 'fas fa-exclamation-triangle'} me-2`}></i>
             {message.text}
           </div>
         )}
@@ -78,7 +78,7 @@ const GetaQuote = ({ onClose }) => {
         {/* Vehicle Information */}
         <div className="mb-4 pt-2">
           <h6 className="fw-bold mb-3 text-dark">
-            <i className="icofont-car text-primary me-2"></i>
+            <i className="fas fa-car text-primary me-2"></i>
             Vehicle Information
           </h6>
 
@@ -142,7 +142,7 @@ const GetaQuote = ({ onClose }) => {
         {/* Contact Information */}
         <div className="mb-4 pt-1">
           <h6 className="fw-bold mb-3 text-dark">
-            <i className="icofont-user text-primary me-2"></i>
+            <i className="fas fa-user text-primary me-2"></i>
             Contact Information
           </h6>
 
@@ -209,7 +209,7 @@ const GetaQuote = ({ onClose }) => {
             </>
           ) : (
             <>
-              <i className="icofont-paper-plane me-2"></i>
+              <i className="fas fa-paper-plane me-2"></i>
               Submit Quote Request
             </>
           )}

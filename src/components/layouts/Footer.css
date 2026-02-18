@@ -243,10 +243,51 @@
 @media only screen and (min-width: 768px) and (max-width: 991px),
   only screen and (max-width: 767px) {
   .footer-link-wrapper {
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
 
 .footer-link-wrapper .footer-widget {
   width: 50%;
+}
+
+/* Small and tablet: footer content center and justify */
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  only screen and (max-width: 767px) {
+  .footer-widget-section .footer-widget {
+    text-align: center;
+  }
+
+  .footer-widget-section .footer-widget p {
+    text-align: justify;
+  }
+
+  .footer-widget-section .footer-widget .footer-logo {
+    display: inline-block;
+  }
+
+  .footer-widget-section .footer-widget .widget-info,
+  .footer-widget-section .footer-widget .widget-link,
+  .footer-widget-section .footer-widget .widget-subscribe {
+    text-align: center;
+  }
+
+  .footer-widget-section .footer-widget .widget-info .title,
+  .footer-widget-section .footer-widget .widget-info p {
+    text-align: center;
+  }
+
+  .footer-widget-section .footer-widget .widget-link ul {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .footer-widget-section .footer-widget .widget-subscribe .subscribe-form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-widget-section .footer-widget .widget-subscribe p {
+    text-align: justify;
+  }
 }

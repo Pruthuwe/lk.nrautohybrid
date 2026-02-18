@@ -189,20 +189,20 @@ const Header = () => {
               </div>
 
                   {/* <span className="mb-0">
-                    <i className="icofont-location-pin me-2"></i>
+                    <i className="fas fa-map-marker-alt me-2"></i>
                     Thalawathugoda, Sri Lanka.
                   </span> */}
 
                 <span className="mb-0 px-3 py-1 rounded">
-                  <i className="icofont-clock-time me-2"></i>
+                  <i className="far fa-clock me-2"></i>
                   Monday - Saturday: 8:30 am - 6:30 pm
                 </span>
               </div>
 
               <div className="header-top-social d-flex align-items-center gap-3">
-                <a href="https://web.facebook.com/greenauto.lk" target="_blank" rel="noopener noreferrer"><i className="icofont-facebook"></i></a>
-                <a href="https://www.instagram.com/greenauto.lk?igsh=cDR4ZGducHk1Nmhi" target="_blank" rel="noopener noreferrer"><i className="icofont-instagram"></i></a>
-                <a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="icofont-whatsapp"></i></a>
+                <a href="https://web.facebook.com/greenauto.lk" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/greenauto.lk?igsh=cDR4ZGducHk1Nmhi" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+                <a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a>
                 <a href="https://www.tiktok.com/@greensroqj7?lang=en-GB&is_from_webapp=1&sender_device=mobile&sender_web_id=7607352033860322836" target="_blank" rel="noopener noreferrer"><i className="fab fa-tiktok"></i></a>
               </div>
             </div>
@@ -256,7 +256,7 @@ const Header = () => {
                       onFocus={() => searchResults.length > 0 && setShowSearchResults(true)}
                     />
                     <button className="btn btn-outline-primary" type="submit">
-                      <i className="icofont-search-2"></i>
+                      <i className="fas fa-search"></i>
                     </button>
                   </form>
                   
@@ -289,7 +289,7 @@ const Header = () => {
                         </>
                       ) : (
                         <div className="search-results-dropdown__no-results">
-                          <i className="icofont-search-2"></i>
+                          <i className="fas fa-search"></i>
                           No results found for "{searchQuery}"
                         </div>
                       )}
@@ -327,9 +327,9 @@ const Header = () => {
 
           {/* Header Social Links Start */}
           <div className="header-top-social d-flex align-items-center justify-content-center gap-3">
-            <a href="https://web.facebook.com/greenauto.lk" target="_blank" rel="noopener noreferrer"><i className="icofont-facebook"></i></a>
-            <a href="https://www.instagram.com/greenauto.lk?igsh=cDR4ZGducHk1Nmhi" target="_blank" rel="noopener noreferrer"><i className="icofont-instagram"></i></a>
-            <a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="icofont-whatsapp"></i></a>
+            <a href="https://web.facebook.com/greenauto.lk" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/greenauto.lk?igsh=cDR4ZGducHk1Nmhi" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+            <a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a>
             <a href="https://www.tiktok.com/@greensroqj7?lang=en-GB&is_from_webapp=1&sender_device=mobile&sender_web_id=7607352033860322836" target="_blank" rel="noopener noreferrer"><i className="fab fa-tiktok"></i></a>
           </div>
           {/* Header Social Links End */}
@@ -348,7 +348,7 @@ const Header = () => {
                   setTimeout(() => setShowSearchResults(false), 200);
                 }}
               />
-              <button type="submit"><i className="icofont-search-2"></i></button>
+              <button type="submit"><i className="fas fa-search"></i></button>
             </form>
             
             {/* Mobile Search Results */}

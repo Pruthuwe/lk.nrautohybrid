@@ -101,7 +101,7 @@ const RegisterPage = () => {
 
       {/* Back To Start */}
       <a href="#" className="back-to-top">
-        <i className="icofont-simple-up"></i>
+        <i className="fas fa-arrow-up"></i>
       </a>
       {/* Back To End */}
     </>

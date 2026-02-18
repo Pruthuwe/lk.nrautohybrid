@@ -50,7 +50,7 @@ const WhatsAppFloat = () => {
           <div className="whatsapp-popup-header">
             <div className="whatsapp-popup-header-left">
               <div className="whatsapp-popup-header-icon">
-                <i className="icofont-whatsapp"></i>
+                <i className="fab fa-whatsapp"></i>
               </div>
               <div className="whatsapp-popup-header-text">
                 <span className="whatsapp-popup-title">Support</span>
@@ -87,7 +87,7 @@ const WhatsAppFloat = () => {
               onClick={handleSendWhatsApp}
               aria-label="Send"
             >
-              <i className="icofont-paper-plane"></i>
+              <i className="fas fa-paper-plane"></i>
             </button>
           </div>
         </div>
@@ -99,7 +99,7 @@ const WhatsAppFloat = () => {
         title="Chat on WhatsApp"
         aria-label="Chat on WhatsApp"
       >
-        <i className="icofont-whatsapp"></i>
+        <i className="fab fa-whatsapp"></i>
       </button>
     </div>
   );

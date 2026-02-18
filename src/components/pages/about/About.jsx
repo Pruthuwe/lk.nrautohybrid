@@ -136,7 +136,7 @@ const About = () => {
           <div className="section-title text-center">
             <h5 className="sub-title">Meet Our Leader</h5>
             <h2 className="main-title">Experienced Leadership at Green Auto</h2>
-            <p>With over 8 years of dedicated expertise in hybrid vehicle technology, <br /> our team leader ensures every service meets the highest standards of excellence</p>
+            <p style={{color: '#000000'}}>With over 8 years of dedicated expertise in hybrid vehicle technology, <br /> our team leader ensures every service meets the highest standards of excellence</p>
           </div>
           {/* Section Title End */}
 
@@ -157,9 +157,9 @@ const About = () => {
                         <p className="meta">Experience: <strong>8+ years</strong></p>
                       </div>
                       <ul className="social">
-                        <li><a href="https://web.facebook.com/greenauto.lk"><i className="icofont-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/greenauto.lk?igsh=cDR4ZGducHk1Nmhi" target="_blank" rel="noopener noreferrer"><i className="icofont-instagram"></i></a></li>
-                        <li><a href="https://wa.me/94772166306"><i className="icofont-whatsapp"></i></a></li>
+                        <li><a href="https://web.facebook.com/greenauto.lk"><i className="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/greenauto.lk?igsh=cDR4ZGducHk1Nmhi" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
+                        <li><a href="https://wa.me/94772166306"><i className="fab fa-whatsapp"></i></a></li>
                         <li><a href="https://www.tiktok.com/@greensroqj7?lang=en-GB&is_from_webapp=1&sender_device=mobile&sender_web_id=7607352033860322836" target="_blank" rel="noopener noreferrer"><i className="fab fa-tiktok"></i></a></li>
                       </ul>
                     </div>
@@ -202,11 +202,6 @@ const About = () => {
       <Footer />
 
       <WhatsAppFloat />
-      {/*Back To Start*/}
-      <a href="#" className="back-to-top">
-        <i className="icofont-simple-up"></i>
-      </a>
-      {/*Back To End*/}
 
       {/* Appointment Modal */}
       {showAppointmentModal && (
