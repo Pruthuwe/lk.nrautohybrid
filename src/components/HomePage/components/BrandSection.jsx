@@ -32,9 +32,8 @@ const BrandSection = () => {
   }, []);
 
   const handleSwiper = (swiper) => {
-    console.log('Swiper initialized:', swiper);
-    console.log('Autoplay enabled:', swiper.autoplay.enabled);
     swiperRef.current = { swiper };
+    swiper.slideTo(0, 0);
   };
 
   return (
@@ -53,6 +52,7 @@ const BrandSection = () => {
             modules={[Autoplay]}
             spaceBetween={30}
             slidesPerView={5}
+            initialSlide={0}
             autoplay={{
               delay: 2000,
               disableOnInteraction: false

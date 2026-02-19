@@ -1,31 +1,86 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './WhatsAppFloat.css';
 
-const WHATSAPP_NUMBER = '94713210583';
-const STORAGE_KEY = 'whatsapp_popup_closed';
+const WHATSAPP_NUMBER = '94772166306';
+const POPUP_SHOW_INTERVAL_MS = 60 * 1000;   // appear every 1 minute
+const POPUP_STAY_DURATION_MS = 10 * 1000;   // stay 10 seconds then hide (unless typing)
+const TYPING_NO_SEND_TIMEOUT_MS = 2 * 60 * 1000; // if typing but don't send within 3 min: clear input & close
+const POPUP_HIDE_ANIMATION_MS = 280;
 
 const WhatsAppFloat = () => {
-  const [whatsappOpen, setWhatsappOpen] = useState(() => {
-    if (typeof sessionStorage === 'undefined') return true;
-    return !sessionStorage.getItem(STORAGE_KEY);
-  });
+  const [whatsappOpen, setWhatsappOpen] = useState(true);
+  const [whatsappClosing, setWhatsappClosing] = useState(false);
   const [whatsappMessage, setWhatsappMessage] = useState('');
+  const hideAfter10sRef = useRef(null);
+  const noSendWithin3minRef = useRef(null);
 
-  const closePopup = () => {
-    setWhatsappMessage('');
+  const requestClose = useCallback(() => {
     setWhatsappOpen(false);
-    try {
-      sessionStorage.setItem(STORAGE_KEY, '1');
-    } catch {
-      // sessionStorage not available (e.g. private mode)
+    setWhatsappClosing(true);
+  }, []);
+
+  useEffect(() => {
+    if (!whatsappClosing) return;
+    const id = setTimeout(() => setWhatsappClosing(false), POPUP_HIDE_ANIMATION_MS);
+    return () => clearTimeout(id);
+  }, [whatsappClosing]);
+
+  const clearTimers = useCallback(() => {
+    if (hideAfter10sRef.current) {
+      clearTimeout(hideAfter10sRef.current);
+      hideAfter10sRef.current = null;
     }
+    if (noSendWithin3minRef.current) {
+      clearTimeout(noSendWithin3minRef.current);
+      noSendWithin3minRef.current = null;
+    }
+  }, []);
+
+  const closePopup = useCallback(() => {
+    clearTimers();
+    setWhatsappMessage('');
+    requestClose();
+  }, [clearTimers, requestClose]);
+
+  // Cycle: show popup every 1 minute
+  useEffect(() => {
+    const showIntervalId = setInterval(() => setWhatsappOpen(true), POPUP_SHOW_INTERVAL_MS);
+    return () => clearInterval(showIntervalId);
+  }, []);
+
+  // When popup opens: start 10s auto-hide (unless user is typing – see input handlers)
+  useEffect(() => {
+    if (!whatsappOpen) return;
+    clearTimers();
+    hideAfter10sRef.current = setTimeout(() => {
+      hideAfter10sRef.current = null;
+      setWhatsappMessage('');
+      requestClose();
+    }, POPUP_STAY_DURATION_MS);
+    return () => clearTimers();
+  }, [whatsappOpen, clearTimers, requestClose]);
+
+  // When user focuses or types in input: cancel 10s hide, start/reset 3min "no send" timer
+  const onInputInteraction = () => {
+    if (hideAfter10sRef.current) {
+      clearTimeout(hideAfter10sRef.current);
+      hideAfter10sRef.current = null;
+    }
+    if (noSendWithin3minRef.current) clearTimeout(noSendWithin3minRef.current);
+    noSendWithin3minRef.current = setTimeout(() => {
+      noSendWithin3minRef.current = null;
+      setWhatsappMessage('');
+      requestClose();
+    }, TYPING_NO_SEND_TIMEOUT_MS);
   };
 
   const handleSendWhatsApp = () => {
+    clearTimers();
     const text = whatsappMessage.trim() || 'Hello!';
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank', 'noopener,noreferrer');
-    closePopup();
+    setWhatsappMessage('');
+    requestClose();
   };
 
   useEffect(() => {
@@ -41,12 +96,14 @@ const WhatsAppFloat = () => {
       clearTimeout(id);
       document.removeEventListener('click', close);
     };
-  }, [whatsappOpen]);
+  }, [whatsappOpen, closePopup]);
+
+  const showPopup = whatsappOpen || whatsappClosing;
 
   return (
     <div className="whatsapp-float-wrap">
-      {whatsappOpen && (
-        <div className="whatsapp-popup">
+      {showPopup && (
+        <div className={`whatsapp-popup${whatsappClosing ? ' whatsapp-popup--closing' : ''}`}>
           <div className="whatsapp-popup-header">
             <div className="whatsapp-popup-header-left">
               <div className="whatsapp-popup-header-icon">
@@ -77,7 +134,11 @@ const WhatsAppFloat = () => {
               className="whatsapp-popup-input"
               placeholder="Type a message..."
               value={whatsappMessage}
-              onChange={(e) => setWhatsappMessage(e.target.value)}
+              onChange={(e) => {
+                setWhatsappMessage(e.target.value);
+                onInputInteraction();
+              }}
+              onFocus={onInputInteraction}
               onKeyDown={(e) => e.key === 'Enter' && handleSendWhatsApp()}
               autoComplete="off"
             />
@@ -95,7 +156,7 @@ const WhatsAppFloat = () => {
       <button
         type="button"
         className="whatsapp-float"
-        onClick={() => setWhatsappOpen((open) => !open)}
+        onClick={() => { if (whatsappOpen || whatsappClosing) closePopup(); else setWhatsappOpen(true); }}
         title="Chat on WhatsApp"
         aria-label="Chat on WhatsApp"
       >

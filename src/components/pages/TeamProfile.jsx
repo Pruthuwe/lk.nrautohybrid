@@ -96,7 +96,7 @@ const TeamProfile = () => {
                     </div>
                     <div className="info">
                       <ul className="social">
-                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a></li>
                         <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i className="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i className="fab fa-instagram"></i></a></li>

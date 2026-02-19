@@ -1,5 +1,52 @@
 /* App-specific styles - now using Tailwind CSS */
 
+/* Appointment & Quote modal: appear from top to center, close from center to bottom (not video modals) */
+.modal.fade.show:not(.video-modal) .modal-dialog {
+  animation: modalSlideInFromTop 0.4s cubic-bezier(0.34, 1.2, 0.64, 1) forwards;
+}
+.modal.fade.show.quote-modal .modal-dialog,
+.modal.fade.show:not(.video-modal) .modal-dialog.modal-dialog-centered {
+  animation: modalSlideInFromTop 0.4s cubic-bezier(0.34, 1.2, 0.64, 1) forwards;
+}
+.modal.modal--closing:not(.video-modal) .modal-dialog {
+  animation: modalSlideOutToBottom 0.32s ease forwards;
+}
+.modal-backdrop.fade.show {
+  animation: modalBackdropIn 0.3s ease forwards;
+}
+.modal.modal--closing:not(.video-modal) + .modal-backdrop.fade.show,
+.modal-backdrop.modal-backdrop--closing {
+  animation: modalBackdropOut 0.28s ease forwards;
+}
+@keyframes modalSlideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100vh);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes modalSlideOutToBottom {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0.4;
+    transform: translateY(100vh);
+  }
+}
+@keyframes modalBackdropIn {
+  from { opacity: 0; }
+  to { opacity: 0.5; }
+}
+@keyframes modalBackdropOut {
+  from { opacity: 0.5; }
+  to { opacity: 0; }
+}
+
 /* Full page: no white space on right when header offcanvas/menu is open */
 html:has(body.modal-open) {
   overflow-x: hidden !important;

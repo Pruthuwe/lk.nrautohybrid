@@ -59,7 +59,7 @@ const BlogPost = ({ image, date, author, title, videoUrl, delay }) => {
       {/* Video Modal */}
       {showVideoModal && videoUrl && (
         <>
-          <div className="modal fade show d-block" tabIndex="-1" role="dialog" style={{zIndex: 1050}}>
+          <div className="modal fade show d-block video-modal" tabIndex="-1" role="dialog" style={{zIndex: 1050}}>
             <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
               <div className="modal-content" style={{ backgroundColor: '#000' }}>
                 <div className="modal-header" style={{ borderBottom: 'none', padding: '10px' }}>

@@ -109,7 +109,7 @@ const BlogDetailsLeftSidebar = () => {
                   <div className="blog-details-share">
                     <span className="label">Share:</span>
                     <ul className="social">
-                      <li><Link to="#"><i className="fab fa-whatsapp"></i></Link></li>
+                      <li><a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a></li>
                       <li><Link to="#"><i className="fab fa-facebook-f"></i></Link></li>
                       <li><Link to="#"><i className="fab fa-twitter"></i></Link></li>
                       <li><Link to="#"><i className="fab fa-linkedin-in"></i></Link></li>

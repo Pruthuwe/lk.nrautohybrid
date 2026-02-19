@@ -1,84 +1,26 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import GetaQuote from "../quote/getaQuote";
+import { Link, useLocation } from "react-router-dom";
+import Appointment from "../appointment/Appointment";
 import "./Header.css";
 
+const MODAL_CLOSE_ANIMATION_MS = 320;
+
 const Header = () => {
-  const navigate = useNavigate();
   const location = useLocation();
   const [isSticky, setIsSticky] = useState(false);
-  const [showQuoteModal, setShowQuoteModal] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
-  const [showSearchResults, setShowSearchResults] = useState(false);
+  const [showAppointmentModal, setShowAppointmentModal] = useState(false);
+  const [appointmentModalClosing, setAppointmentModalClosing] = useState(false);
 
-  // Search content database - Only pages accessible through header navigation
-  const searchContent = [
-    { title: 'Home', url: '/', description: 'Green Auto - Expert Vehicle Repair Services', keywords: 'home main index landing page welcome get a quote appointment contact us' },
-    { title: 'About Us', url: '/about', description: 'Learn about Green Auto and our expertise in vehicle repairs', keywords: 'about company history team experience expertise background information' },
-    { title: 'Service', url: '/service', description: 'Our specialized repair services and maintenance', keywords: 'services repairs maintenance fix turbo abs hybrid engine diagnostics' },
-    { title: 'Our Jobs', url: '/our-jobs', description: 'View our completed projects and gallery', keywords: 'projects gallery work jobs portfolio completed past showcase' },
-    { title: 'Team', url: '/team', description: 'Meet our expert mechanics and technicians', keywords: 'team mechanics staff experts technicians professionals people' },
-    { title: 'Contact', url: '/contact', description: 'Get in touch with us - Phone, Email, Location', keywords: 'contact phone email location address kurunegala sri lanka reach us' }
-  ];
-
-  const handleSearch = (query) => {
-    setSearchQuery(query);
-    
-    if (query.trim().length < 2) {
-      setSearchResults([]);
-      setShowSearchResults(false);
-      return;
-    }
-
-    const lowerQuery = query.toLowerCase();
-    const queryWords = lowerQuery.split(' ').filter(word => word.length > 0);
-    
-    // Score and filter results
-    const scoredResults = searchContent.map(item => {
-      let score = 0;
-      const itemText = `${item.title} ${item.description} ${item.keywords}`.toLowerCase();
-      
-      // Exact title match gets highest score
-      if (item.title.toLowerCase().includes(lowerQuery)) {
-        score += 10;
-      }
-      
-      // Description match
-      if (item.description.toLowerCase().includes(lowerQuery)) {
-        score += 5;
-      }
-      
-      // Keywords match
-      if (item.keywords.toLowerCase().includes(lowerQuery)) {
-        score += 3;
-      }
-      
-      // Individual word matches
-      queryWords.forEach(word => {
-        if (itemText.includes(word)) {
-          score += 1;
-        }
-      });
-      
-      return { ...item, score };
-    })
-    .filter(item => item.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 8); // Limit to top 8 results
-
-    setSearchResults(scoredResults);
-    setShowSearchResults(true);
+  const closeAppointmentModal = () => {
+    setShowAppointmentModal(false);
+    setAppointmentModalClosing(true);
   };
 
-  const handleSearchSubmit = (e) => {
-    e.preventDefault();
-    if (searchResults.length > 0) {
-      setShowSearchResults(false);
-      setSearchQuery('');
-      navigate(searchResults[0].url);
-    }
-  };
+  useEffect(() => {
+    if (!appointmentModalClosing) return;
+    const id = setTimeout(() => setAppointmentModalClosing(false), MODAL_CLOSE_ANIMATION_MS);
+    return () => clearTimeout(id);
+  }, [appointmentModalClosing]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -91,20 +33,9 @@ const Header = () => {
       }
     };
 
-    const handleClickOutside = (event) => {
-      if (showSearchResults && !event.target.closest('.header-search')) {
-        setShowSearchResults(false);
-      }
-    };
-
     window.addEventListener('scroll', handleScroll);
-    document.addEventListener('mousedown', handleClickOutside);
-    
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [showSearchResults]);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Remove white space on right when offcanvas menu opens (clear immediately on click so no flash during open)
   useEffect(() => {
@@ -185,7 +116,7 @@ const Header = () => {
               <div className="header-top-info d-flex align-items-center gap-4">
               <div className="header-top-info">
                 <p>Kurunegala, Sri Lanka</p>
-                <p>Call us: <a href="tel:+12025256214">+94 77 216 6306</a></p>
+                <p>Call us: <a href="tel:+94772166306">+94 77 216 6306</a></p>
               </div>
 
                   {/* <span className="mb-0">
@@ -243,59 +174,10 @@ const Header = () => {
               {/* Header Meta */}
               <div className="header-meta d-flex align-items-center gap-3">
 
-                <button onClick={() => setShowQuoteModal(true)} className="btn btn-outline-primary">Get a Quote</button>
-
-                <div className="header-search d-none d-lg-block">
-                  <form onSubmit={handleSearchSubmit}>
-                    <input 
-                      type="text" 
-                      placeholder="Search" 
-                      className="form-control border-primary" 
-                      value={searchQuery}
-                      onChange={(e) => handleSearch(e.target.value)}
-                      onFocus={() => searchResults.length > 0 && setShowSearchResults(true)}
-                    />
-                    <button className="btn btn-outline-primary" type="submit">
-                      <i className="fas fa-search"></i>
-                    </button>
-                  </form>
-                  
-                  {/* Search Results Dropdown */}
-                  {showSearchResults && (
-                    <div className="search-results-dropdown">
-                      {searchResults.length > 0 ? (
-                        <>
-                          <div className="search-results-dropdown__header">
-                            Found {searchResults.length} result{searchResults.length !== 1 ? 's' : ''}
-                          </div>
-                          {searchResults.map((result, index) => (
-                            <Link
-                              key={index}
-                              to={result.url}
-                              onClick={() => {
-                                setShowSearchResults(false);
-                                setSearchQuery('');
-                              }}
-                              className="search-results-dropdown__item"
-                            >
-                              <div className="search-results-dropdown__item-title">
-                                {result.title}
-                              </div>
-                              <div className="search-results-dropdown__item-description">
-                                {result.description}
-                              </div>
-                            </Link>
-                          ))}
-                        </>
-                      ) : (
-                        <div className="search-results-dropdown__no-results">
-                          <i className="fas fa-search"></i>
-                          No results found for "{searchQuery}"
-                        </div>
-                      )}
-                    </div>
-                  )}
-                </div>
+                <button onClick={() => setShowAppointmentModal(true)} className="btn btn-primary">
+                  <i className="far fa-calendar-alt me-2"></i>
+                  Book Appointment
+                </button>
 
                 <div className="header-toggle d-lg-none">
                   <button className="menu-toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
@@ -333,58 +215,6 @@ const Header = () => {
             <a href="https://www.tiktok.com/@greensroqj7?lang=en-GB&is_from_webapp=1&sender_device=mobile&sender_web_id=7607352033860322836" target="_blank" rel="noopener noreferrer"><i className="fab fa-tiktok"></i></a>
           </div>
           {/* Header Social Links End */}
-
-          {/* Header Search Start */}
-          <div className="header-search">
-            <form onSubmit={handleSearchSubmit}>
-              <input 
-                type="text" 
-                placeholder="Search" 
-                value={searchQuery}
-                onChange={(e) => handleSearch(e.target.value)}
-                onFocus={() => searchResults.length > 0 && setShowSearchResults(true)}
-                onBlur={() => {
-                  // Delay to allow clicking on search results
-                  setTimeout(() => setShowSearchResults(false), 200);
-                }}
-              />
-              <button type="submit"><i className="fas fa-search"></i></button>
-            </form>
-            
-            {/* Mobile Search Results */}
-            {showSearchResults && searchResults.length > 0 && (
-              <div className="search-results-dropdown">
-                <div className="search-results-dropdown__header">
-                  Found {searchResults.length} result{searchResults.length !== 1 ? 's' : ''}
-                </div>
-                {searchResults.map((result, index) => (
-                  <Link
-                    key={index}
-                    to={result.url}
-                    onClick={() => {
-                      setShowSearchResults(false);
-                      setSearchQuery('');
-                      // Close the offcanvas
-                      const offcanvas = document.getElementById('offcanvasExample');
-                      const bsOffcanvas = window.bootstrap?.Offcanvas?.getInstance(offcanvas);
-                      if (bsOffcanvas) {
-                        bsOffcanvas.hide();
-                      }
-                    }}
-                    className="search-results-dropdown__item"
-                  >
-                    <div className="search-results-dropdown__item-title">
-                      {result.title}
-                    </div>
-                    <div className="search-results-dropdown__item-description">
-                      {result.description}
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-          {/* Header Search End */}
 
           {/* Mobile Menu Start */}
           <div className="mobile-menu-items">
@@ -435,12 +265,11 @@ const Header = () => {
           </div>
           {/* Mobile Menu End */}
 
-          {/* Get a Quote Button Start */}
+          {/* Book Appointment Button Start - same as CallToAction */}
           <div className="mobile-quote-btn">
             <button 
               onClick={() => {
-                setShowQuoteModal(true);
-                // Close the offcanvas
+                setShowAppointmentModal(true);
                 const offcanvas = document.getElementById('offcanvasExample');
                 const bsOffcanvas = window.bootstrap?.Offcanvas?.getInstance(offcanvas);
                 if (bsOffcanvas) {
@@ -449,28 +278,27 @@ const Header = () => {
               }} 
               className="btn btn-primary w-100"
             >
-              Get a Quote
+              <i className="far fa-calendar-alt me-2"></i>
+              Book Appointment
             </button>
           </div>
-          {/* Get a Quote Button End */}
+          {/* Book Appointment Button End */}
         </div>
       </div>
 
-      {/* Quote Modal */}
-      {showQuoteModal && (
+      {/* Appointment Modal - same structure as CallToAction for consistent position */}
+      {(showAppointmentModal || appointmentModalClosing) && (
         <>
-          <div className="modal fade show d-block quote-modal" tabIndex="-1" role="dialog">
-            <div className="modal-dialog modal-lg" role="document">
+          <div className={`modal fade show d-block quote-modal${appointmentModalClosing ? ' modal--closing' : ''}`} tabIndex="-1" role="dialog" style={{ zIndex: 1050 }}>
+            <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
               <div className="modal-content">
                 <div className="modal-body p-4">
-                  <GetaQuote 
-                    onClose={() => setShowQuoteModal(false)}
-                  />
+                  <Appointment onClose={closeAppointmentModal} />
                 </div>
               </div>
             </div>
           </div>
-          <div className="modal-backdrop fade show quote-modal-backdrop" onClick={() => setShowQuoteModal(false)}></div>
+          <div className={`modal-backdrop fade show quote-modal-backdrop${appointmentModalClosing ? ' modal-backdrop--closing' : ''}`} onClick={closeAppointmentModal} style={{ zIndex: 1040 }}></div>
         </>
       )}
     </>

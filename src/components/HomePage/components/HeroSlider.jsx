@@ -24,7 +24,7 @@ const HeroSlider = () => (
             Need to Service or repair your car?
           </h1>
           <p data-aos="fade-up" data-aos-delay="600">
-            Car servicing rationally encounter consequences that extremely painful. Nor again is there anyone who loves or pursues
+            Neglecting car servicing can rationally lead to consequences that are extremely painful. Nor is there anyone who loves or willingly pursues such risks.
           </p>
           <Link 
             to="/contact" 

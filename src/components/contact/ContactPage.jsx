@@ -17,7 +17,7 @@ const ContactPage = () => {
     
     const whatsappMessage = `*New Contact Form Inquiry*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Message:* ${message}`;
     
-    const whatsappUrl = `https://wa.me/94713210583?text=${whatsappMessage}`;
+    const whatsappUrl = `https://wa.me/94772166306?text=${whatsappMessage}`;
     window.open(whatsappUrl, '_blank');
     // Do not reload: keeps SPA state and avoids content-not-loading issues
   };
@@ -133,7 +133,7 @@ const ContactPage = () => {
                         {/* Single Info Start */}
                         <div className="single-info">
                           <h4 className="info-title">Call us</h4>
-                          <p><Link to="tel:+99123456789">+94 77 2166 306</Link></p>
+                          <p><a href="tel:+94772166306">+94 77 216 6306</a></p>
                           {/* <p><Link to="tel:+99123456789">+99 123 456 789</Link></p> */}
                         </div>
                         {/* Single Info End */}

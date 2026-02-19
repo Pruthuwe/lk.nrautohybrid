@@ -649,3 +649,22 @@
 .about-team-section .team-description h3 {
   color: #000000 !important;
 }
+
+/* About team section: video thumbnail + play button (same as BlogSection) */
+.about-team-video-wrap {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+}
+.about-team-video-thumb {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+  pointer-events: none;
+}
+.about-team-play-button:hover {
+  transform: translate(-50%, -50%) scale(1.1) !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  border-color: #28a745 !important;
+}

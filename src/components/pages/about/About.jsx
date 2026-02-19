@@ -19,8 +19,25 @@ import TestimonialsSection from '../../HomePage/components/TestimonialsSection';
 import BrandSection from '../../HomePage/components/BrandSection';
 import './About.css';
 
+const TEAM_VIDEO_SRC = '/assets/images/team/CEO.mp4';
+
+const MODAL_CLOSE_ANIMATION_MS = 320;
+
 const About = () => {
   const [showAppointmentModal, setShowAppointmentModal] = useState(false);
+  const [appointmentModalClosing, setAppointmentModalClosing] = useState(false);
+  const [showVideoModal, setShowVideoModal] = useState(false);
+
+  const closeAppointmentModal = () => {
+    setShowAppointmentModal(false);
+    setAppointmentModalClosing(true);
+  };
+
+  useEffect(() => {
+    if (!appointmentModalClosing) return;
+    const id = setTimeout(() => setAppointmentModalClosing(false), MODAL_CLOSE_ANIMATION_MS);
+    return () => clearTimeout(id);
+  }, [appointmentModalClosing]);
 
   useEffect(() => {
     AOS.init({
@@ -146,8 +163,27 @@ const About = () => {
               <div className="col-lg-5 col-md-6">
                 {/* Single Team Start */}
                 <div className="single-team" data-aos="fade-up" data-aos-delay="100">
-                  <div className="team-images">
-                    <Link to="/team-profile"><img src="/assets/images/team/team-1.webp" alt="Team" /></Link>
+                  <div
+                    className="team-images about-team-video-wrap"
+                    style={{ position: 'relative', cursor: 'pointer' }}
+                    onClick={() => setShowVideoModal(true)}
+                  >
+                    <video
+                      className="about-team-video-thumb"
+                      src={TEAM_VIDEO_SRC}
+                      muted
+                      playsInline
+                      preload="metadata"
+                      title="Team video"
+                    />
+                    <div className="about-team-play-button" style={{
+                      position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+                      width: '70px', height: '70px', backgroundColor: 'rgba(0, 0, 0, 0.7)', borderRadius: '50%',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer',
+                      transition: 'all 0.3s ease', border: '3px solid #28a745',
+                    }}>
+                      <i className="fas fa-play" style={{ color: '#28a745', fontSize: '24px', marginLeft: '5px' }}></i>
+                    </div>
                   </div>
                   <div className="team-content">
                     <div className="content-wrapper">
@@ -203,21 +239,55 @@ const About = () => {
 
       <WhatsAppFloat />
 
-      {/* Appointment Modal */}
-      {showAppointmentModal && (
+      {/* Video Modal - same as BlogSection */}
+      {showVideoModal && (
         <>
-          <div className="modal fade show d-block" tabIndex="-1" role="dialog" style={{zIndex: 1050}}>
+          <div className="modal fade show d-block video-modal" tabIndex="-1" role="dialog" style={{ zIndex: 1050 }}>
             <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
-              <div className="modal-content">
-                <div className="modal-body p-4">
-                  <Appointment 
-                    onClose={() => setShowAppointmentModal(false)}
+              <div className="modal-content" style={{ backgroundColor: '#000' }}>
+                <div className="modal-header" style={{ borderBottom: 'none', padding: '10px' }}>
+                  <button
+                    type="button"
+                    className="btn-close btn-close-white"
+                    onClick={() => setShowVideoModal(false)}
+                    aria-label="Close"
+                    style={{ filter: 'invert(1)', opacity: 1 }}
                   />
+                </div>
+                <div className="modal-body p-0">
+                  <div style={{ position: 'relative', width: '100%' }}>
+                    <video
+                      src={TEAM_VIDEO_SRC}
+                      controls
+                      autoPlay
+                      playsInline
+                      style={{ width: '100%', height: 'auto', display: 'block' }}
+                      title="Team video"
+                    >
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="modal-backdrop fade show" onClick={() => setShowAppointmentModal(false)} style={{zIndex: 1040}}></div>
+          <div className="modal-backdrop fade show" onClick={() => setShowVideoModal(false)} style={{ zIndex: 1040 }} />
+        </>
+      )}
+
+      {/* Appointment Modal */}
+      {(showAppointmentModal || appointmentModalClosing) && (
+        <>
+          <div className={`modal fade show d-block${appointmentModalClosing ? ' modal--closing' : ''}`} tabIndex="-1" role="dialog" style={{zIndex: 1050}}>
+            <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
+              <div className="modal-content">
+                <div className="modal-body p-4">
+                  <Appointment onClose={closeAppointmentModal} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={`modal-backdrop fade show${appointmentModalClosing ? ' modal-backdrop--closing' : ''}`} onClick={closeAppointmentModal} style={{zIndex: 1040}}></div>
         </>
       )}
 

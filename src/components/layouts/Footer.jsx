@@ -1,10 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Appointment from "../appointment/Appointment";
 import "./Footer.css";
 
+const MODAL_CLOSE_ANIMATION_MS = 320;
+
 const Footer = () => {
   const [showAppointmentModal, setShowAppointmentModal] = useState(false);
+  const [appointmentModalClosing, setAppointmentModalClosing] = useState(false);
+
+  const closeAppointmentModal = () => {
+    setShowAppointmentModal(false);
+    setAppointmentModalClosing(true);
+  };
+
+  useEffect(() => {
+    if (!appointmentModalClosing) return;
+    const id = setTimeout(() => setAppointmentModalClosing(false), MODAL_CLOSE_ANIMATION_MS);
+    return () => clearTimeout(id);
+  }, [appointmentModalClosing]);
 
   return (
     <>
@@ -146,20 +160,18 @@ const Footer = () => {
     </div>
 
     {/* Appointment Modal */}
-    {showAppointmentModal && (
+    {(showAppointmentModal || appointmentModalClosing) && (
       <>
-        <div className="modal fade show d-block" tabIndex="-1" role="dialog" style={{zIndex: 1050}}>
+        <div className={`modal fade show d-block${appointmentModalClosing ? ' modal--closing' : ''}`} tabIndex="-1" role="dialog" style={{zIndex: 1050}}>
           <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div className="modal-content">
               <div className="modal-body p-4">
-                <Appointment 
-                  onClose={() => setShowAppointmentModal(false)}
-                />
+                <Appointment onClose={closeAppointmentModal} />
               </div>
             </div>
           </div>
         </div>
-        <div className="modal-backdrop fade show" onClick={() => setShowAppointmentModal(false)} style={{zIndex: 1040}}></div>
+        <div className={`modal-backdrop fade show${appointmentModalClosing ? ' modal-backdrop--closing' : ''}`} onClick={closeAppointmentModal} style={{zIndex: 1040}}></div>
       </>
     )}
     </>

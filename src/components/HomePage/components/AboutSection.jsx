@@ -1,8 +1,22 @@
-import React, { useState } from 'react';
-import Appointment from '../../appointment/Appointment';
+import React, { useState, useEffect } from 'react';
+import GetaQuote from '../../quote/getaQuote';
+
+const MODAL_CLOSE_ANIMATION_MS = 320;
 
 const AboutSection = () => {
-  const [showAppointmentModal, setShowAppointmentModal] = useState(false);
+  const [showQuoteModal, setShowQuoteModal] = useState(false);
+  const [quoteModalClosing, setQuoteModalClosing] = useState(false);
+
+  const closeQuoteModal = () => {
+    setShowQuoteModal(false);
+    setQuoteModalClosing(true);
+  };
+
+  useEffect(() => {
+    if (!quoteModalClosing) return;
+    const id = setTimeout(() => setQuoteModalClosing(false), MODAL_CLOSE_ANIMATION_MS);
+    return () => clearTimeout(id);
+  }, [quoteModalClosing]);
 
   return (
     <>
@@ -33,16 +47,16 @@ const AboutSection = () => {
                   </div>
                   {/* Section Title End */}
 
-                  <p style={{color: '#000000'}}>Turbocharger and hybrid system repairs demand precision and expertise. Our technicians diagnose performance issues, boost pressure faults, and electrical system errors to ensure your vehicle operates at peak efficiency without risking further engine or battery damage.</p>
+                  <p style={{color: '#000000', textAlign: 'justify'}}>Turbocharger and hybrid system repairs demand precision and expertise. Our technicians diagnose performance issues, boost pressure faults, and electrical system errors to ensure your vehicle operates at peak efficiency without risking further engine or battery damage.</p>
 
-                  <p style={{color: '#000000'}}>We specialize in advanced turbo and hybrid repairs using industry-grade tools and genuine components, helping you restore fuel efficiency, power delivery, and long-term reliability with minimal downtime.</p>
+                  <p style={{color: '#000000', textAlign: 'justify'}}>We specialize in advanced turbo and hybrid repairs using industry-grade tools and genuine components, helping you restore fuel efficiency, power delivery, and long-term reliability with minimal downtime.</p>
 
                   <button
                     type="button"
-                    onClick={() => setShowAppointmentModal(true)}
+                    onClick={() => setShowQuoteModal(true)}
                     className="btn btn-custom-01"
                   >
-                    Get Appointment
+                    Get a Quote
                   </button>
                 </div>
                 {/* About Content End */}
@@ -53,21 +67,21 @@ const AboutSection = () => {
         </div>
       </div>
 
-      {/* Appointment Modal - same as CallToAction */}
-      {showAppointmentModal && (
+      {/* Quote Modal */}
+      {(showQuoteModal || quoteModalClosing) && (
         <>
-          <div className="modal fade show d-block" tabIndex="-1" role="dialog" style={{ zIndex: 1050 }}>
+          <div className={`modal fade show d-block${quoteModalClosing ? ' modal--closing' : ''}`} tabIndex="-1" role="dialog" style={{ zIndex: 1050 }}>
             <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
               <div className="modal-content">
                 <div className="modal-body p-4">
-                  <Appointment onClose={() => setShowAppointmentModal(false)} />
+                  <GetaQuote onClose={closeQuoteModal} />
                 </div>
               </div>
             </div>
           </div>
           <div
-            className="modal-backdrop fade show"
-            onClick={() => setShowAppointmentModal(false)}
+            className={`modal-backdrop fade show${quoteModalClosing ? ' modal-backdrop--closing' : ''}`}
+            onClick={closeQuoteModal}
             style={{ zIndex: 1040 }}
           />
         </>

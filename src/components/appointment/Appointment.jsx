@@ -134,7 +134,7 @@ Please confirm this appointment. Thank you!`;
     const encodedMessage = encodeURIComponent(message);
     
     // WhatsApp number (remove + and any spaces)
-    const whatsappNumber = '94713210583';
+    const whatsappNumber = '94772166306';
     
     // Create WhatsApp URL
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
@@ -310,7 +310,7 @@ Please confirm this appointment. Thank you!`;
           </div>
 
           <div className="col-12">
-            <button type="submit" className="btn btn-primary w-100">
+            <button type="submit" className="btn btn-custom-01 w-100">
               <i className="fab fa-whatsapp me-2"></i>
               Book Appointment via WhatsApp
             </button>

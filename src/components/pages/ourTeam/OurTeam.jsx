@@ -76,10 +76,9 @@ const OurTeam = () => {
                       <span className="designation">Engine Mechanic</span>
                       <div className="team-meta">
                         <p className="meta">Exprience: <strong>8 years</strong></p>
-                        <p className="meta">Rating: <span>5</span></p>
                       </div>
                       <ul className="social">
-                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a></li>
                         <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i className="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i className="fab fa-instagram"></i></a></li>
@@ -101,10 +100,9 @@ const OurTeam = () => {
                       <span className="designation">Interior Mechanic</span>
                       <div className="team-meta">
                         <p className="meta">Exprience: <strong>8 years</strong></p>
-                        <p className="meta">Rating: <span>4.7</span></p>
                       </div>
                       <ul className="social">
-                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a></li>
                         <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i className="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i className="fab fa-instagram"></i></a></li>
@@ -126,10 +124,9 @@ const OurTeam = () => {
                       <span className="designation">Wheels Specialist</span>
                       <div className="team-meta">
                         <p className="meta">Exprience: <strong>8 years</strong></p>
-                        <p className="meta">Rating: <span>5</span></p>
                       </div>
                       <ul className="social">
-                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a></li>
                         <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i className="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i className="fab fa-instagram"></i></a></li>
@@ -151,10 +148,9 @@ const OurTeam = () => {
                       <span className="designation">Lead Painter</span>
                       <div className="team-meta">
                         <p className="meta">Exprience: <strong>8 years</strong></p>
-                        <p className="meta">Rating: <span>4.9</span></p>
                       </div>
                       <ul className="social">
-                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a></li>
                         <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i className="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i className="fab fa-instagram"></i></a></li>
@@ -176,10 +172,9 @@ const OurTeam = () => {
                       <span className="designation">Brake Expert</span>
                       <div className="team-meta">
                         <p className="meta">Exprience: <strong>8 years</strong></p>
-                        <p className="meta">Rating: <span>4.8</span></p>
                       </div>
                       <ul className="social">
-                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a></li>
                         <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i className="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i className="fab fa-instagram"></i></a></li>
@@ -201,10 +196,9 @@ const OurTeam = () => {
                       <span className="designation">Structure Mechanic</span>
                       <div className="team-meta">
                         <p className="meta">Exprience: <strong>8 years</strong></p>
-                        <p className="meta">Rating: <span>4.7</span></p>
                       </div>
                       <ul className="social">
-                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a></li>
                         <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i className="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i className="fab fa-instagram"></i></a></li>
@@ -226,10 +220,9 @@ const OurTeam = () => {
                       <span className="designation">Engine Mechanic</span>
                       <div className="team-meta">
                         <p className="meta">Exprience: <strong>10 years</strong></p>
-                        <p className="meta">Rating: <span>5</span></p>
                       </div>
                       <ul className="social">
-                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a></li>
                         <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i className="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i className="fab fa-instagram"></i></a></li>
@@ -251,10 +244,9 @@ const OurTeam = () => {
                       <span className="designation">Interior Mechanic</span>
                       <div className="team-meta">
                         <p className="meta">Exprience: <strong>9 years</strong></p>
-                        <p className="meta">Rating: <span>5</span></p>
                       </div>
                       <ul className="social">
-                        <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://wa.me/94772166306" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a></li>
                         <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i className="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i className="fab fa-instagram"></i></a></li>

@@ -342,6 +342,23 @@
   padding-top: 10px;
 }
 
+/* Equal-height service price cards */
+.service-details-price .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-details-price .row > [class*="col-"] {
+  display: flex;
+}
+
+.service-details-price .service-price {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 180px;
+}
+
 .service-price {
   background-color: #e4f3ff;
   border-radius: 10px;
@@ -350,6 +367,7 @@
   position: relative;
   overflow: hidden;
   margin-top: 30px;
+  width: 100%;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
@@ -415,7 +433,7 @@
 .service-price .price {
   text-align: right;
   position: relative;
-  margin-top: 5px;
+  margin-top: auto;
 }
 
 .service-price .price span {
@@ -499,6 +517,11 @@
   font-weight: 700;
   font-family: 'Rajdhani', sans-serif;
   padding: 0 20px;
+}
+
+.widget-sidebar .category li.active a {
+  background-color: #0046e2;
+  color: #ffffff;
 }
 
 .widget-sidebar .category li a:hover {
