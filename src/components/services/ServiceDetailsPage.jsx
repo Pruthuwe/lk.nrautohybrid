@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
 import WhatsAppFloat from '../WhatsAppFloat/WhatsAppFloat';
@@ -11,6 +13,10 @@ const ServiceDetailsPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [localSelectedService, setLocalSelectedService] = useState('Turbocharger Repairs');
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
 
   // Scroll to top when location key changes (new navigation)
   useEffect(() => {
@@ -41,13 +47,13 @@ const ServiceDetailsPage = () => {
             {/* Page Banner Content Start */}
             <div className="page-banner-content">
 
-              {/* Title as in HeroSlider (slider section) */}
+              {/* Title as in HeroSlider (slider section) - same AOS animation */}
               <div className="page-banner-titles slider-style">
-                <h5 className="sub-title">Services</h5>
-                <h1 className="main-title">{currentService.title}</h1>
+                <h5 className="sub-title" data-aos="fade-up" data-aos-delay="100">Services</h5>
+                <h1 className="main-title" data-aos="fade-up" data-aos-delay="400">{currentService.title}</h1>
               </div>
 
-              <ul className="breadcrumb">
+              <ul className="breadcrumb" data-aos="fade-up" data-aos-delay="600">
                 <li className="breadcrumb-item"><Link to="/">Home</Link></li>
                 <li className="breadcrumb-item"><Link to="/service">Services</Link></li>
                 <li className="breadcrumb-item active">Services Details</li>
@@ -56,7 +62,7 @@ const ServiceDetailsPage = () => {
             {/* Page Banner Content End */}
 
             {/* Page Banner Images Start */}
-            <div className="page-banner-images">
+            <div className="page-banner-images" data-aos="fade-left" data-aos-delay="1000">
               <img src="/assets/images/page-banner-2.webp" alt="Page Banner" />
             </div>
             {/* Page Banner Images End */}

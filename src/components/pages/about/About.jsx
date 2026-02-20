@@ -59,13 +59,13 @@ const About = () => {
             {/* Page Banner Content Start */}
             <div className="page-banner-content">
 
-              {/* Title as in HeroSlider (slider section) */}
+              {/* Title as in HeroSlider (slider section) - same AOS animation */}
               <div className="page-banner-titles slider-style">
-                <h5 className="sub-title">About Us</h5>
-                <h1 className="main-title">Learn about Green Auto.</h1>
+                <h5 className="sub-title" data-aos="fade-up" data-aos-delay="100">About Us</h5>
+                <h1 className="main-title" data-aos="fade-up" data-aos-delay="400">Learn about Green Auto.</h1>
               </div>
 
-              <ul className="breadcrumb">
+              <ul className="breadcrumb" data-aos="fade-up" data-aos-delay="600">
                 <li className="breadcrumb-item"><Link to="/">Home</Link></li>
                 <li className="breadcrumb-item active">About</li>
               </ul>
@@ -73,7 +73,7 @@ const About = () => {
             {/* Page Banner Content End */}
 
             {/* Page Banner Images Start */}
-            <div className="page-banner-images">
+            <div className="page-banner-images" data-aos="fade-left" data-aos-delay="1000">
               <img src="/assets/images/page-banner.webp" alt="Page Banner" />
             </div>
             {/* Page Banner Images End */}

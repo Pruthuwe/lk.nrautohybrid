@@ -32,13 +32,13 @@ const ProjectGallery = () => {
             {/* Page Banner Content Start */}
             <div className="page-banner-content">
 
-              {/* Title as in HeroSlider (slider section) */}
+              {/* Title as in HeroSlider (slider section) - same AOS animation */}
               <div className="page-banner-titles slider-style">
-                <h5 className="sub-title">Projects</h5>
-                <h1 className="main-title">Our Projects Gallery</h1>
+                <h5 className="sub-title" data-aos="fade-up" data-aos-delay="100">Projects</h5>
+                <h1 className="main-title" data-aos="fade-up" data-aos-delay="400">Our Projects Gallery</h1>
               </div>
 
-              <ul className="breadcrumb">
+              <ul className="breadcrumb" data-aos="fade-up" data-aos-delay="600">
                 <li className="breadcrumb-item"><Link to="/">Home</Link></li>
                 <li className="breadcrumb-item active">Gallery</li>
               </ul>
@@ -46,7 +46,7 @@ const ProjectGallery = () => {
             {/* Page Banner Content End */}
 
             {/* Page Banner Images Start */}
-            <div className="page-banner-images">
+            <div className="page-banner-images" data-aos="fade-left" data-aos-delay="1000">
               <img src="/assets/images/page-banner-2.webp" alt="Page Banner" />
             </div>
             {/* Page Banner Images End */}

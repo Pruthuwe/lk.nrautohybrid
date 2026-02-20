@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
 import WhatsAppFloat from '../WhatsAppFloat/WhatsAppFloat';
 import './ContactPage.css';
 
 const ContactPage = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     
@@ -35,13 +41,13 @@ const ContactPage = () => {
             {/* Page Banner Content Start */}
             <div className="page-banner-content">
 
-              {/* Title as in HeroSlider (slider section) */}
+              {/* Title as in HeroSlider (slider section) - same AOS animation */}
               <div className="page-banner-titles slider-style">
-                <h5 className="sub-title">Connect</h5>
-                <h1 className="main-title">Connect with<br /> us</h1>
+                <h5 className="sub-title" data-aos="fade-up" data-aos-delay="100">Connect</h5>
+                <h1 className="main-title" data-aos="fade-up" data-aos-delay="400">Connect with<br /> us</h1>
               </div>
 
-              <ul className="breadcrumb">
+              <ul className="breadcrumb" data-aos="fade-up" data-aos-delay="600">
                 <li className="breadcrumb-item"><Link to="/">Home</Link></li>
                 <li className="breadcrumb-item active">Connect</li>
               </ul>
@@ -49,7 +55,7 @@ const ContactPage = () => {
             {/* Page Banner Content End */}
 
             {/* Page Banner Images Start */}
-            <div className="page-banner-images">
+            <div className="page-banner-images" data-aos="fade-left" data-aos-delay="1000">
               <img src="/assets/images/slider/slider-1.webp" alt="Page Banner" />
             </div>
             {/* Page Banner Images End */}
