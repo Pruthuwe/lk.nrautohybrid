@@ -245,12 +245,54 @@
   visibility: visible;
 }
 
-/* Header Meta */
+/* Header Meta - logo | Book Appointment | hamburger on mobile */
 .header-meta {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 12px;
+  min-width: 0;
+}
+
+/* Book Appointment button: icon and text centered in button */
+.header-book-appointment-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile: Book Appointment button between logo and hamburger, wider button, more space before hamburger */
+@media only screen and (max-width: 991px) {
+  .header-meta {
+    flex-shrink: 0;
+    gap: 12px;
+  }
+  .header-book-appointment-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    white-space: nowrap;
+    min-width: 140px;
+    margin-right: 12px;
+  }
+  .header-book-appointment-btn .me-2 {
+    margin-right: 6px !important;
+  }
+  .header-toggle {
+    flex-shrink: 0;
+    margin-left: 4px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .header-book-appointment-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+    min-width: 120px;
+    margin-right: 10px;
+  }
+  .header-meta {
+    gap: 10px;
+  }
 }
 
 /* Header Search */

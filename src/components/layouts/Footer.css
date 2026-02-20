@@ -89,6 +89,14 @@
   margin-top: -50px;
 }
 
+@media only screen and (max-width: 767px) {
+  .footer-widget-wrapper {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .footer-widget-title {
   font-size: 28px;
   font-weight: 600;

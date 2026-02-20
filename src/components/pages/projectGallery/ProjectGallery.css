@@ -99,25 +99,50 @@
   }
 }
 
-.page-banner-content .section-title .main-title {
-  font-size: 80px;
-  line-height: 1;
+/* Page banner titles – same as slider section (HeroSlider) */
+.page-banner-section .page-banner-content .page-banner-titles.slider-style .sub-title {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 15px;
+  font-family: 'Roboto', sans-serif;
 }
-
+.page-banner-section .page-banner-content .page-banner-titles.slider-style .sub-title::before {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 15px;
+  background-color: #0046e2;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.page-banner-section .page-banner-content .page-banner-titles.slider-style .main-title {
+  font-size: 80px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1;
+  margin-top: 10px;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .page-banner-content .section-title .main-title {
+  .page-banner-section .page-banner-content .page-banner-titles.slider-style .main-title {
     font-size: 48px;
   }
 }
-
 @media only screen and (max-width: 767px) {
-  .page-banner-content .section-title .main-title {
-    font-size: 40px;
+  .page-banner-section .page-banner-content .page-banner-titles.slider-style .sub-title {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  .page-banner-section .page-banner-content .page-banner-titles.slider-style .main-title {
+    font-size: 60px;
   }
 }
-
 @media only screen and (max-width: 575px) {
-  .page-banner-content .section-title .main-title {
+  .page-banner-section .page-banner-content .page-banner-titles.slider-style .main-title {
     font-size: 36px;
   }
 }
@@ -154,6 +179,14 @@
 /* ========== 4.13 Project Gallery (_project-gallery.scss) ========== */
 .project-gallery-wrapper {
   margin-top: -30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .project-gallery-wrapper {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .single-gallery {

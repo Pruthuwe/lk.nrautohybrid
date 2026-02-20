@@ -82,6 +82,22 @@
   color: #ffffff;
 }
 
+/* Center all section titles (main title + paragraph) on mobile across home page */
+@media only screen and (max-width: 767px) {
+  .section .section-title {
+    text-align: center;
+  }
+  .section .section-title .sub-title,
+  .section .section-title .main-title,
+  .section .section-title p {
+    text-align: center;
+  }
+  /* Keep sub-title as inline-block so the ::before bar stays visible and centers with the text */
+  .section .section-title .sub-title {
+    display: inline-block;
+  }
+}
+
 /* ========== 4.1 Slider (_slider.scss) ========== */
 .slider-section {
 }
@@ -362,6 +378,14 @@
   margin-top: 45px;
 }
 
+@media only screen and (max-width: 767px) {
+  .about-content .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .about-content .section-title .main-title {
   color: #0046e2;
 }
@@ -587,6 +611,20 @@
   }
 }
 
+/* Reduce service card width on mobile (keep height) */
+@media only screen and (max-width: 767px) {
+  .services-section .service-wrapper .row > [class*="col-"] {
+    display: flex;
+    justify-content: center;
+  }
+  .services-section .single-service {
+    width: 100%;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .single-service .service-icon .icon-path {
   fill: #4CAF50;
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -631,6 +669,14 @@
 @media only screen and (max-width: 767px) {
   .call-to-action-wrapper {
     border-radius: 15px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .call-to-action-content .content-wrapper .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -851,6 +897,19 @@
   opacity: 1;
 }
 
+@media only screen and (max-width: 767px) {
+  .how-we-work-section .how-we-work-wrapper .row > [class*="col-"] {
+    display: flex;
+    justify-content: center;
+  }
+  .how-we-work-section .single-work {
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /* ========== 4.7 Testimonials (_testimonials.scss) ========== */
 .testimonials-wrapper {
   border-radius: 30px;
@@ -868,6 +927,17 @@
 @media only screen and (max-width: 767px) {
   .testimonials-wrapper {
     border-radius: 15px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .testimonials-title {
+    text-align: center;
+  }
+  .testimonials-title .section-title .sub-title,
+  .testimonials-title .section-title .main-title,
+  .testimonials-title .section-title p {
+    text-align: center;
   }
 }
 
@@ -1031,6 +1101,12 @@
 }
 
 /* ========== 4.8 Blog (_blog.scss) ========== */
+.blog-section,
+.blog-section .container,
+.blog-section .blog-wrapper {
+  overflow: visible;
+}
+
 .blog-section .section-title .main-title {
   color: #0046e2 !important;
 }
@@ -1061,23 +1137,35 @@
 
 .blog-items {
   padding-top: 20px;
+  overflow: visible;
+}
+
+.blog-section .blog-items .row {
+  overflow: visible;
 }
 
 .single-blog {
   margin-top: 30px;
+  overflow: visible;
 }
 
 .single-blog .blog-image {
   overflow: hidden;
   border-radius: 15px;
+  width: 100%;
 }
 
-.single-blog .blog-image a {
+.single-blog .blog-image a,
+.single-blog .blog-image {
   display: block;
 }
 
-.single-blog .blog-image a img {
+.single-blog .blog-image a img,
+.single-blog .blog-image img {
   width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -1143,8 +1231,22 @@
   color: #4CAF50;
 }
 
-.single-blog:hover .blog-image a img {
+.single-blog:hover .blog-image a img,
+.single-blog:hover .blog-image img {
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 767px) {
+  .blog-section .blog-items .row > [class*="col-"] {
+    display: flex;
+    justify-content: center;
+  }
+  .blog-section .single-blog {
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* ========== 4.9 Brand (_brand.scss) ========== */

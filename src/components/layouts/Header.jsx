@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Appointment from "../appointment/Appointment";
+import GetaQuote from "../quote/getaQuote";
 import "./Header.css";
 
 const MODAL_CLOSE_ANIMATION_MS = 320;
@@ -10,10 +11,17 @@ const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [showAppointmentModal, setShowAppointmentModal] = useState(false);
   const [appointmentModalClosing, setAppointmentModalClosing] = useState(false);
+  const [showQuoteModal, setShowQuoteModal] = useState(false);
+  const [quoteModalClosing, setQuoteModalClosing] = useState(false);
 
   const closeAppointmentModal = () => {
     setShowAppointmentModal(false);
     setAppointmentModalClosing(true);
+  };
+
+  const closeQuoteModal = () => {
+    setShowQuoteModal(false);
+    setQuoteModalClosing(true);
   };
 
   useEffect(() => {
@@ -21,6 +29,12 @@ const Header = () => {
     const id = setTimeout(() => setAppointmentModalClosing(false), MODAL_CLOSE_ANIMATION_MS);
     return () => clearTimeout(id);
   }, [appointmentModalClosing]);
+
+  useEffect(() => {
+    if (!quoteModalClosing) return;
+    const id = setTimeout(() => setQuoteModalClosing(false), MODAL_CLOSE_ANIMATION_MS);
+    return () => clearTimeout(id);
+  }, [quoteModalClosing]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -174,7 +188,7 @@ const Header = () => {
               {/* Header Meta */}
               <div className="header-meta d-flex align-items-center gap-3">
 
-                <button onClick={() => setShowAppointmentModal(true)} className="btn btn-primary">
+                <button onClick={() => setShowAppointmentModal(true)} className="btn btn-primary header-book-appointment-btn">
                   <i className="far fa-calendar-alt me-2"></i>
                   Book Appointment
                 </button>
@@ -265,11 +279,11 @@ const Header = () => {
           </div>
           {/* Mobile Menu End */}
 
-          {/* Book Appointment Button Start - same as CallToAction */}
+          {/* Get a Quote Button Start (mobile menu) */}
           <div className="mobile-quote-btn">
             <button 
               onClick={() => {
-                setShowAppointmentModal(true);
+                setShowQuoteModal(true);
                 const offcanvas = document.getElementById('offcanvasExample');
                 const bsOffcanvas = window.bootstrap?.Offcanvas?.getInstance(offcanvas);
                 if (bsOffcanvas) {
@@ -278,11 +292,10 @@ const Header = () => {
               }} 
               className="btn btn-primary w-100"
             >
-              <i className="far fa-calendar-alt me-2"></i>
-              Book Appointment
+              Get a Quote
             </button>
           </div>
-          {/* Book Appointment Button End */}
+          {/* Get a Quote Button End */}
         </div>
       </div>
 
@@ -299,6 +312,22 @@ const Header = () => {
             </div>
           </div>
           <div className={`modal-backdrop fade show quote-modal-backdrop${appointmentModalClosing ? ' modal-backdrop--closing' : ''}`} onClick={closeAppointmentModal} style={{ zIndex: 1040 }}></div>
+        </>
+      )}
+
+      {/* Quote Modal (mobile menu "Get a Quote") */}
+      {(showQuoteModal || quoteModalClosing) && (
+        <>
+          <div className={`modal fade show d-block quote-modal${quoteModalClosing ? ' modal--closing' : ''}`} tabIndex="-1" role="dialog" style={{ zIndex: 1050 }}>
+            <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
+              <div className="modal-content">
+                <div className="modal-body p-4">
+                  <GetaQuote onClose={closeQuoteModal} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={`modal-backdrop fade show quote-modal-backdrop${quoteModalClosing ? ' modal-backdrop--closing' : ''}`} onClick={closeQuoteModal} style={{ zIndex: 1040 }}></div>
         </>
       )}
     </>

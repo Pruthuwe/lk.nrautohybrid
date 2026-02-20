@@ -31,12 +31,11 @@ const OurTeam = () => {
             {/* Page Banner Content Start */}
             <div className="page-banner-content">
 
-              {/* Section Title Start */}
-              <div className="section-title">
+              {/* Title as in HeroSlider (slider section) */}
+              <div className="page-banner-titles slider-style">
                 <h5 className="sub-title">Our Team</h5>
-                <h2 className="main-title">Expert Mechanics</h2>
+                <h1 className="main-title">Expert Mechanics</h1>
               </div>
-              {/* Section Title End */}
 
               <ul className="breadcrumb">
                 <li className="breadcrumb-item"><Link to="/">Home</Link></li>
