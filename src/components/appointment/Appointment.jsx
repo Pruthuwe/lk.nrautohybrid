@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
+const LOCATIONS = [
+  { value: 'Kurunegala', label: 'Kurunegala' },
+  { value: 'Thalawathugoda', label: 'Thalawathugoda' }
+];
+
 const Appointment = ({ onClose }) => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
+    location: '',
     vehicleType: '',
     serviceType: '',
     date: '',
@@ -28,6 +34,38 @@ const Appointment = ({ onClose }) => {
     '06:30 PM'
   ];
 
+  // Parse slot string "08:30 AM" to minutes since midnight (for comparison with current time)
+  const parseSlotToMinutes = (slotStr) => {
+    const match = slotStr.match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
+    if (!match) return 0;
+    let hours = parseInt(match[1], 10);
+    const minutes = parseInt(match[2], 10);
+    const period = match[3].toUpperCase();
+    if (period === 'PM' && hours !== 12) hours += 12;
+    if (period === 'AM' && hours === 12) hours = 0;
+    return hours * 60 + minutes;
+  };
+
+  // Get current time in minutes since midnight (local time)
+  const getCurrentMinutes = () => {
+    const now = new Date();
+    return now.getHours() * 60 + now.getMinutes();
+  };
+
+  // For today only: time slots that are after current time (cannot book past slots)
+  const isSlotInPastForToday = (slot) => {
+    const todayStr = new Date().toISOString().split('T')[0];
+    if (formData.date !== todayStr) return false;
+    return parseSlotToMinutes(slot) <= getCurrentMinutes();
+  };
+
+  // Slots to show in dropdown: for today, only future slots; for other dates, all slots
+  const visibleTimeSlots = formData.date
+    ? (formData.date === new Date().toISOString().split('T')[0]
+        ? timeSlots.filter(slot => !isSlotInPastForToday(slot))
+        : timeSlots)
+    : timeSlots;
+
   // Load booked appointments from localStorage
   useEffect(() => {
     const loadBookedSlots = () => {
@@ -51,34 +89,59 @@ const Appointment = ({ onClose }) => {
     loadBookedSlots();
   }, []);
 
-  // Get booked time slots for selected date
-  const getBookedTimesForDate = (date) => {
+  // Get booked time slots for selected date and location
+  const getBookedTimesForDate = (date, location) => {
     if (!date) return [];
     return bookedSlots
-      .filter(slot => slot.date === date)
+      .filter(slot => {
+        if (slot.date !== date) return false;
+        if (!location) return true;
+        // Legacy appointments without location block all locations
+        return slot.location === location || slot.location == null || slot.location === '';
+      })
       .map(slot => slot.time);
   };
 
-  // Check if a time slot is available
+  // Check if a time slot is available for the selected date and location
   const isTimeSlotAvailable = (time) => {
     if (!formData.date) return true;
-    const bookedTimes = getBookedTimesForDate(formData.date);
+    const location = formData.location || null;
+    const bookedTimes = getBookedTimesForDate(formData.date, location);
     return !bookedTimes.includes(time);
   };
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    const name = e.target.name;
+    const value = e.target.value;
+    const next = { ...formData, [name]: value };
+    const nextDate = name === 'date' ? value : formData.date;
+    const nextLocation = name === 'location' ? value : formData.location;
+    // When location or date changes, clear time if current selection becomes invalid
+    if ((name === 'location' || name === 'date') && formData.time) {
+      const bookedTimes = getBookedTimesForDate(nextDate, nextLocation);
+      if (bookedTimes.includes(formData.time)) next.time = '';
+      // If booking for today, clear time if it's now in the past
+      const todayStr = new Date().toISOString().split('T')[0];
+      if (nextDate === todayStr && formData.time && parseSlotToMinutes(formData.time) <= getCurrentMinutes()) {
+        next.time = '';
+      }
+    }
+    setFormData(next);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     // Validate required fields
-    if (!formData.name || !formData.phone || !formData.date || !formData.time) {
-      alert('Please fill in all required fields');
+    if (!formData.name || !formData.phone || !formData.location || !formData.date || !formData.time) {
+      alert('Please fill in all required fields (Name, Phone, Location, Date, Time)');
+      return;
+    }
+
+    // If booking for today, cannot book a time slot that has already passed
+    const todayStr = new Date().toISOString().split('T')[0];
+    if (formData.date === todayStr && parseSlotToMinutes(formData.time) <= getCurrentMinutes()) {
+      alert('Cannot book a time slot that has already passed. Please select a future time.');
       return;
     }
 
@@ -88,9 +151,10 @@ const Appointment = ({ onClose }) => {
       return;
     }
 
-    // Save appointment to localStorage
+    // Save appointment to localStorage (including location for slot availability)
     const newAppointment = {
       id: Date.now(),
+      location: formData.location,
       date: formData.date,
       time: formData.time,
       name: formData.name,
@@ -125,6 +189,7 @@ Vehicle Type: ${formData.vehicleType}` : ''}${formData.serviceType ? `
 Service Type: ${formData.serviceType}` : ''}
 
 *Appointment Schedule:*
+Location: ${formData.location}
 Date: ${formattedDate}
 Time: ${formData.time}
 
@@ -203,6 +268,25 @@ Please confirm this appointment. Thank you!`;
           </div>
 
           <div className="col-md-6 mb-3">
+            <label htmlFor="location" className="form-label">
+              Location <span className="text-danger">*</span>
+            </label>
+            <select
+              className="form-select"
+              id="location"
+              name="location"
+              value={formData.location}
+              onChange={handleChange}
+              required
+            >
+              <option value="">Select Location</option>
+              {LOCATIONS.map((loc) => (
+                <option key={loc.value} value={loc.value}>{loc.label}</option>
+              ))}
+            </select>
+          </div>
+
+          <div className="col-md-6 mb-3">
             <label htmlFor="vehicleType" className="form-label">
               Vehicle Type
             </label>
@@ -273,12 +357,16 @@ Please confirm this appointment. Thank you!`;
               value={formData.time}
               onChange={handleChange}
               required
-              disabled={!formData.date}
+              disabled={!formData.date || !formData.location}
             >
               <option value="">
-                {formData.date ? 'Select Time Slot' : 'Please select a date first'}
+                {!formData.location
+                  ? 'Please select a location first'
+                  : !formData.date
+                    ? 'Please select a date first'
+                    : 'Select Time Slot'}
               </option>
-              {timeSlots.map((slot, index) => {
+              {visibleTimeSlots.map((slot, index) => {
                 const available = isTimeSlotAvailable(slot);
                 return (
                   <option key={index} value={slot} disabled={!available}>
@@ -287,9 +375,10 @@ Please confirm this appointment. Thank you!`;
                 );
               })}
             </select>
-            {formData.date && (
+            {formData.date && formData.location && (
               <small className="text-muted">
-                {getBookedTimesForDate(formData.date).length} of {timeSlots.length} slots booked for this date
+                {getBookedTimesForDate(formData.date, formData.location).length} of {visibleTimeSlots.length} slots booked for this date at {formData.location}
+                {formData.date === new Date().toISOString().split('T')[0]}
               </small>
             )}
           </div>
